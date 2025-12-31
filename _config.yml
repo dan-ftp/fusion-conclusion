@@ -2,8 +2,8 @@ title: Fusion Conclusion
 description: "Staging (GitHub Pages) during migration from Ghost."
 theme: minima
 
-url: "https://dan-ftp.github.io"
-baseurl: "/fusion-conclusion"
+url: "https://www.fusionconclusion.com"
+baseurl: ""
 permalink: /:title/
 
 timezone: America/New_York

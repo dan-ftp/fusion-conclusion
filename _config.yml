@@ -11,3 +11,7 @@ timezone: America/New_York
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Ensure Ghost-style /content/... assets are published
+include:
+  - content

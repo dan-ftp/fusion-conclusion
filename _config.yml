@@ -1,0 +1,17 @@
+title: Fusion Conclusion
+description: "Staging (GitHub Pages) during migration from Ghost."
+theme: minima
+
+url: "https://dan-ftp.github.io"
+baseurl: "/fusion-conclusion"
+permalink: /:title/
+
+timezone: America/New_York
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Ensure Ghost-style /content/... assets are published
+include:
+  - content

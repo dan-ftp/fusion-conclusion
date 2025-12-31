@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ghost/
+
+Sitemap: https://dan-ftp.github.io/fusion-conclusion/sitemap.xml

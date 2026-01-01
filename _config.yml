@@ -19,3 +19,7 @@ include:
 header_pages:
   - about.md
   - subscribe.md
+
+exclude:
+  - ops/
+  - RUNBOOK.md

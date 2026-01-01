@@ -15,3 +15,7 @@ plugins:
 # Ensure Ghost-style /content/... assets are published
 include:
   - content
+
+header_pages:
+  - about.md
+  - subscribe.md

@@ -11,5 +11,5 @@ permalink: /subscribe/
          height: 220px;
          border: 1px #ccc solid !important;
         "
-  src="https://buttondown.com/YOUR-BUTTONDOWN-USERNAME?as_embed=true"
+  src="https://buttondown.com/fusionconclusion?as_embed=true"
 ></iframe>

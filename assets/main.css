@@ -482,3 +482,110 @@ pre{
 .site-footer a{
   color: var(--link);
 }
+
+
+/* =========================================================
+   Fusion Conclusion — polish pass
+   - Fix page title indent
+   - Use logo in header instead of text
+   - Keep original tufte-type font stacks (no new fonts)
+   ========================================================= */
+
+/* Ensure we keep the ORIGINAL tufte-type style font stacks */
+:root {
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+    Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* Make sure body + headings stay serif (as in tufte-type) */
+body {
+  font-family: var(--font-serif);
+}
+
+.site-header,
+.site-nav {
+  font-family: var(--font-sans);
+}
+
+/* ---- Header: align logo + nav nicely ---- */
+.site-header .wrapper {
+  align-items: center; /* fixes slight baseline weirdness once logo is used */
+}
+
+/* ---- Replace the site-title text with your logo (keeps text for screen readers) ---- */
+.site-title {
+  /* keep existing typographic intent, but hide visually */
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  /* logo */
+  background-image: url("/assets/logo-full.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+
+  /* responsive width for the wordmark */
+  width: clamp(220px, 28vw, 380px);
+
+  border: 0 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.site-title:hover,
+.site-title:focus,
+.site-title:active {
+  border: 0 !important;
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+/* OPTIONAL: On small screens, swap to the mini mark.
+   If you prefer the full logo even on mobile, delete this whole @media block. */
+@media (max-width: 520px) {
+  .site-title {
+    background-image: url("/assets/logo-mini.svg");
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+}
+
+/* Add better spacing between nav links (About / Subscribe) */
+.site-nav .page-link {
+  margin-left: 1.35rem;
+}
+.site-nav .page-link:first-child {
+  margin-left: 0;
+}
+
+/* ---- Fix: page/post titles are “indented” relative to body copy ----
+   This is usually caused by inherited text-align / padding / margins. */
+.post-header {
+  text-align: left;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.post-title,
+.page-title,
+.page-heading {
+  text-align: left;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+/* If your theme applies extra left padding to the header only, this forces alignment */
+.post-header > * {
+  margin-left: 0 !important;
+}

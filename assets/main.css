@@ -1,2 +1,484 @@
-/* Site CSS override: load custom css */
-@import url("/assets/css/screen.css");
+/* ==========================================================
+   FusionConclusion — Tufte-inspired Jekyll (Minima) theme
+   Drop-in replacement for /assets/main.css
+
+   Goals:
+   - Preserve Tufte-ish typography + calm layout
+   - Fix Minima header/nav (no visible checkbox, proper spacing)
+   - Fix too-narrow columns + weird bullets
+   - Keep margin-note capability without wrecking the home page
+   ========================================================== */
+
+/* -----------------------------
+   Design tokens
+------------------------------ */
+:root{
+  --bg: #fdfaf7;
+  --text: #111111;
+  --muted: #555555;
+
+  --link: #1f4b99;
+  --link-hover: #163a7a;
+
+  --rule: rgba(0,0,0,0.14);
+  --rule-soft: rgba(0,0,0,0.09);
+
+  --max-width: 1100px;
+
+  /* Main reading measure (the actual text column) */
+  --content-width: 760px;
+
+  /* Margin-note gutter (only used on post/page content on wide screens) */
+  --note-width: 15rem;
+  --note-gap: 2.25rem;
+
+  --serif: "ETBembo","Palatino Linotype",Palatino,"Iowan Old Style","Georgia",serif;
+  --sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  --mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+/* -----------------------------
+   Reset-ish
+------------------------------ */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg, video { max-width: 100%; height: auto; }
+
+a{
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31,75,153,0.35);
+}
+a:hover{
+  color: var(--link-hover);
+  border-bottom-color: rgba(22,58,122,0.55);
+}
+
+hr{
+  border: 0;
+  border-top: 1px solid var(--rule-soft);
+  margin: 2.25rem 0;
+}
+
+code, pre{
+  font-family: var(--mono);
+  font-size: 0.92em;
+}
+pre{
+  overflow: auto;
+  padding: 1rem 1.1rem;
+  background: rgba(0,0,0,0.035);
+  border: 1px solid var(--rule-soft);
+  border-radius: 4px;
+}
+
+/* -----------------------------
+   Minima wrappers
+------------------------------ */
+.wrapper{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 640px){
+  body{ font-size: 17px; }
+  .wrapper{ padding: 0 1.15rem; }
+}
+
+/* -----------------------------
+   Header (fixes checkbox + spacing)
+------------------------------ */
+.site-header{
+  border-top: 0;
+  border-bottom: 1px solid var(--rule);
+  padding: 1.6rem 0 1.05rem;
+  background: transparent;
+}
+
+.site-header .wrapper{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-title{
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  color: var(--text);
+  border-bottom: 0;
+}
+.site-title:hover{ border-bottom: 0; }
+
+/* Minima nav structure:
+   <nav class="site-nav">
+     <input class="nav-trigger" ...>
+     <label ...><span class="menu-icon">...</span></label>
+     <div class="trigger">
+       <a class="page-link" ...>About</a>
+       ...
+     </div>
+   </nav>
+*/
+.site-nav{
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+.site-nav .nav-trigger{
+  /* IMPORTANT: hide the checkbox (this is the square you saw) */
+  position: absolute;
+  left: -9999px;
+}
+
+.site-nav .trigger{
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+}
+
+.site-nav .page-link{
+  color: var(--text);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.05rem;
+}
+.site-nav .page-link:hover{
+  border-bottom-color: var(--rule);
+}
+
+.site-nav label{
+  display: none; /* desktop: no hamburger */
+}
+
+/* Mobile nav */
+@media (max-width: 720px){
+  .site-header .wrapper{
+    align-items: flex-start;
+  }
+
+  .site-nav{
+    width: 100%;
+  }
+
+  .site-nav label{
+    display: inline-flex;  /* show hamburger */
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .site-nav .menu-icon{
+    display: inline-flex;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 0.3rem 0.45rem;
+  }
+
+  .site-nav .menu-icon svg{
+    width: 18px;
+    height: 18px;
+    fill: var(--text);
+  }
+
+  .site-nav .trigger{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .site-nav .nav-trigger:checked ~ .trigger{
+    display: flex;
+  }
+}
+
+/* -----------------------------
+   Main content spacing
+------------------------------ */
+.page-content{
+  padding: 2.6rem 0 3.25rem;
+}
+
+/* Home page container (DON’T reserve margin-note gutter here) */
+.home{
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.page-heading{
+  font-family: var(--serif);
+  font-size: 3.1rem;
+  line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 1.2rem;
+}
+
+@media (max-width: 720px){
+  .page-heading{ font-size: 2.3rem; }
+}
+
+/* -----------------------------
+   Post list (fix bullets + spacing)
+------------------------------ */
+.post-list{
+  list-style: none;
+  padding-left: 0;
+  margin: 2.0rem 0 0;
+}
+
+.post-list > li{
+  margin: 0 0 1.9rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.post-list > li:last-child{
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-meta{
+  display: block;
+  font-family: var(--sans);
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+}
+
+.post-link{
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  line-height: 1.18;
+  font-weight: 650;
+  border-bottom-color: rgba(31,75,153,0.25);
+}
+
+@media (max-width: 720px){
+  .post-link{ font-size: 1.45rem; }
+}
+
+/* Minima RSS line */
+.rss-subscribe{
+  font-family: var(--sans);
+  color: var(--muted);
+  margin-top: 2.25rem;
+}
+
+/* -----------------------------
+   Posts/pages typography (Minima)
+------------------------------ */
+.post,
+.page{
+  /* Minima uses <article class="post"> for both posts and pages */
+  max-width: calc(var(--content-width) + var(--note-width) + var(--note-gap));
+  margin: 0 auto;
+}
+
+.post-header{
+  max-width: var(--content-width);
+  margin: 0 auto 1.5rem;
+}
+
+.post-title{
+  font-size: 3.15rem;
+  line-height: 1.03;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.55rem;
+  font-weight: 650;
+}
+
+@media (max-width: 720px){
+  .post-title{ font-size: 2.2rem; }
+}
+
+.post-content{
+  /* This is the main content container in Minima */
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.post-content p{
+  margin: 0 0 1.15rem;
+}
+
+.post-content h2{
+  font-size: 1.85rem;
+  line-height: 1.18;
+  margin: 2.2rem 0 0.75rem;
+}
+.post-content h3{
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin: 1.8rem 0 0.6rem;
+}
+
+.post-content blockquote{
+  margin: 1.6rem 0;
+  padding: 0 0 0 1.1rem;
+  border-left: 3px solid var(--rule);
+  color: rgba(0,0,0,0.80);
+}
+
+.post-content ul,
+.post-content ol{
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+/* Images: center, breathe, and don’t get “postage stamp” sizing */
+.post-content p > img,
+.post-content figure > img{
+  display: block;
+  margin: 1.4rem auto;
+}
+
+/* If you want occasional “hero” images, add class="wide" in Markdown/HTML */
+.post-content img.wide{
+  width: 100%;
+  max-width: 100%;
+}
+
+/* -----------------------------
+   Buttondown form styling
+------------------------------ */
+.embeddable-buttondown-form{
+  font-family: var(--sans);
+  margin: 1.6rem 0 0;
+}
+
+.embeddable-buttondown-form label{
+  display: block;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+
+.embeddable-buttondown-form input[type="email"]{
+  width: min(28rem, 100%);
+  padding: 0.55rem 0.7rem;
+  border-radius: 4px;
+  border: 1px solid var(--rule);
+  background: rgba(255,255,255,0.65);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+
+.embeddable-buttondown-form input[type="submit"]{
+  display: inline-block;
+  margin-top: 0.85rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 4px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.embeddable-buttondown-form input[type="submit"]:hover{
+  background: rgba(0,0,0,0.04);
+}
+
+.embeddable-buttondown-form p{
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* -----------------------------
+   Tufte-ish margin notes
+   (only activate on wider screens, only on post/page content)
+------------------------------ */
+.sidenote,
+.marginnote{
+  font-family: var(--serif);
+  font-size: 0.86em;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+@media (min-width: 1100px){
+  /* Reserve a margin-note gutter without shrinking the text column */
+  .post-content{
+    max-width: calc(var(--content-width) + var(--note-width) + var(--note-gap));
+    padding-right: calc(var(--note-width) + var(--note-gap));
+  }
+
+  .sidenote,
+  .marginnote{
+    float: right;
+    clear: right;
+    width: var(--note-width);
+    margin-right: calc(-1 * (var(--note-width) + var(--note-gap)));
+    margin-top: 0.15rem;
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media (max-width: 1099.98px){
+  .sidenote,
+  .marginnote{
+    display: block;
+    margin: 0.55rem 0 0.95rem;
+    padding: 0.6rem 0.75rem;
+    border-left: 3px solid var(--rule-soft);
+    background: rgba(0,0,0,0.02);
+  }
+}
+
+/* Optional superscript note number */
+.sidenote-number{
+  font-size: 0.75em;
+  vertical-align: super;
+}
+
+/* -----------------------------
+   Footer (clean up bullets/spacing)
+------------------------------ */
+.site-footer{
+  border-top: 1px solid var(--rule);
+  padding: 2.4rem 0 2.8rem;
+  color: var(--muted);
+}
+
+.site-footer .footer-heading{
+  font-family: var(--serif);
+  font-weight: 650;
+  font-size: 1.35rem;
+  color: var(--text);
+  margin: 0 0 1rem;
+}
+
+.site-footer ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-footer a{
+  color: var(--link);
+}

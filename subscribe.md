@@ -4,6 +4,12 @@ title: "Subscribe"
 permalink: /subscribe/
 ---
 
-{% include buttondown_signup.html %}
-
-<p><small>No spam. Unsubscribe any time.</small></p>
+<iframe
+  scrolling="no"
+  style="
+         width: 100% !important;
+         height: 220px;
+         border: 1px #ccc solid !important;
+        "
+  src="https://buttondown.com/YOUR-BUTTONDOWN-USERNAME?as_embed=true"
+></iframe>

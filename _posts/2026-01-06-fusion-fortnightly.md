@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fusion Fortnightly | 2026-01-06"
-published: false
+published: true
 ---
 <p>After an all-too-exciting end to 2025 in the fusion world, 2026 starts out relatively quiet.</p>
 <hr>

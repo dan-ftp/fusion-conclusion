@@ -16,6 +16,6 @@ published: false
 <p>While one can debate the merits of various fusion concepts <em>ad infinitum</em>, at the end of the day none of it matters if it cannot be a commercially viable system. The only breakeven value that matters is that sale of what the fusion system produces must be competitive commercially against other technologies. The most elegant physics or engineering solutions to individual problems do not matter unless P (for profits) is greater than zero. What follows is an examination and explanation behind the various parts of a fusion system that contribute to this bottom line.</p>
 
 <figure>
-  <img src="sankey_cash_flow.png" alt="Trulli" style="width:100%">
+  <img src="{{ site.baseurl }}/content/images/2026/01/sankey_cash_flow.png" style="width:100%">
   <figcaption>If there's no profits, there's no fusion industry, no matter the Q.</figcaption>
 </figure>

@@ -17,20 +17,24 @@ Before diving into General Fusion's reactor concept and critiques, it is importa
 
 ### Compressing plasmas in the U.S.S.R., NRL, and LANL
 
-In the 1960's researchers at the Kurchatov Institute in the U.S.S.R. were using rapidly compressing solid metal liners to compress plasmas to near the conditions needed to generate fusion energy, in a process called [magnetized target fusion (MTF)](https://en.wikipedia.org/wiki/Magnetized_target_fusion). This works as follows: A a mangetically confined plasma is formed inside of an electrical conductor. The conductor is compressed rapidly around the plasma. A conductor with high enough electrical conductivity does not allow the magnetic field to penetrate through it on the short timescales of compression. The magnetic flux must be conserved in the plasma, so as it is compressed the magnetic field increases. A higher magnetic field can confine higher plasma pressures, ideally high enough to get to significant fusion energy production. The compression also increases the plasma density. If the energy loss is low during compression, the purpose of the stronger magnetic field is to reduce energy losses, the plasma also heats up to what is needed to produce fusion. The key to a successful compression of a plasma is to have sufficiently low energy losses during compression to fusion conditions; and there are a lot of ways it can go wrong.
+In the 1960's researchers at the Kurchatov Institute in the U.S.S.R. were using rapidly compressing solid metal liners to compress plasmas to near the conditions needed to generate fusion energy, in a process called [magnetized target fusion (MTF)](https://en.wikipedia.org/wiki/Magnetized_target_fusion). This works as follows: A a mangetically confined plasma is formed inside of an electrical conductor. The conductor is compressed rapidly around the plasma. A conductor with high enough electrical conductivity does not allow the magnetic field to penetrate through it on the short timescales of compression. As the plasma is compressed (with $C=R_0/R$ as the ratio between the initial plasma radius $R_0$ and the compressed plasma radius $R$) the magnetic field increases $B \propto C^2$ to conserve magnetic flux. The compression also increases the plasma density $n \propto C^3$ if the particles are well confined and increases the plasma temperature $T \propto C^2$ if the system is [adiabatic](https://en.wikipedia.org/wiki/Adiabatic_process) and does not leak energy.
 
-While the soviet scientists achieved some success in compressing plasmas, it was realized that the cost of the metal liners would exceed the value of the fusion energy generated (this is part of the challenge for the company Pacific Fusion, but that analysis is for another day). This pushed researchers to use liquid liners for compression as they could be recycled in situ with minimal efforts to reform it between pulses. The NRL and LANL picked up on this concept and did a series of experiments in the 1970's along with detailed reactor conceptual designs through their [Linus program](https://en.wikipedia.org/wiki/Linus_(fusion_experiment)). MTF fusion suffered a similar fate to other alternative fusion concepts and, at least according to its propoents, has been underfunded for decades.
+To get to fusion energy production conditions requires that the magnetic field confines the plasma all the way through the compression. [Beta](https://en.wikipedia.org/wiki/Plasma_beta) ($\beta$) is the ratio of the plasma pressue to the magnetic pressure. Every mangetic fusion plasma has a maximum beta it can support. In adiabatic compression beta increases as $\beta \propto C$, so there is a finite limit to which the plasma can be stabily compressed.
+
+While the soviet scientists achieved some success in compressing plasmas, it was realized that the cost of the metal liners would exceed the value of the fusion energy generated. This is a problem common to many of the pulsed fusion concepts where the cost to produce the target and anything else destroyed in the pulse must be less than that of the value of the energy produced. It is termed the "kopeck problem" after Russian [kopeck](https://en.wikipedia.org/wiki/Kopeck), which was worth 0.01 rubles or $0.00013 USD as of mid-February 2026 (it was essentially the value of a U.S. penny in the 1960's).
+
+The kopeck problem pushed researchers to use liquid liners for compression as they could be recycled in situ with minimal efforts to reform it between pulses. The NRL and LANL picked up on this concept and did a series of experiments in the 1970's along with detailed reactor conceptual designs through their [Linus program](https://en.wikipedia.org/wiki/Linus_(fusion_experiment)). MTF fusion suffered a similar fate to other alternative fusion concepts and, at least according to its propoents, has been underfunded for decades.
 
 ## Framing the discussion
 
 To fusion outsiders – and some insiders – it's hard to differentiate among the different concepts and separate out fact from opinion in the narratives that are told around them. For any given concept: there are proponents who will argue to the grave that theirs is the only way to a fusion power plant, there are opponents who will argue with absolute conviction that it has no chance of working, and there are many people occupying the middle.
 
-In discussing contentious issues like the tradeoffs of different fusion reactor concepts, I lean on <a href="https://bigthink.com/the-learning-curve/rapoports-rules-arguments/"><u>Rapoport’s Rules</u></a> for a productive framing:
+In discussing contentious issues like the tradeoffs of different fusion reactor concepts, I lean on [Rapoport’s Rules](https://bigthink.com/the-learning-curve/rapoports-rules-arguments/) for a productive framing:
 
-    1. Explain the other person’s position clearly, vividly, and justly.
-    2. Mention anything you’ve learned.
-    3. List the points on which you agree.
-    4. Only now make a critique or refutation.
+1. Explain the other person’s position clearly, vividly, and justly.
+2. Mention anything you’ve learned.
+3. List the points on which you agree.
+4. Only now make a critique or refutation.
 
 Due to the efforts of many brilliant fusion physicists, we understand much of the physics to point to where the challenges of different concepts can be laid out quantitatively. We know the targets in temperature, density, and confinement time that a fusion reactor must achieve to have even a hope of being a power plant, and we can measure what they are in experiments. We can calculate and estimate how power flows and where it is lost. Thus, we can have productive discussions on how concepts fare as potential fusion power plants.
 
@@ -82,15 +86,15 @@ A major "why now?" question for General Fusion has been within this driver techn
 
 ## Learnings from General Fusion
 
-1. **The middle ground is an interesting place to look for fusion energy systems.** At the time of General Fusion's founding in the early 2000s, the global fusion research had largely calcified into big-magnetic (ITER) and big-inertial (NIF). General Fusion opened up the area in between for a whole new generation of scientists and engineers.
+1. **The middle ground is an interesting place to look for fusion energy systems.** At the time of General Fusion's founding in the early 2000s, the global fusion research had largely calcified into big-magnetic (ITER) and big-inertial (NIF). General Fusion opened up the area in between for a whole new generation of scientists and engineers. Concepts in the intermediate density will have catching up to do in plasma performance. Still, there is a very wide playing field to look for better overall fusion energy systems.
 
-2. **There is appetite for more than one private fusion company.** While TAE is the pioneer of modern private fusion companies, General Fusion is the second mover, the first one validating TAE's business model. [Turning a lone nut into a leader](https://sive.rs/ff).
+2. **There is appetite for more than one private fusion company.** TAE is the pioneer of the modern private-fusion era. General Fusion is the second mover, and the first to validate TAE’s business model, [turning a lone nut into a leader](https://sive.rs/ff).
 
 3. **Iterate, iterate, iterate.** In the face of plasma compression challenges, General Fusion continued to iterate on the target plasma it was using as well as how they compressed it.
 
 ## Agree with General Fusion
 
-1. **Fusion has to be designed as a power plant, not just a plasma experiment.**
+1. **Fusion has to be designed as a power plant, not just a plasma experiment.** For fusion energy production to be economically competitive
 
 2. **The first-wall/blanket problem is existential, and thick liquid metal concepts are worth taking seriously.**
 
@@ -101,18 +105,39 @@ A major "why now?" question for General Fusion has been within this driver techn
 
 ## General Fusion critiques
 
-### Potentially the worst of both worlds
-
 While General Fusion claims to operate at an optimal density between magnetic and inertial fusion, combining the best of those two worlds, it could also be combining the worst of them as well. It is both:
-  1. *a plasma physics problem:* need to make a magnetically confined target that stays well behaved and
-  2. *a pulsed hydrodynamics problem:* need to compress it cleanly and repeatably.
+  1. *a plasma physics problem:* they need to make a magnetically confined target that stays well behaved and
+  2. *a pulsed hydrodynamics problem:* they need to compress it cleanly and repeatably.
 
-Inertial confinement fusion, including magnetized target fusion, relies on the compression being [adiabatic](https://en.wikipedia.org/wiki/Adiabatic_process), which means that little to no energy leaks out while the plasma target is compressed. Through compression, the plasma increases in density and temperature. In practicle this means that the energy confinement time of the target during compression is longer than that of the time it takes to compressively heat it. If the energy confinement time is less than the compression time, then energy leaks out and the target does not heat up enough to get to fusion energy production conditions.
+### Squeezing jelly with rubber bands
 
-Just because a target plasma is well performing and initial compression looks good, does not mean that it can be compressed all the way to fusion conditions. Of especial challenge for magnetized target fusion is the evolution of the magnetic confinement of the plasma as it is heated up and densified. There is little to no ability to apply external modification or control of this process beyond the shockwave. And, as General Fusion found out, nature does not always work in one's favor.
+General Fusion relies on the compression being adiabatic, which means that little to no energy leaks out while the plasma target is compressed. In practicle this means that the energy confinement time of the target during compression is longer than that of the time it takes to compressively heat it. If the energy confinement time is less than the compression time, then energy leaks out and the target does not heat up enough to get to fusion energy production conditions.
 
-To its credit, General Fusion has evolved on their target plasma strategy. As late as 2008, it had published that its target plasma was a [Field-Reversed Configuration (FRC)][https://doi.org/10.1007/s10894-007-9091-4] as well a later publication that year stating it to be an ["spheromak-like or an FRC-like plasma"](https://doi.org/10.1007/s10894-008-9167-9). In 2013 it appears to have coallesced into a [spheromak](https://doi.org/10.1063/1.4819307) target. In 2015 ["transition from familiar spheromak behavior to tokomak-like [sic] behavior"](https://www.afs.enea.it/project/protosphera/Proto-Sphera_Full_Documents/EPR2016/Contributions/Acoustically_Driven_Magnetized_Target_Fusion.pdf). In 2017 it had transformed into the [spherical tokamak](https://doi.org/10.1007/s10894-018-0180-3) target they use to this day.
+Just because a target plasma is well performing and initial compression looks good, does not mean that it can be compressed all the way to fusion conditions. Especially challenging for magnetized target fusion is the evolution of the magnetic confinement of the plasma as it is heated up and densified. As described above, the plasma beta increases with compression and is limited in how high it can go. [Edward Teller](https://en.wikipedia.org/wiki/Edward_Teller) memorably described the challenge of magnetic confinement as being like trying to [hold together a blob of jelly with rubber bands](https://research.princeton.edu/news/celebrating-lyman-spitzer-father-pppl-and-hubble-space-telescope): the harder you hold onto it, the more that squeezes out. 
+
+General Fusion has learned, through years of compressing different magnetic target plasmas, just how challenging plasma compression is. A history is given in a following section.
+
+### Holding water upsidedown in a cup
+
+Rotating the liquid metal liner opened up a [void in the center](https://en.wikipedia.org/wiki/Vortex#Pressure_in_a_vortex), into which the plasma can be injected. The liquid rotation also helps reduce [Rayleigh Taylor instabilities](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability), a major challenge in fusion plasma confinement. 
+
+
+
+
+The compression challenges are in part evident in the evolution of General Fusion's target plasma strategy. 
+- From conception through as late as 2008, it had published that its target plasma was a [Field-Reversed Configuration (FRC)][https://doi.org/10.1007/s10894-007-9091-4].
+- A later publication that year stated it was a ["spheromak-like or an FRC-like plasma"](https://doi.org/10.1007/s10894-008-9167-9).
+- By 2013 it appears to have coallesced into a [spheromak](https://doi.org/10.1063/1.4819307) target.
+- In 2015 ["transition from familiar spheromak behavior to tokomak-like [sic] behavior"](https://www.afs.enea.it/project/protosphera/Proto-Sphera_Full_Documents/EPR2016/Contributions/Acoustically_Driven_Magnetized_Target_Fusion.pdf).
+- In 2017 it had transformed into the [spherical tokamak](https://doi.org/10.1007/s10894-018-0180-3) target they use to this day.
 
 In a [2013 paper](https://proceedings.cns-snc.ca/index.php/pcns/article/view/6765) about their acoustic concept, they say the earlier LINUS-style liner “could not be accelerated to sufficiently high velocities to compress plasma within its thermal lifetime,” and describe their acoustic wave compressing “in less than 200 µs,” matched to “practically achievable plasma lifetimes.” They had to move away from this fast compression concept because, as indicated in a [2018 poser](https://generalfusion.com/wp-content/uploads/2022/05/ICPP_2018_OShea.pdf) the large magnetic fields that resulted because of the fast and high compression would vaporize the surrounding metal. This both allowed magnetic flux to diffuse away as well as the vapor could penetrate the plasma, causing radiation losses. Thus, they moved back to a slow compression concept, which required a target with much better energy confinement and the move to a spherical tokamak target.
 
-Rotating the liquid metal liner opened up a [void in the center](https://en.wikipedia.org/wiki/Vortex#Pressure_in_a_vortex), into which the plasma can be injected. The liquid rotation also helps reduce [Rayleigh Taylor instabilities](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability), a major challenge in fusion plasma confinement. 
+
+
+### Calculatus eliminatus
+*[The way to find a missing something is to find out where it's not](https://www.youtube.com/watch?v=KoBhw3nvBkc)*
+
+### Rep rate problem
+
+Even if General Fusion could get one fusion pulse to work, the repetition rate is then the key determinant if it is an economic energy source. There are many things that could limit this.

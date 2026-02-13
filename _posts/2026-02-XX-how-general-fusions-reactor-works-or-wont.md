@@ -5,7 +5,7 @@ published: false
 ---
 <p><img src="{{ site.baseurl }}/content/images/2025/12/DPK-TAE-Technologies-Norm-Rendering-Exterior-Full-View-Cropped.jpg" alt="How TAE's fusion reactor will work (or won't)"></p>
 
-*Closely following TAE's merger with the public company TMTG, General Fusion has announced that they are going public through a SPAC. As with my [TAE article](https://www.fusionconclusion.com/how-taes-fusion-reactor-will-work-or-wont/), I aim to answer for non-experts: "What, exactly, is General Fusion building and how close is it to working?"*
+*Closely following TAE's merger with the public company TMTG, General Fusion has [announced](https://generalfusion.com/post/general-fusion-business-combination-announcement/) that they are [going public through a SPAC](https://generalfusion.com/wp-content/uploads/2026/01/General-Fusion-Investor-Presentation-January-2026-2.pdf). As with my [TAE article](https://www.fusionconclusion.com/how-taes-fusion-reactor-will-work-or-wont/), I aim to answer for non-experts: "What, exactly, is General Fusion building and how close is it to working?"*
 
 This piece is the second is a series where I'll explain the fusion reactor concepts being pursed by fusion companies and then evaluate the company claims using the standard metrics of fusion physicists: plasma temperature, density, and confinement (pluse the realities of power balance and economics).
 
@@ -119,24 +119,48 @@ General Fusion has learned, through years of compressing different magnetic targ
 
 ### Holding water upsidedown in a cup
 
+A problem that spans most fusion concepts—magnetic confinement, inertial confinement, and magnetized target alike—is the [Rayleigh–Taylor instability](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability) (RTI), among other [hydrodynamic instabilities](https://en.wikipedia.org/wiki/Hydrodynamic_stability). RTI occurs when a light fluid  supports a heavy fluid: small interface perturbations can grow and drive mixing.
+
+A helpful tabletop analogy is the “upside-down glass of water” family of demos. Hydrostatics makes the setup seem plausible: atmospheric pressure corresponds to roughly a 10 m water head. So an inverted, water-filled container can be in static force balance in principle and it typically is when a playing card is used between the water-air interface. But dense water sitting above light air is an unstable equilibrium: once the water–air interface deforms, perturbations can grow and the configuration fails in the Rayleigh–Taylor sense.
+
+This maps to fusion because gravity is replaced by an effective acceleration from inertia, pressure gradients, or magnetic curvature/field gradients. For liner-based approaches (including dense liquid-metal liners compressing a much lower-density plasma), the same intuition applies: keeping interfaces smooth during rapid acceleration is hard, and RTI-like growth is a canonical failure mode.
+
+### Calculatus eliminatus
+*[The way to find a missing something is to find out where it's not](https://www.youtube.com/watch?v=KoBhw3nvBkc)*
+
+From the outside, General Fusion's MTF experiments may look like an exercise in The Cat in the Hat's Calculatus eliminatus: figuring out every plasma target that's not stable through compression to find the one that is. But, to be fair, there is logic to what they tried and they learned along the way. The many different things they tried demonstrates how hard their plasma compression challenge is.
+
+From conception through as late as 2008, General Fusion had published that its target plasma was a [Field-Reversed Configuration (FRC)][https://doi.org/10.1007/s10894-007-9091-4] and that it was using a very fast compression to outrun the relatively poor energy confinement of the FRC. The FRC was created by injecting a [spheromaks](https://en.wikipedia.org/wiki/Spheromak) from each side of the liquid metal vortex. This has the benefit of easy "catching" within the vortex due to the near zero velocity of the FRC after spheromak merger. The spheromaks were injected with opposite helicity, which converts much of the toroidal magetic field energy into ion heating.
+
+Some time in 2008 it became clear General Fusion was exploring options beyond the FRC, publishing on ["spheromak-like or an FRC-like plasma"](https://doi.org/10.1007/s10894-008-9167-9) in a publication on their plasma accelerators. It it they explored potential ways the spheromak merger could go wrong and postulated that injecting a single plasma could be an option.
+
+Experimental compression results in [2013 were only on spheromaks](https://doi.org/10.1109/SOFE.2013.6635495), with no mention of FRCs. While a compression of $2\times$ showed increases in plasma temperature and density as expected, a $4\times$ compression had and electron temperature "far below adiabatic expectations", indicating heat was leaking out. In that work General Fusion also had results from their small scale liquid metal vortex and compression experiment, which had 14 pistons to form a compression wave. The pistons were able to reach their design velocity and timing. But, it was found that there was significant liquid metal spray into the center of the vortex, which would be ruinous if there were a plasma inside. The spray was postulated to be due to a combination of the (Richtmyer–Meshkov instability)[https://en.wikipedia.org/wiki/Richtmyer%E2%80%93Meshkov_instability] (the impulse limit of the Rayliegh-Taylor instability) and (cavitation)[https://en.wikipedia.org/wiki/Cavitation].
+
+This was a double-whammy of bad news: The plasma targets confinement was margingal, indicating that very fast compression was needed for even a hope of getting to fusion conditions. But faster compression increases hydrodynamic stability and symmetry requirements. The easiest system‑level way out was to improve target confinement by changing targets so they can compress more gently, reducing the instability drive.
+
+In 2015 it was reported that the target had evolved into a tokamak. The experimental setup had a shaft in the center of the plasma in which current could be drien and case a ["transition from familiar spheromak behavior to tokomak-like [sic] behavior"](https://www.cns-snc.ca/wp-content/uploads/2021/12/no-04-CWFEST-B-CASSIDY-2015-10-18-General-Fusion.pdf). The tokamak targets had increased plasma lifetimes due in part to reduced plasma turbulence and radiation.
+
+A [full reconceptualization](https://doi.org/10.1007/s10894-018-0180-3) of General Fusion's system was published in 2019. It was to use a spherical tokamak as the target plasma due the high beta potential (~40%). Compression was no longer driving by an accoustic shock wave in the liquid metal liner but instead by a slower pushing of liquid into the chamber by external pistons. 
+
+The high toroidal magnetic field needed to maintain the superior plasma confinement came at an expense. The fusion gain, Q, was estimated to be near unity due to the harder compressibility of the strong toroidal magnetic field. This then requires effecient energy recapture by the liner and pistons. It also complicated the core of the machine: what once only contained the liquid metal liner and plasma now also had to have an electrical conductor running down the center.
+
+
+
 Rotating the liquid metal liner opened up a [void in the center](https://en.wikipedia.org/wiki/Vortex#Pressure_in_a_vortex), into which the plasma can be injected. The liquid rotation also helps reduce [Rayleigh Taylor instabilities](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability), a major challenge in fusion plasma confinement. 
 
 
 
 
 The compression challenges are in part evident in the evolution of General Fusion's target plasma strategy. 
-- From conception through as late as 2008, it had published that its target plasma was a [Field-Reversed Configuration (FRC)][https://doi.org/10.1007/s10894-007-9091-4].
-- A later publication that year stated it was a ["spheromak-like or an FRC-like plasma"](https://doi.org/10.1007/s10894-008-9167-9).
-- By 2013 it appears to have coallesced into a [spheromak](https://doi.org/10.1063/1.4819307) target.
-- In 2015 ["transition from familiar spheromak behavior to tokomak-like [sic] behavior"](https://www.afs.enea.it/project/protosphera/Proto-Sphera_Full_Documents/EPR2016/Contributions/Acoustically_Driven_Magnetized_Target_Fusion.pdf).
+
+- 
 - In 2017 it had transformed into the [spherical tokamak](https://doi.org/10.1007/s10894-018-0180-3) target they use to this day.
 
 In a [2013 paper](https://proceedings.cns-snc.ca/index.php/pcns/article/view/6765) about their acoustic concept, they say the earlier LINUS-style liner “could not be accelerated to sufficiently high velocities to compress plasma within its thermal lifetime,” and describe their acoustic wave compressing “in less than 200 µs,” matched to “practically achievable plasma lifetimes.” They had to move away from this fast compression concept because, as indicated in a [2018 poser](https://generalfusion.com/wp-content/uploads/2022/05/ICPP_2018_OShea.pdf) the large magnetic fields that resulted because of the fast and high compression would vaporize the surrounding metal. This both allowed magnetic flux to diffuse away as well as the vapor could penetrate the plasma, causing radiation losses. Thus, they moved back to a slow compression concept, which required a target with much better energy confinement and the move to a spherical tokamak target.
 
 
 
-### Calculatus eliminatus
-*[The way to find a missing something is to find out where it's not](https://www.youtube.com/watch?v=KoBhw3nvBkc)*
+
 
 ### Rep rate problem
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How TAE's fusion reactor will work (or won't)"
+title: "How General Fusion's reactor will work (or won't)"
 published: false
 ---
 <p><img src="{{ site.baseurl }}/content/images/2025/12/DPK-TAE-Technologies-Norm-Rendering-Exterior-Full-View-Cropped.jpg" alt="How TAE's fusion reactor will work (or won't)"></p>
@@ -144,19 +144,9 @@ A [full reconceptualization](https://doi.org/10.1007/s10894-018-0180-3) of Gener
 
 The high toroidal magnetic field needed to maintain the superior plasma confinement came at an expense. The fusion gain, Q, was estimated to be near unity due to the harder compressibility of the strong toroidal magnetic field. This then requires effecient energy recapture by the liner and pistons. It also complicated the core of the machine: what once only contained the liquid metal liner and plasma now also had to have an electrical conductor running down the center.
 
+Since then, General Fusion has built a new plasma injector and [
 
-
-Rotating the liquid metal liner opened up a [void in the center](https://en.wikipedia.org/wiki/Vortex#Pressure_in_a_vortex), into which the plasma can be injected. The liquid rotation also helps reduce [Rayleigh Taylor instabilities](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability), a major challenge in fusion plasma confinement. 
-
-
-
-
-The compression challenges are in part evident in the evolution of General Fusion's target plasma strategy. 
-
-- 
-- In 2017 it had transformed into the [spherical tokamak](https://doi.org/10.1007/s10894-018-0180-3) target they use to this day.
-
-In a [2013 paper](https://proceedings.cns-snc.ca/index.php/pcns/article/view/6765) about their acoustic concept, they say the earlier LINUS-style liner “could not be accelerated to sufficiently high velocities to compress plasma within its thermal lifetime,” and describe their acoustic wave compressing “in less than 200 µs,” matched to “practically achievable plasma lifetimes.” They had to move away from this fast compression concept because, as indicated in a [2018 poser](https://generalfusion.com/wp-content/uploads/2022/05/ICPP_2018_OShea.pdf) the large magnetic fields that resulted because of the fast and high compression would vaporize the surrounding metal. This both allowed magnetic flux to diffuse away as well as the vapor could penetrate the plasma, causing radiation losses. Thus, they moved back to a slow compression concept, which required a target with much better energy confinement and the move to a spherical tokamak target.
+### Lawson benchmarking
 
 
 
@@ -164,4 +154,12 @@ In a [2013 paper](https://proceedings.cns-snc.ca/index.php/pcns/article/view/676
 
 ### Rep rate problem
 
-Even if General Fusion could get one fusion pulse to work, the repetition rate is then the key determinant if it is an economic energy source. There are many things that could limit this.
+Even if General Fusion could get one fusion pulse to work, the repetition rate is then the key determinant if it is an economic energy source. There are many things that could limit this. The kopeck problem of 
+
+
+
+
+
+
+
+

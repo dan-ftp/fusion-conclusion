@@ -3,7 +3,7 @@ layout: post
 title: "How General Fusion's reactor will work (or won't)"
 published: false
 ---
-<p><img src="{{ site.baseurl }}/content/images/2025/12/DPK-TAE-Technologies-Norm-Rendering-Exterior-Full-View-Cropped.jpg" alt="How TAE's fusion reactor will work (or won't)"></p>
+<p><img src="{{ site.baseurl }}content/images/2026/general_fusion_reactor.jpg" alt="How General Fusion's reactor will work (or won't)"></p>
 
 *Closely following TAE's merger with the public company TMTG, General Fusion has [announced](https://generalfusion.com/post/general-fusion-business-combination-announcement/) that they are [going public through a SPAC](https://generalfusion.com/wp-content/uploads/2026/01/General-Fusion-Investor-Presentation-January-2026-2.pdf). As with my [TAE article](https://www.fusionconclusion.com/how-taes-fusion-reactor-will-work-or-wont/), I aim to answer for non-experts: "What, exactly, is General Fusion building and how close is it to working?"*
 
@@ -21,7 +21,7 @@ In the 1960's researchers at the Kurchatov Institute in the U.S.S.R. were using 
 
 To get to fusion energy production conditions requires that the magnetic field confines the plasma all the way through the compression. [Beta](https://en.wikipedia.org/wiki/Plasma_beta) ($\beta$) is the ratio of the plasma pressue to the magnetic pressure. Every mangetic fusion plasma has a maximum beta it can support. In adiabatic compression beta increases as $\beta \propto C$, so there is a finite limit to which the plasma can be stabily compressed.
 
-While the soviet scientists achieved some success in compressing plasmas, it was realized that the cost of the metal liners would exceed the value of the fusion energy generated. This is a problem common to many of the pulsed fusion concepts where the cost to produce the target and anything else destroyed in the pulse must be less than that of the value of the energy produced. It is termed the "kopeck problem" after Russian [kopeck](https://en.wikipedia.org/wiki/Kopeck), which was worth 0.01 rubles or $0.00013 USD as of mid-February 2026 (it was essentially the value of a U.S. penny in the 1960's).
+While the soviet scientists achieved some success in compressing plasmas, it was realized that the cost of the metal liners would exceed the value of the fusion energy generated. This is a problem common to many of the pulsed fusion concepts where the cost to produce the target and anything else destroyed in the pulse must be less than that of the value of the energy produced. It is termed the "[kopeck problem](https://en.wikipedia.org/wiki/Magnetized_target_fusion#Kopeck_problem)" after Russian [kopeck](https://en.wikipedia.org/wiki/Kopeck), which was worth 0.01 rubles or $0.00013 USD as of mid-February 2026 (it was essentially the value of a U.S. penny in the 1960's).
 
 The kopeck problem pushed researchers to use liquid liners for compression as they could be recycled in situ with minimal efforts to reform it between pulses. The NRL and LANL picked up on this concept and did a series of experiments in the 1970's along with detailed reactor conceptual designs through their [Linus program](https://en.wikipedia.org/wiki/Linus_(fusion_experiment)). MTF fusion suffered a similar fate to other alternative fusion concepts and, at least according to its propoents, has been underfunded for decades.
 
@@ -46,7 +46,10 @@ Fortunately for this discussion, General Fusion has [published peer-reviewed art
 
 General Fusion has the following claimed concept advantages:
 
-!!show their classice optimium plot!!
+<figure>
+  <img src="{{ site.baseurl }}/content/images/2026/" alt="">
+  <figcaption></figcaption>
+</figure>
 
 ### MTF is the optimal between the titans of ITER (magnetic fusion) and NIF (inertial fusion). 
 
@@ -67,6 +70,8 @@ The downside is that the neutrons damage solid materials along the way, through 
 The survivability of materials in a fusion neutron environment is one of the key factors that will determine how well fusion will economically compete with other energy sources. This comes through both in the costs of replacing components as well as the loss of revenue during maintenance periods.
 
 A solution for dealing with the fusion neutron material damage problem is to minimize the amount of solid material in the damage pathway of neutrons, instead using liquids wherever possible. While this is not an idea pioneed by General Fusion, they are one of the primary fusion companies persuing it. Similarly, companies like Commonwealth Fusion Systems, are  planning on using a molten salt blanket; yet they still have a solid plasma-facing surface which will be subject to intense nuclear damage. Where General Fusion stands out is having basically no solid structure subject to the intense inner neutron flux. Although this has changed in recent years, as the company has moved to find a more stable plasma target and the present plans do have some functional solid material in the core of the plasma to maintain plasma stability.
+
+General Fusion has since [switched to a pure lithium blanket](https://infuse.ornl.gov/wp-content/uploads/2024/07/2022a-GF-SRNL-Tritium-Fuel-Cycle-Modelling-and-Optimization.pdf) to avoid the "poisoning" of the high-Z lead that could get into the plasma and radiate power away. With this switch, much of the liquid blanket benefits remain, although the tritium is harder to extract from pure lithium. 
 
 ### Fuel sustainability via tritium breeding.
 
@@ -94,20 +99,19 @@ A major "why now?" question for General Fusion has been within this driver techn
 
 ## Agree with General Fusion
 
-1. **Fusion has to be designed as a power plant, not just a plasma experiment.** For fusion energy production to be economically competitive
+1. **Fusion has to be designed as a power plant, not just a plasma experiment.** For fusion energy production to be economically competitive, then end goal must always be kept in mind.
 
-2. **The first-wall/blanket problem is existential, and thick liquid metal concepts are worth taking seriously.**
+2. **The first-wall and blanket problem is existential, and thick liquid metal concepts are worth taking seriously.** Nuclear and plasma damage of materials is one of the critical problems to solve for fusion, liquids are one of the compelling options to explore to solve this.
 
-3. **Cost and manufacturability matter, so exploring drivers that might avoid ultra-expensive systems is legitimate. **
+3. **Cost and manufacturability matter, so exploring drivers that might avoid ultra-expensive systems is legitimate.** Many fusion concepts appear to be a [Rube Goldberg-style](https://en.wikipedia.org/wiki/Rube_Goldberg_machine) assemblage of complex systems to solve all of the challenges of fusion. Going simpler wherever possible is needed to make fusion competitive. 
 
-4. **magneto-inertial / magnetized-target fusion is a real, recognized research area that combines elements of magnetic and inertial approaches—and it warrants careful experimental validation.**
-
+4. **Magnetized-target fusion is a real, recognized research area that combines elements of magnetic and inertial approaches—and it warrants careful experimental validation.** This field has a large area of opportunity to explore and the ultimate fusion power plant may be somewhere in it.
 
 ## General Fusion critiques
 
 While General Fusion claims to operate at an optimal density between magnetic and inertial fusion, combining the best of those two worlds, it could also be combining the worst of them as well. It is both:
-  1. *a plasma physics problem:* they need to make a magnetically confined target that stays well behaved and
-  2. *a pulsed hydrodynamics problem:* they need to compress it cleanly and repeatably.
+  1. *a plasma physics problem:* General Fusion needs to make a magnetically confined target that stays well behaved and
+  2. *a pulsed hydrodynamics problem:* General Fusion needs to compress it cleanly and repeatably.
 
 ### Squeezing jelly with rubber bands
 
@@ -156,7 +160,7 @@ From the outside, this situation does not look good. Why would the company strug
 
 As with TAE, General Fusion has made some performance improvements but is nowhere near the conditions needed for fusion energy production. What General Fusion does have on TAE though is they are setting the bar lower and only aiming for deuterium-tritium fuel. 
 
-General Fusion has published a lot on their pre-compression target plasma parameters, but has only one peer-reivewed compressed plasma data point (PCS-16) to plot against the Lawson criterion. Because of this, I will also include the pre-compression PI3 results to show where they are presently starting from. The energy confinement time in PCS-16 was ~35% of the compression time, so it was not adiabatic. The ion temperature in the PCS-16 compression was $\sim 40 \times$ less than the Lawson minimum and the Lawson parameter $\sim 400 \times$ less. The PI3 pre-compression results demonstrated they improved the target performance
+General Fusion has published a lot on their pre-compression target plasma parameters, but has only [one peer-reivewed compressed plasma data point](https://iopscience.iop.org/article/10.1088/1741-4326/ad9033) (PCS-16) to plot against the Lawson criterion. Because of this, I will also include the pre-compression PCS-16 and PI3 results to show where they are presently starting from. The energy confinement time in PCS-16 was ~35% of the compression time, so it was not adiabatic. The ion temperature in the PCS-16 post-compression was $\sim 40 \times$ less than the Lawson minimum and the Lawson parameter $\sim 400 \times$ less. The PI3 pre-compression results demonstrated they improved the target performance in the Lawson parameter but reduced the pre-compression ion temperature. To get above the minimums needed for the Lawson criterion, LM26 needs to increase the PI3 ion temperature $\sim 60 \times$ and Lawson parameter $\sim 50 \times$.
 
 <figure>
   <img src="{{ site.baseurl }}/content/images/2026/gf_ti_progress.png" alt="General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.">
@@ -174,12 +178,14 @@ Given how far General Fusion is away from what is needed, it is hard to take the
 
 Even if General Fusion could get one pulse to fusion energy production levels, the repetition rate is then the key determinant if it is an economic energy source. This is because each plasma pulse only delivers a certain amount of energy and the plant must deliver power to make a profit. So the profitability determines the minimum repetition rate and a higher rate results in a more profitable system. The primary challenge here is the coupled injection-compression-evacuation-reset problem. The plasma must be formed externally to the chamber, translated into the chamber, and compressed to fusion conditions. The byproducts, unused fuel, and vaporized liner must then be evacuated from the chamber, likely aided by condensation on the liquid metal liner. The rotating liquid metal line must rest to allow the next plasma to be injected.
 
-
 ## Conclusions
 
 General Fusion's story has always been around "engineering" their way to fusion energy and operating at an optimal middle density. On paper their reactor looks attractive: inject a simple magnetized plasma into the center of a rotating liquid metal liner and compress it with steam driven pistons. No fancy schmancy superconducting magnets and no highfalutin lasers. But, their own history of performance has clearly demonstrated that a simple-on-paper fusion concept does not make it simple in practice.  
 
-![General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.](/assets/images/gf_timeline_transparent.png)
+<figure>
+  <img src="{{ site.baseurl }}/content/images/2026/gf_timeline_transparent.png" alt="General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.">
+  <figcaption>General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.</figcaption>
+</figure>
 
 Over a decade has been spent on finding less-bad plasmas targets to compress and dealing with hydrodynamic instabilities in their liquid metal liner. Yet, the company has barely improved plasma performance relative to the Lawson criterion and is no closer to their commercialization predictions than when the company started. 
 

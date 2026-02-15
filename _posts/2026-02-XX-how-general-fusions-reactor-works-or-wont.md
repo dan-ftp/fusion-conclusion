@@ -123,7 +123,7 @@ A problem that spans most fusion concepts—magnetic confinement, inertial confi
 
 A helpful tabletop analogy is the “upside-down glass of water” family of demos. Hydrostatics makes the setup seem plausible: atmospheric pressure corresponds to roughly a 10 m water head. So an inverted, water-filled container can be in static force balance in principle and it typically is when a playing card is used between the water-air interface. But dense water sitting above light air is an unstable equilibrium: once the water–air interface deforms, perturbations can grow and the configuration fails in the Rayleigh–Taylor sense.
 
-This maps to fusion because gravity is replaced by an effective acceleration from inertia, pressure gradients, or magnetic curvature/field gradients. For liner-based approaches (including dense liquid-metal liners compressing a much lower-density plasma), the same intuition applies: keeping interfaces smooth during rapid acceleration is hard, and RTI-like growth is a canonical failure mode.
+This maps to fusion because gravity is replaced by an effective acceleration from inertia, pressure gradients, or magnetic curvature/field gradients. For liner-based approaches (including dense liquid-metal liners compressing a much lower-density plasma), the same intuition applies: keeping interfaces smooth during rapid acceleration is hard, and hydrodynamic instabilities are a common failure mode. Much of the research is in techniques to reduce 
 
 ### Calculatus eliminatus
 *[The way to find a missing something is to find out where it's not](https://www.youtube.com/watch?v=KoBhw3nvBkc)*
@@ -144,22 +144,44 @@ A [full reconceptualization](https://doi.org/10.1007/s10894-018-0180-3) of Gener
 
 The high toroidal magnetic field needed to maintain the superior plasma confinement came at an expense. The fusion gain, Q, was estimated to be near unity due to the harder compressibility of the strong toroidal magnetic field. This then requires effecient energy recapture by the liner and pistons. It also complicated the core of the machine: what once only contained the liquid metal liner and plasma now also had to have an electrical conductor running down the center.
 
-Since then, General Fusion has built a new plasma injector and [
+To test the new slow compression concept, General Fusion built and operated a pair of experiments. The first being the Cylindrical Water Compressor (CWC). At 1/10th the scale of their Fusion Demonstration Prototype, the goal of the CWC was to demonstrate, using water, that liner rotation along with a slower compression would supress the hydrodynamic instabilities seen in previous fast compressions. Results [published in 2024](https://doi.org/10.1016/j.fusengdes.2023.114087) demonstrated compression ratios approaching 8 and liner perturbations <10%, in comparison to a calculated [compression ratio of 12[(https://firefusionpower.org/FPA24_3-7_Laberge_GENFUS.pdf) to surpass the Lawson criterion..
+
+The second experiments involved plasma formation, injection, and compression. General Fusion has [achieved their target energy confinement time of ~10 ms](https://iopscience.iop.org/article/10.1088/1741-4326/adb8fb), hitting a best energy confinement time of 12 ms with $6\times10^19 m^{-3}$ plasma density and 400 eV plasma temperature. This injector was incorperated onto Lawson Machine 26 (LM26) in early 2025. LM26 uses a solid lithium liner that is compressed with external electromagnets to compress the plasma target. It was [reported](https://generalfusion.com/post/watch-general-fusions-lm26-achieves-first-plasma-compression/) that initial compression tests resulted in densification and heating. 
+
+By late spring 2025, the General Fusion CEO [wrote an open letter](https://web.archive.org/web/20260113160615/https://generalfusion.com/post/open-letter-from-ceo-greg-twinney-general-fusion-at-a-crossroads/) describing a funding crises for the company that resulted in reducing LM26 experiments and laying off 25% of the staff. This letter has since been removed from the General Fusion website since the SPAC announcement. 
+
+From the outside, this situation does not look good. Why would the company struggle to raise funds after reportedly making progress? If I were an investor in General Fusion and the initial LM26 results were promizing, I would invest more to keep it going.
 
 ### Lawson benchmarking
 
+As with TAE, General Fusion has made some performance improvements but is nowhere near the conditions needed for fusion energy production. What General Fusion does have on TAE though is they are setting the bar lower and only aiming for deuterium-tritium fuel. 
+
+General Fusion has published a lot on their pre-compression target plasma parameters, but has only one peer-reivewed compressed plasma data point (PCS-16) to plot against the Lawson criterion. Because of this, I will also include the pre-compression PI3 results to show where they are presently starting from. The energy confinement time in PCS-16 was ~35% of the compression time, so it was not adiabatic. The ion temperature in the PCS-16 compression was $\sim 40 \times$ less than the Lawson minimum and the Lawson parameter $\sim 400 \times$ less. The PI3 pre-compression results demonstrated they improved the target performance
+
+<figure>
+  <img src="{{ site.baseurl }}/content/images/2026/gf_ti_progress.png" alt="General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.">
+  <figcaption>General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.</figcaption>
+</figure>
+
+<figure>
+  <img src="{{ site.baseurl }}/content/images/2026/gf_lawson_progress.png" alt="General Fusion's one published compressed plasma Lawson parameter measurement compared to the minimum needed for D+T fusion.">
+  <figcaption>General Fusion's one published compressed plasma Lawson parameter measurement compared to the minimum needed for D+T fusion.</figcaption>
+</figure>
+
+Given how far General Fusion is away from what is needed, it is hard to take the title of their SPAC investor slide seriously: [*An Engineering Approach to Delivering Fusion Energy*](https://generalfusion.com/wp-content/uploads/2026/01/General-Fusion-Investor-Presentation-January-2026-2.pdf). There is a lot of plasma physics left to be done!
+
+### Repetition rate problem
+
+Even if General Fusion could get one pulse to fusion energy production levels, the repetition rate is then the key determinant if it is an economic energy source. This is because each plasma pulse only delivers a certain amount of energy and the plant must deliver power to make a profit. So the profitability determines the minimum repetition rate and a higher rate results in a more profitable system. The primary challenge here is the coupled injection-compression-evacuation-reset problem. The plasma must be formed externally to the chamber, translated into the chamber, and compressed to fusion conditions. The byproducts, unused fuel, and vaporized liner must then be evacuated from the chamber, likely aided by condensation on the liquid metal liner. The rotating liquid metal line must rest to allow the next plasma to be injected.
 
 
+## Conclusions
 
+General Fusion's story has always been around "engineering" their way to fusion energy and operating at an optimal middle density. On paper their reactor looks attractive: inject a simple magnetized plasma into the center of a rotating liquid metal liner and compress it with steam driven pistons. No fancy schmancy superconducting magnets and no highfalutin lasers. But, their own history of performance has clearly demonstrated that a simple-on-paper fusion concept does not make it simple in practice.  
 
-### Rep rate problem
+![General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.](/assets/images/gf_timeline_transparent.png)
 
-Even if General Fusion could get one fusion pulse to work, the repetition rate is then the key determinant if it is an economic energy source. There are many things that could limit this. The kopeck problem of 
+Over a decade has been spent on finding less-bad plasmas targets to compress and dealing with hydrodynamic instabilities in their liquid metal liner. Yet, the company has barely improved plasma performance relative to the Lawson criterion and is no closer to their commercialization predictions than when the company started. 
 
-
-
-
-
-
-
+Like TAE going public, General Fusion going public is more likely a sign of financing of last resort than being ready for commercial fusion energy production. 
 

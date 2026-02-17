@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fusion Fortnightly | 2026-02-17"
-published: false
+published: true
 ---
 *No fluff, all facts.*
 
@@ -15,7 +15,7 @@ A NIF spinout raises a $450M Series A, Helion touts a vague achievement, and I f
 ---
 ## Companies
 
-[Helion announced](https://www.helionenergy.com/articles/helion-achieves-new-fusion-energy-milestones/) that its Polaris prototype achieved measurable deuterium‑tritium (D‑T) fusion and reached plasma temperatures of 150 million °C (~13 keV). If true, the results would put Helion in the lead for plasma temperature in a non-tokamak fusion device. Without any context on the other plasma conditions, specificly density, energy confinement time, and electron temperture, it is hard to assess what they have accomplished here. It fits with their history of bold claims with little evidence. And operating with tritium is a major milestone, just saying that you achieved D+T fusion without any metrics is not a useful statement; there are plenty of particle accelerators that could say the same thing but are not on a path to commercial fusion energy.
+[Helion announced](https://www.helionenergy.com/articles/helion-achieves-new-fusion-energy-milestones/) that its Polaris prototype achieved measurable deuterium‑tritium (D‑T) fusion and reached plasma temperatures of 150 million °C (~13 keV). If true, the results would put Helion in the lead for plasma temperature in a non-tokamak fusion device. Without any context on the other plasma conditions, specificly density, energy confinement time, and electron temperture, it is hard to assess what they have accomplished here. It fits with their history of bold claims with little evidence or context. Operating with tritium is a major milestone, but saying that you achieved D-T fusion without any metrics is not a useful statement; there are plenty of particle accelerators that could say the same thing but are not on a path to commercial fusion energy.
 
 ---
 

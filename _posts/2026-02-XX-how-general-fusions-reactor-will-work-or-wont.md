@@ -165,22 +165,17 @@ From the outside, this situation does not make sense: Why would a company strugg
 
 ### Lawson benchmarking
 
-As with TAE, General Fusion has made some performance improvements but is far from the conditions needed for fusion energy production. General Fusion does have an advantage over TAE  in that they are setting the bar lower and only aiming for deuterium-tritium fuel. However, deuterium-tritium fuel will not be enough to get General Fusion over that bar. 
+As with TAE, General Fusion has made some performance improvements but is far from the conditions needed for fusion energy production. General Fusion does have an advantage over TAE in that they are setting the bar lower and only aiming for deuterium-tritium fuel. However, deuterium-tritium fuel will not be enough to get General Fusion over that bar. 
 
-General Fusion has published a lot on their pre-compression target plasma parameters, but has only [one peer-reivewed compressed plasma data point](https://iopscience.iop.org/article/10.1088/1741-4326/ad9033) (PCS-16) to plot against the Lawson criterion. Because of this, I will also include the pre-compression PCS-16 and PI3 results to show where they are starting from. The energy confinement time in PCS-16 was ~35% of the compression time, so it was not adiabatic. The ion temperature in the PCS-16 post-compression was $\sim 40 \times$ less than the Lawson minimum and the Lawson parameter $\sim 400 \times$ less. The PI3 pre-compression results demonstrated they improved the target performance in the Lawson parameter but reduced the pre-compression ion temperature. To get above the minimums needed for the Lawson criterion, LM26 needs to increase the PI3 ion temperature $\sim 60 \times$ and Lawson parameter $\sim 50 \times$.
-
-<figure>
-  <img src="{{ '/content/images/2026/gf_ti_progress.png' | relative_url }}"
-     alt="General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.">
-  <figcaption>General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.</figcaption>
-</figure>
+General Fusion has published a lot on their pre-compression target plasma parameters, but has only [one peer-reivewed compressed plasma data point](https://iopscience.iop.org/article/10.1088/1741-4326/ad9033) (PCS-16) to plot against the Lawson criterion. The energy confinement time in PCS-16 was ~35% of the compression time, so it was not adiabatic as evidenced by the minimal ion heating. The PI3 pre-compression results demonstrated they improved the target performance in the Lawson parameter but reduced the pre-compression ion temperature. To get to where they want to go, LM26 needs to increase the PI3 ion temperature $\sim 50 \times$ and Lawson parameter $\sim 90 \times$. These are absolutely huge leaps to make. The improved targets from PI3 and the simpler compression scheme of LM26 gives General Fusion a better shot than before at doing so. But it is far from a sure path.
 
 <figure>
-  <img src="{{ site.baseurl }}/content/images/2026/gf_lawson_progress.png" alt="General Fusion's one published compressed plasma Lawson parameter measurement compared to the minimum needed for D+T fusion.">
-  <figcaption>General Fusion's one published compressed plasma Lawson parameter measurement compared to the minimum needed for D+T fusion.</figcaption>
+  <img src="{{ '/content/images/2026/General_Fusion_Lawson_progress.png' | relative_url }}"
+     alt="General Fusion's progress on the Lawson diagram.">
+  <figcaption>General Fusion's progress on the Lawson diagram.</figcaption>
 </figure>
 
-Given how far General Fusion is away from what is needed for fusion plasma performance, it is hard to take the title of their SPAC investor slide seriously: [*An Engineering Approach to Delivering Fusion Energy*](https://generalfusion.com/wp-content/uploads/2026/01/General-Fusion-Investor-Presentation-January-2026-2.pdf). There is a lot of plasma physics left to be done!
+Given how far General Fusion is away from what is needed for fusion reactor relevant Q, it is hard to take the title of their SPAC investor slide seriously: [*An Engineering Approach to Delivering Fusion Energy*](https://generalfusion.com/wp-content/uploads/2026/01/General-Fusion-Investor-Presentation-January-2026-2.pdf). There is a lot of plasma physics left to be done!
 
 ### Repetition rate problem
 
@@ -193,7 +188,8 @@ The primary challenge here is the coupled injection-compression-evacuation-reset
 General Fusion's story has always been around "engineering" their way to fusion energy and operating at an optimal middle density. On paper, their reactor looks attractive: inject a simple magnetized plasma into the center of a rotating liquid metal liner and compress it with steam driven pistons. No expensive superconducting magnets and no complex lasers. But, their own history of performance has clearly demonstrated that a simple-on-paper fusion concept does not translate to simplicity in practice.  
 
 <figure>
-  <img src="{{ site.baseurl }}/content/images/2026/gf_timeline_transparent.png" alt="General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.">
+  <img src="{{ '/content/images/2026/gf_timeline_transparent.png' | relative_url }}"
+     alt="General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.">
   <figcaption>General Fusion, like TAE, has had over a decade of slipping fusion commercialization timeline claims. Unlike TAE, General Fusion seems to be ~50% more pessimistic on how far away they are from commercialization.</figcaption>
 </figure>
 

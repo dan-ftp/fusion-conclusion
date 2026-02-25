@@ -3,7 +3,8 @@ layout: post
 title: "How General Fusion's reactor will work (or won't)"
 published: false
 ---
-<p><img src="{{ site.baseurl }}content/images/2026/general_fusion_reactor.jpg" alt="How General Fusion's reactor will work (or won't)"></p>
+<p><img src="{{ '/content/images/2026/general_fusion_reactor.png' | relative_url }}"
+     alt="How General Fusion's reactor will work (or won't)"></p>
 
 *Closely following TAE's merger with the public company TMTG, General Fusion has [announced](https://generalfusion.com/post/general-fusion-business-combination-announcement/) that they are [going public through a SPAC](https://generalfusion.com/wp-content/uploads/2026/01/General-Fusion-Investor-Presentation-January-2026-2.pdf). As with my [TAE article](https://www.fusionconclusion.com/how-taes-fusion-reactor-will-work-or-wont/), I aim to answer for non-experts: "What, exactly, is General Fusion building and how close is it to working?"*
 
@@ -18,7 +19,8 @@ Before diving into General Fusion's reactor concept and critiques, it is importa
 ### Compressing plasmas in the U.S.S.R., NRL, and LANL
 
 <figure>
-  <img src="{{ site.baseurl }}/content/images/2026/MTF-schematic.png" alt="Schematic of a MTF concept.">
+  <img src="{{ '/content/images/2026/MTF-schematic.png' | relative_url }}"
+     alt="Schematic of a MTF concept.">
   <figcaption>Schematic of a [MTF concept](https://doi.org/10.1109/TPS.2004.823974).</figcaption>
 </figure>
 
@@ -37,8 +39,9 @@ Due to the contentious nature of discussions on different fusion energy concepts
 ## General Fusion's public position
 
 <figure>
-  <img src="{{ site.baseurl }}/content/images/2026/General_Fusion_steampunk.png" alt="General Fusion’s liquid metal compression experiment.">
-  <figcaption>General Fusion’s liquid metal compression experiment, from [Scientific American](https://www.scientificamerican.com/article/can-small-fusion-energy-start-ups-conquer-the-problems-that-killed-the-giants/).</figcaption>
+  <img src="{{ '/content/images/2026/General_Fusion_steampunk.png' | relative_url }}"
+     alt="General Fusion’s steampunk-looking liquid metal compression experiment.">
+  <figcaption>General Fusion’s steampunk-looking liquid metal compression experiment, from [Scientific American](https://www.scientificamerican.com/article/can-small-fusion-energy-start-ups-conquer-the-problems-that-killed-the-giants/).</figcaption>
 </figure>
 
 Fortunately for this discussion, General Fusion has [published peer-reviewed articles](https://generalfusion.com/post/category/research-library/) on their experiments and their results as well as put out public information on their vision for how that translates to a fusion power plant. While some of the specifics have changed over the years, especially the target plasma, the basic concept has remained constant: Inject a stable plasma into the vortex created in the center of a spinning volume of liquid metal and use precisely-timed pistons to send a pulse through the liquid that compresses the plasma to fusion energy production conditions. This is the most [steampunk](https://en.wikipedia.org/wiki/Steampunk) fusion concept out there and, in my opinion, they missed the marketing opportunity to go hard into the steampunk aesthetic.
@@ -48,7 +51,8 @@ General Fusion has the following claimed concept advantages:
 ### MTF is the optimal between the titans of ITER (magnetic fusion) and NIF (inertial fusion)
 
 <figure>
-  <img src="{{ site.baseurl }}/content/images/2026/MTF_optimum.png" alt="General Fusion’s rallying cry for the MTF optimum between ITER and NIF.">
+  <img src="{{ '/content/images/2026/MTF_optimum.png' | relative_url }}"
+     alt="General Fusion’s rallying cry for the MTF optimum between ITER and NIF.">
   <figcaption>General Fusion’s rallying cry for the MTF optimum between ITER and NIF.</figcaption>
 </figure>
 
@@ -166,7 +170,8 @@ As with TAE, General Fusion has made some performance improvements but is far fr
 General Fusion has published a lot on their pre-compression target plasma parameters, but has only [one peer-reivewed compressed plasma data point](https://iopscience.iop.org/article/10.1088/1741-4326/ad9033) (PCS-16) to plot against the Lawson criterion. Because of this, I will also include the pre-compression PCS-16 and PI3 results to show where they are starting from. The energy confinement time in PCS-16 was ~35% of the compression time, so it was not adiabatic. The ion temperature in the PCS-16 post-compression was $\sim 40 \times$ less than the Lawson minimum and the Lawson parameter $\sim 400 \times$ less. The PI3 pre-compression results demonstrated they improved the target performance in the Lawson parameter but reduced the pre-compression ion temperature. To get above the minimums needed for the Lawson criterion, LM26 needs to increase the PI3 ion temperature $\sim 60 \times$ and Lawson parameter $\sim 50 \times$.
 
 <figure>
-  <img src="{{ site.baseurl }}/content/images/2026/gf_ti_progress.png" alt="General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.">
+  <img src="{{ '/content/images/2026/gf_ti_progress.png' | relative_url }}"
+     alt="General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.">
   <figcaption>General Fusion's one published compressed plasma ion temperature measurement compared to the minimum needed for D+T fusion.</figcaption>
 </figure>
 

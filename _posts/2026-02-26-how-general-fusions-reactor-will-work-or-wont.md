@@ -41,7 +41,7 @@ Due to the contentious nature of discussions on different fusion energy concepts
 <figure>
   <img src="{{ '/content/images/2026/General_Fusion_steampunk.png' | relative_url }}"
      alt="General Fusion’s steampunk-looking liquid metal compression experiment.">
-  <figcaption>General Fusion’s steampunk-looking liquid metal compression experiment, from [Scientific American](https://www.scientificamerican.com/article/can-small-fusion-energy-start-ups-conquer-the-problems-that-killed-the-giants/).</figcaption>
+  <figcaption>General Fusion’s steampunk-looking liquid metal compression experiment, from <a href="https://www.scientificamerican.com/article/can-small-fusion-energy-start-ups-conquer-the-problems-that-killed-the-giants/">Scientific American</a>.</figcaption>
 </figure>
 
 Fortunately for this discussion, General Fusion has [published peer-reviewed articles](https://generalfusion.com/post/category/research-library/) on their experiments and their results as well as put out public information on their vision for how that translates to a fusion power plant. While some of the specifics have changed over the years, especially the target plasma, the basic concept has remained constant: Inject a stable plasma into the vortex created in the center of a spinning volume of liquid metal and use precisely-timed pistons to send a pulse through the liquid that compresses the plasma to fusion energy production conditions. This is the most [steampunk](https://en.wikipedia.org/wiki/Steampunk) fusion concept out there and, in my opinion, they missed the marketing opportunity to go hard into the steampunk aesthetic.
@@ -198,3 +198,7 @@ General Fusion's story has always been around "engineering" their way to fusion 
 General Fusion has spent over two decades on finding less-bad plasma targets to compress and dealing with hydrodynamic instabilities in their liquid metal liner. Yet, the company has barely improved plasma performance relative to the Lawson criterion and is no closer in time to their own commercialization predictions than when the company started. 
 
 General Fusion’s decision to go public is more likely a sign of financing-of-last-resort than of really being ready for commercial fusion energy production. 
+
+### About the author
+
+<p><a href="https://www.linkedin.com/in/dan-brunner/" rel="noreferrer">Dan Brunner</a> has a PhD in Applied Plasma Physics from MIT. He is one of the co-founders and former Chief Technology Officer of <a href="https://www.cfs.energy/" rel="noreferrer">Commonwealth Fusion Systems</a> (CFS), "the world's largest and leading commercial fusion energy company." He built and led the team of scientists and engineers that did the conceptual design of <a href="https://www.cfs.energy/technology/sparc" rel="noreferrer">SPARC</a>, the D+T tokamak being built by CFS to demonstrate net fusion energy before 2030. He is now advising fusion investors and startups through <a href="https://futuretech.partners/" rel="noreferrer">Future Tech Partners</a>.</p>

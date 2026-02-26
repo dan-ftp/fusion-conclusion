@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How General Fusion's reactor will work (or won't)"
-published: false
+published: true
 ---
 <p><img src="{{ '/content/images/2026/general_fusion_reactor.png' | relative_url }}"
      alt="How General Fusion's reactor will work (or won't)"></p>

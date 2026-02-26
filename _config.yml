@@ -23,3 +23,5 @@ header_pages:
 exclude:
   - ops/
   - RUNBOOK.md
+
+markdown: kramdown

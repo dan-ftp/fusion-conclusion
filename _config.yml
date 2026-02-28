@@ -1,6 +1,5 @@
 title: The Fusion Conclusion
 description: "Your solution to fusion confusion."
-theme: minima
 
 url: "https://www.fusionconclusion.com"
 baseurl: ""
@@ -11,17 +10,16 @@ timezone: America/New_York
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Ensure Ghost-style /content/... assets are published
 include:
   - content
-
-header_pages:
-  - about.md
-  - subscribe.md
 
 exclude:
   - ops/
   - RUNBOOK.md
 
 markdown: kramdown
+kramdown:
+  input: GFM

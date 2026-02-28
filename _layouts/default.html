@@ -1,38 +1,18 @@
-h<!doctype html>
+<!doctype html>
 <html lang="{{ site.lang | default: 'en' }}">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    {% include head.html %}
+  </head>
 
-  <title>
-    {%- if page.title -%}
-      {{ page.title }} | {{ site.title }}
-    {%- else -%}
-      {{ site.title }}{%- if site.description -%} | {{ site.description }}{%- endif -%}
-    {%- endif -%}
-  </title>
+  <body>
+    <div class="site-wrapper">
+      {% include site-header.html %}
 
-  {%- if page.description -%}
-    <meta name="description" content="{{ page.description | strip_html | strip_newlines | escape }}" />
-  {%- elsif site.description -%}
-    <meta name="description" content="{{ site.description | strip_html | strip_newlines | escape }}" />
-  {%- endif -%}
+      <main class="site-main" role="main">
+        {{ content }}
+      </main>
 
-  <link rel="stylesheet" href="{{ '/assets/css/screen.css' | relative_url }}" />
-
-  {%- feed_meta -%}
-</head>
-<body>
-  <div class="site-wrapper">
-    {% include site-header.html %}
-
-    <main class="site-main" role="main">
-      {{ content }}
-    </main>
-
-    {% include site-footer.html %}
-  </div>
-
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-</body>
+      {% include site-footer.html %}
+    </div>
+  </body>
 </html>

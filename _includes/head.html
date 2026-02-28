@@ -1,26 +1,29 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{%- comment -%}
+Head include for Fusion Conclusion (Tufte-style).
+Keeps everything in one place so layouts stay clean.
+{%- endcomment -%}
 
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+{%- seo -%}
+{%- feed_meta -%}
 
-  <!-- MathJax -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true
-      }
-    };
-  </script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-</head>
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml" />
+<link rel="alternate icon" href="{{ '/assets/favicon.ico' | relative_url }}" />
+
+<link rel="stylesheet" href="{{ '/assets/css/screen.css' | relative_url }}" />
+
+{%- comment -%}
+MathJax (only loads if enabled).
+Enable per-page with `mathjax: true` in front matter, or globally with `mathjax: true` in _config.yml.
+{%- endcomment -%}
+{%- if page.mathjax or layout.mathjax or site.mathjax -%}
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{%- endif -%}

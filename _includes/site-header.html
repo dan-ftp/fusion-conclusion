@@ -1,0 +1,33 @@
+{%- comment -%}
+Site header / navigation (styled by assets/css/screen.css)
+{%- endcomment -%}
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="{{ '/' | relative_url }}" aria-label="Home">
+      <img src="{{ '/assets/logo-icon.svg' | relative_url }}" alt="{{ site.title | escape }}" />
+    </a>
+
+    <div class="site-title-group">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      {%- if site.description -%}
+        <p class="site-description">{{ site.description }}</p>
+      {%- endif -%}
+    </div>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        {%- for item in site.data.navigation -%}
+          {%- assign item_url = item.url | relative_url -%}
+          {%- assign is_current = false -%}
+          {%- if page.url == item.url -%}
+            {%- assign is_current = true -%}
+          {%- endif -%}
+          <li class="{% if is_current %}is-current{% endif %}">
+            <a href="{{ item_url }}">{{ item.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

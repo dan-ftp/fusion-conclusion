@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="post-list">
+  {% for post in site.posts %}
+    <article class="post-card">
+      <header class="post-card-header">
+        <h2 class="post-card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-card-meta">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %B %Y' }}</time>
+          {% if post.tags and post.tags.size > 0 %}
+            <span class="post-card-tag">{{ post.tags[0] }}</span>
+          {% endif %}
+        </div>
+      </header>
+
+      {% if post.excerpt %}
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>

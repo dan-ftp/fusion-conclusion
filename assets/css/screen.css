@@ -211,6 +211,13 @@ a.site-logo:hover {
   line-height: 1.25;
 }
 
+.post-title,
+.page-title,
+.post-card-title {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
 .post-content h2,
 .page-content h2 {
   font-size: 1.6rem;

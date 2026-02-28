@@ -1,0 +1,11 @@
+{%- comment -%}
+Site footer (styled by assets/css/screen.css)
+{%- endcomment -%}
+
+<footer class="site-footer">
+  <p>
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }}.
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    · <a href="{{ '/subscribe/' | relative_url }}">Email updates</a>
+  </p>
+</footer>

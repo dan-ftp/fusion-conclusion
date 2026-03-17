@@ -1,16 +1,11 @@
 ---
 layout: post
 title: "Fusion Fortnightly | 2026-03-17"
-published: false
+published: true
 ---
 *No fluff, all facts.*
 
-
-
----
-## Funding
-
-[Sumitomo Corporation announced it made an equity investment in SHINE](https://www.sumitomocorp.com/en/jp/news/topics/2026/group/20260310). Sumitomo is a diversified corporation that produces cryogenics, vacuum, and superconducting hardware, which could be used in fusion. It sees the SHINE, as well as its TAE, investments as helping them get into the fusion industry and bring it to East Asia.
+Pacific Fusion opens their doors for others to use its fusion facility. Helion adds litigation firepower. First public fusion company has possible ties to convicted securities fraudster.
 
 ---
 ## Companies
@@ -23,7 +18,7 @@ published: false
 
 ---
 
-[Lynn Miller has joined Helion Energy as General Counsel](https://www.linkedin.com/posts/helion-energy_we-are-thrilled-to-announce-thatlynn-miller-activity-7437897662936559617-mWp4). Lynn's background is in technology litigation, having spent 14 years as the Senior Litigation Manager at Apple and 7 years as the Associate/Deputy General Council at Tesla ("with a CEO who demanded creative solutions rather than legal hurdles"). While Lynn has "ensured IPO readiness" at Plus.AI, she has no other apparent IPO legal experience. That background suggests Helion is prioritizing litigation capability far more than public-markets readiness or fusion-specific nuclear-regulatory expertise.
+[Lynn Miller has joined Helion Energy as General Counsel](https://www.linkedin.com/posts/helion-energy_we-are-thrilled-to-announce-thatlynn-miller-activity-7437897662936559617-mWp4). Lynn's background is in technology litigation, having spent 14 years as the Senior Litigation Manager at Apple and 7 years as the Associate/Deputy General Counsel at Tesla ("with a CEO who demanded creative solutions rather than legal hurdles"). While Lynn has "ensured IPO readiness" at Plus.AI, she has no other apparent IPO legal experience. That background suggests Helion is prioritizing litigation capability far more than public-markets readiness or fusion-specific nuclear-regulatory expertise.
 
 ---
 
@@ -31,11 +26,11 @@ published: false
 
 ---
 
-[TMTG filed it's SEC form 10-K](https://www.sec.gov/ix?doc=/Archives/edgar/data/1849635/000114036126007174/ef20062365_10k.htm), which is the yearly report that is meant to give investors a standardized, legally significant picture of the business. Nothing new on the TAE merger in it. But it did lay out the financials for 2025 for TMTG: $3.43M of advertising revenue and $0.26M of subscription revenue from Truth Social and Truth+, $712.3M net losses, and $2.63B of total assets.
+[TMTG filed its SEC Form 10-K](https://www.sec.gov/ix?doc=/Archives/edgar/data/1849635/000114036126007174/ef20062365_10k.htm), which is the yearly report that is meant to give investors a standardized, legally significant picture of the business. Nothing new on the TAE merger in it. But it did lay out the financials for 2025 for TMTG: $3.43M of advertising revenue and $0.26M of subscription revenue from Truth Social and Truth+, $712.3M net losses, and $2.63B of total assets.
 
 ---
 
-[Spring Valley Acquisition Corp. III filed it's SEC form 10-K](https://www.sec.gov/ix?doc=/Archives/edgar/data/2074850/000110465926024740/none-20251231x10k.htm). There are no substaintial updates about it's merger and de-SPAC with General Fusion in it.
+[Spring Valley Acquisition Corp. III filed its SEC Form 10-K](https://www.sec.gov/ix?doc=/Archives/edgar/data/2074850/000110465926024740/none-20251231x10k.htm). There are no substantial updates about its merger and de-SPAC with General Fusion in it.
 
 ---
 
@@ -50,13 +45,22 @@ published: false
 [Helical Fusion announced the construction site for its Helix HARUKA program will be located on the National Institute for Fusion Science campus](https://prtimes.jp/main/html/rd/p/000000059.000089262.html), with manufacturing and construction underway toward a 2027 energization test.
 
 ---
+
+Renewal Fuels, operating as American Fusion (as I reported a few issues ago is the original public fusion company) [releases](https://www.globenewswire.com/news-release/2026/03/09/3251763/0/en/Renewal-Fuels-Inc-OTC-RNWF-Operating-as-American-Fusion-Appoints-Andrew-S-Mikulski-as-Independent-Director-and-Provides-Patent-Portfolio-Update-for-Texatron-Fusion-Platform.html) a [bunch](https://www.globenewswire.com/news-release/2026/03/11/3253710/0/en/Renewal-Fuels-Inc-OTC-RNWF-Operating-as-American-Fusion-Appoints-Sebastian-E-Hoyos-as-Chief-Revenue-Officer-to-Lead-Commercialization-Strategy-for-Texatron-Platform.html) of [announcements](https://www.globenewswire.com/news-release/2026/03/11/3253973/0/en/Renewal-Fuels-Inc-OTC-RNWF-Operating-as-American-Fusion-Issues-Statement-Regarding-False-Online-Report-of-Public-Offering.html). Most interesting was their [SEC Form 10](https://www.sec.gov/Archives/edgar/data/96664/000107997326000298/rnwf-form10.htm) in which it is disclosed they plan on achieving a 100 MW D+He3 fusion system before the end of 2026, have filed 20 patents and plan to file an additional 240 by the end of 2026, and over half of their liabilities are due to litigation ($670k). Most interestingly, their majority common shareholder is Justin Costello who, as far as I can tell, ["...posed as a billionaire and twice-wounded Special Forces Iraq veteran to dupe investors while portraying himself as a legal cannabis mogul, pleaded guilty Wednesday (Jan 18 2023) to securities fraud"](https://www.cnbc.com/2023/01/18/fake-billionaire-justin-costello-pleads-guilty-in-fraud.html) and [was convicted](https://www.justice.gov/usao-wdwa/pr/former-bellevue-washington-resident-sentenced-12-years-prison-securities-fraud). If I'm confuseing this Justin Costello with someone else, please let me know. I don't give investing advice, but...
+
+---
+## Funding
+
+[Sumitomo Corporation announced it made an equity investment in SHINE](https://www.sumitomocorp.com/en/jp/news/topics/2026/group/20260310). Sumitomo is a diversified corporation that produces cryogenics, vacuum, and superconducting hardware, which could be used in fusion. It sees the SHINE, as well as its TAE, investments as helping them get into the fusion industry and bring it to East Asia.
+
+---
 ## Government
 
-(The UK releases its 2026 fusion strategy)[https://www.gov.uk/government/publications/uk-fusion-strategy-2026]. The new strategy is about more public money, a stronger delivery organization around STEP, more explicit supply-chain and skills policy, and a push to make the UK the easiest jurisdiction in which to build and finance a fusion project. The UK government will invest more than £2.5 billion over five years, with roughly £1.3 billion for STEP through UK Fusion Energy, £740 million for fusion R&D infrastructure across magnetic and inertial confinement, and £180 million for LIBRTI, its tritium-breeding facility.
+[The U.K. releases its 2026 fusion strategy](https://www.gov.uk/government/publications/uk-fusion-strategy-2026). The new strategy is about more public money, a stronger delivery organization around STEP, more explicit supply-chain and skills policy, and a push to make the U.K. the easiest jurisdiction in which to build and finance a fusion project. The U.K. government will invest more than £2.5 billion over five years, with roughly £1.3 billion for STEP through U.K. Fusion Energy, £740 million for fusion R&D infrastructure across magnetic and inertial confinement, and £180 million for LIBRTI, its tritium-breeding facility.
 
 ---
 
-[The US Department of Energy announced $293M Request for Application](https://www.energy.gov/articles/energy-department-announces-293-million-funding-support-genesis-mission-national-science) in support of The Genisis Mission to use AI to advance fusion and other areas covered by the department.
+[The U.S. Department of Energy announced $293M Request for Applications](https://www.energy.gov/articles/energy-department-announces-293-million-funding-support-genesis-mission-national-science) in support of The Genisis Mission to use AI to advance fusion and other areas covered by the department.
 
 ---
 
@@ -68,7 +72,7 @@ published: false
 
 ---
 
-[UK "splashes" £45M on AI supercomputer for fusion](https://www.theregister.com/2026/03/16/uk_splurges_45m_on_ai/). Those Brits really have a way with the English language. Traditionally supercomputers, with a focus on CPUs, have been used for large fusion simulations. AI supercomputers are more often centralized on GPUs.
+[U.K. "splashes" £45M on AI supercomputer for fusion](https://www.theregister.com/2026/03/16/uk_splurges_45m_on_ai/). Those Brits really have a way with the English language. Traditionally supercomputers, with a focus on CPUs, have been used for large fusion simulations. AI supercomputers are more often focused on using GPUs.
 
 ---
 
@@ -81,17 +85,3 @@ published: false
 ---
 
 [Europe and Japan restarted JT-60SA integrated commissioning](https://fusionforenergy.europa.eu/news/europe-and-japan-restart-jt-60sa/) after installing new components including diagnostics and cryopumps.
-
-
-Renewal Fuels, operating as American Fusion, (the original public fusion company) [Appointment Andrew S. Mikulski to the Board](https://www.globenewswire.com/news-release/2026/03/09/3251763/0/en/Renewal-Fuels-Inc-OTC-RNWF-Operating-as-American-Fusion-Appoints-Andrew-S-Mikulski-as-Independent-Director-and-Provides-Patent-Portfolio-Update-for-Texatron-Fusion-Platform.html) and [announced Sebastian E. Hoyos as CRO to lead commercialization strategy](https://www.globenewswire.com/news-release/2026/03/11/3253710/0/en/Renewal-Fuels-Inc-OTC-RNWF-Operating-as-American-Fusion-Appoints-Sebastian-E-Hoyos-as-Chief-Revenue-Officer-to-Lead-Commercialization-Strategy-for-Texatron-Platform.html). Such a strange thing to follow, I wonder where it is going...
-
-
-[Brussels slips nuclear fusion into its upcoming small reactor plan](https://www.euractiv.com/news/brussels-slips-nuclear-fusion-into-its-upcoming-small-reactor-plan/)
-
-
-[Renewal Fuels' Form 10 provides the clearest current primary-source snapshot of its capitalization, governance, risk factors, and pending Washington share-cancellation litigation.](https://www.sec.gov/Archives/edgar/data/96664/000107997326000298/rnwf-form10.htm)
-
-RNWF [issued an official statement saying a supposed public-offering announcement circulating online was fabricated and unauthorized](https://www.globenewswire.com/news-release/2026/03/11/3253973/0/en/Renewal-Fuels-Inc-OTC-RNWF-Operating-as-American-Fusion-Issues-Statement-Regarding-False-Online-Report-of-Public-Offering.html), making it the key in-window source on disclosure control and potential market-confusion risk.
-
-
-

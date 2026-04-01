@@ -73,7 +73,7 @@ American Fusion, which is quickly growing to be the most interesting public fusi
 ---
 ## Media
 
-[Astera Institute describes how it is working to find 1 cent/kWh fusion energy.](https://asterainstitute.substack.com/p/mapping-the-path-to-one-cent-electricity) A nobile goal, but let's try to just get it to work to start.
+[Astera Institute describes how it is working to find 1 cent/kWh fusion energy.](https://asterainstitute.substack.com/p/mapping-the-path-to-one-cent-electricity) A noble goal, but let's try to just get it to work to start.
 
 ---
 

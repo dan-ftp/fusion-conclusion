@@ -16,5 +16,31 @@ This article first explains what a five-year plan is and how it works within Chi
 
 ## Middling: circuits/chips
 
+1986–1990 — [Seventh Five-Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/200709/P020191029595676468654.pdf)
+“Bring integrated circuits ... up to a relatively advanced world level.”
+
+1991–1995 — [Eighth Five-Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/200709/P020191029595681819982.pdf)
+“... strengthen the development of integrated circuits ... actively develop microelectronics ... technology and equipment ... strengthen the R&D and production of electronic components, specialized high-precision equipment and instruments, and specialized materials, so as to improve product performance and quality.”
+
+1996–2000 — [Ninth Five-Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/200709/P020191029595686994247.pdf)
+“Accelerate the industrialization of high technology, focusing on ... submicron integrated circuits and 8-inch single-crystal silicon manufacturing technology ... and strive to improve the performance, quality, and market share of high-tech products.”
+
+2001–2005 — [Tenth Five](https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/200507/W020191104623866254322.pdf)-[Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/200709/P020191029595691974319.pdf)
+“Vigorously develop the integrated-circuit ... industries ... Establish an integrated-circuit industrial system and pursue leapfrog development ... vigorously develop IC design, chip manufacturing, and testing, form supporting production and service systems for integrated circuits, and also develop IC equipment manufacturing.”
+
+2006–2010 — [Eleventh Five-Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/200709/P020191104623156010398.pdf)
+“Strengthen innovation capacity in the integrated-circuit industry ... accelerate the R&D and industrialization of 90nm-and-below IC manufacturing process technologies ... achieve breakthroughs in some key equipment and materials, and form a relatively complete IC industrial chain led by design, centered on manufacturing, and supported by equipment manufacturing and ancillary industries.”
+
+2011–2015 — [Twelfth Five-Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/201109/P020191029595702423333.pdf)
+“... priority development areas include ... integrated circuits ... Strengthen R&D in key information-industry technologies ... with breakthroughs in ... integrated circuits and key components ...”
+
+2016–2020 — [Thirteenth Five-Year Plan](https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/201107/t20110713_88230.html)
+“Foster an integrated-circuit industrial system ... Accelerate the industrialization of 16/14nm processes and the construction of memory production lines ... and promote the rapid development of packaging and testing, key equipment, materials, and related industries ... Achieve breakthroughs in key core technologies such as high-end general-purpose chips, integrated-circuit equipment, and foundational software ... and break through in electronic design automation (EDA) software.”
+
+2021–2025 — [Fourteenth Five-Year Plan](https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/201603/P020191104614882474091.pdf)
+"Focus on key areas such as high-end chips ... and accelerate breakthroughs and iterative application in fundamental theory, basic algorithms, equipment, and materials ... Implement the industrial-foundation reengineering program and accelerate efforts to shore up bottlenecks and weak links in ... foundational software, foundational materials, and related areas ... Promote innovative development in industries including integrated circuits ...”
+
+2026–2030 — Fifteenth Five-Year Plan draft
+"Promote, across the full chain, decisive breakthroughs in key core technologies in priority fields including integrated circuits ...”
 
 ## Fusion

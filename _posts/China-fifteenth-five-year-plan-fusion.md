@@ -55,3 +55,44 @@ This article first explains what a five-year plan is and how it works within Chi
 "Promote, across the full chain, decisive breakthroughs in key core technologies in priority fields including integrated circuits ...”
 
 ## Fusion
+
+## Facilities and experiments
+
+* **1965 — [Southwestern Institute of Physics (SWIP)](https://www.swip.ac.cn/swip/english66/about_swip/index.html)** was established in 1965 as China’s first nuclear-fusion research institute. 
+* **1978 — [Institute of Plasma Physics, Chinese Academy of Sciences (ASIPP/IPP)](https://english.hf.cas.cn/r/ResearchDivisions/IPP/)** was founded in September 1978 to research the tokamak for fusion energy.
+* **1984 — [HL-1 tokamak](https://www.swip.ac.cn/swip/english66/about_swip/index.html)** was completed in 1984 at SWIP and is the first large-scale tokamak in China. 
+* **1994 — [HL-1M tokamak](https://www.swip.ac.cn/swip/english66/about_swip/index.html)** was commissioned in 1994 at SWIP and was the upgraded successor to HL-1. 
+* **1995 — [HT-7 superconducting tokamak](https://english.ipp.cas.cn/syxw/201305/t20130531_274918.html)** entered service at ASIPP in 1995 as China’s first superconducting tokamak.
+* **2002 — [HL-2A tokamak](https://www.sciencedirect.com/science/article/abs/pii/S092037960500339X)** started operation in 2002 as China’s first tokamak with a divertor, with first plasma obtained at the end of that year.
+* **2006 — [EAST](https://www.iter.org/node/20687/chinese-tokamak-east-achieves-first-plasma)** EAST achieved first plasma in Hefei, it was the largest superconducting tokamak with a divertor at the time.
+* **2007 — [J-TEXT tokamak](https://www-pub.iaea.org/mtcd/meetings/pdfplus/2010/cn180/cn180_papers/ov_p-8.pdf)** was reconstructied at Huazhong University of Science and Technology. Formerly the TEXT-U tokamak from the University of Texas at Austin.
+* **2015 — [CFETR](https://english.ipp.cas.cn/syxw/201812/t20181214_275108.html)** is the Chinese successor to ITER. Chinese scientists finished CFETR’s conceptual design in August 2015, moving China’s next-step reactor concept from early studies toward engineering design. 
+* **2018 — [CRAFT](https://english.hf.cas.cn/nr/bth/202203/t20220328_303131.html)** broke ground in Hefei as a large fusion-engineering test complex for magnets, heating systems, divertors, materials, and other reactor technologies.
+* **2020 — [HL-2M](https://en.cnnc.com.cn/2020-12/07/c_1023230.htm) (now generally called HL-3)** first plasma on December 4, 2020, giving China its next-generation advanced magnetic-confinement experimental device in Chengdu.
+* **2023 — [EAST H-mode record](https://www.world-nuclear-news.org/Articles/Chinese-and-German-milestones-in-fusion-research)** with 403 seconds of steady-state high-confinement plasma operation.
+* **2024 — [HH70 tokamak](https://stcsm.sh.gov.cn/news/20240702/e0940adf99fb412da09491b2dbdb0187.html)** achieved first plasma in June 2024 as the world’s first fully high-temperature-superconducting tokamak built by a Chinese private fusion company. 
+* **2025 — [EAST 1,066-second H-mode record](https://english.news.cn/20250120/1d4e392ccaef48f29e8e9cdd0f9360c5/c.html)** becoming the first tokamak to sustain steady-state H-mode operation for more than 1,000 seconds, reaching 1,066 seconds.
+* **2026 — [HH70 1,337-second commercial-device record](https://english.news.cn/20260206/1e56546bb39b4d9ea4cf0e2bb2b30cbf/c.html)**
+
+### Five-year plans
+
+2006 — [Eleventh Five-Year Plan](https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/200811/t20081129_65770.html)
+“In the exploration of large-scale use of ... fusion energy ...”
+
+2011 — [Twelfth Five-Year Plan](https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/201107/t20110713_88230.html)
+“Special program on fusion-energy research. Accelerate China’s fusion-energy development research; complete the design, certification, and manufacturing-technology R&D for the ITER procurement packages undertaken by China in the construction of the International Thermonuclear Experimental Reactor; fully assimilate ITER’s overall design and related technologies; carry out overall design studies for China’s future magnetic-confinement fusion reactor; accelerate talent cultivation; and build China’s innovation system for fusion-energy research.”
+
+2016 — [Thirteenth Five-Year Plan](https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/201608/t20160810_127174.html)
+“International Thermonuclear Experimental Reactor (ITER) program. Fully participate in the management of the ITER international organization and raise China’s fusion-energy R&D capability; use participation in ITER as an opportunity to bring more relevant domestic institutions into international R&D, enhance China’s ability to manage major big-science projects, and establish a model for China’s participation in the management of international big-science projects.”
+
+
+
+
+
+
+
+
+
+
+
+

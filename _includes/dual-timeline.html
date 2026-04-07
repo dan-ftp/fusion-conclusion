@@ -1,0 +1,32 @@
+<div class="dual-timeline">
+  {% for item in include.items %}
+    <section class="dual-timeline__row">
+      <div class="dual-timeline__col dual-timeline__col--left">
+        {% if item.left %}
+          <article class="timeline-card">
+            <h3>{{ item.left.title }}</h3>
+            {% if item.left.body %}
+              <p>{{ item.left.body }}</p>
+            {% endif %}
+          </article>
+        {% endif %}
+      </div>
+
+      <div class="dual-timeline__axis" aria-hidden="true">
+        <span class="dual-timeline__dot"></span>
+        <span class="dual-timeline__date">{{ item.date }}</span>
+      </div>
+
+      <div class="dual-timeline__col dual-timeline__col--right">
+        {% if item.right %}
+          <article class="timeline-card">
+            <h3>{{ item.right.title }}</h3>
+            {% if item.right.body %}
+              <p>{{ item.right.body }}</p>
+            {% endif %}
+          </article>
+        {% endif %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

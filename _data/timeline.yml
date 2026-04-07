@@ -1,0 +1,25 @@
+- date: 2018
+  left:
+    title: Project started
+    body: Internal concept work begins.
+  right:
+    title: Team formed
+    body: Core founding team comes together.
+
+- date: 2019
+  left:
+    title: First prototype
+    body: Early technical validation completed.
+
+- date: 2020
+  right:
+    title: First funding
+    body: Initial outside capital secured.
+
+- date: 2021
+  left:
+    title: Pilot launch
+    body: Pilot system moves into active testing.
+  right:
+    title: Version 1 released
+    body: First public product release.

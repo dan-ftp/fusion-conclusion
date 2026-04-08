@@ -10,6 +10,8 @@ China has recently released it's fifteenth five-year plan and fusion energy has 
 
 This article first explains what a five-year plan is and how it works within China. It then goes on to compare Chinese five-year plans in two different industries: 1. electric vehicles where China has quickly built itself into the world dominating supplier and 2. circuits/chip where China has not been able to keep up with the leading edge. Finally, the article goes through the history of fusion within Chinese five-year plans, looking at what was actually achieved versus planned and projects where the next five years will take China.
 
+{% include dual-timeline.html items=site.data.timeline %}
+
 ## The Chinese five-year plan
 
 China’s [five-year plan](https://en.wikipedia.org/wiki/Five-year_plans_of_China) is best understood as an instrument of rule. In Western democracies, parties publish programs to signal intent to voters. In China, the Communist Party issues plans to steer the state. The result is a medium-term governing blueprint that spans the economy, technology, industry and social policy. As [Vivienne Shue notes in a British Academy talk](https://www.thebritishacademy.ac.uk/podcasts/10-minute-talks-china-14th-five-year-plan-bold-beautiful/), the exercise is one of “comprehensive, long-term, cross-sectoral, macro-planning”. [Bloomberg](https://www.listennotes.com/my/podcasts/heres-why/heres-why-chinas-five-year-VXBa_p9tQvq/) calls it a blueprint for economic and social development. The point is to organize priorities rather than to advertize them.

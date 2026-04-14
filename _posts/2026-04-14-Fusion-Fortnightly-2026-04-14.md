@@ -25,73 +25,9 @@ published: false
 
 [France and Japan issued a joint declaration on nuclear-energy cooperation that includes an explicit commitment to continue cooperation on fusion-energy projects, including ITER and JT‑60SA.](https://www.elysee.fr/emmanuel-macron/2026/04/01/declaration-conjointe-franco-japonaise-sur-la-cooperation-dans-le-domaine-de-lenergie-nucleaire) In addition to cooperating on many fission energy related issues, they confirm they will continue to cooperate on the fusion research they have been cooperating on (JT60-SA, ITER, IFMIF, etc.).
 
-[The U.S. Department of Energy published its FY 2027 Budget in Brief.](https://www.energy.gov/documents/doe-fy-2027-budget-brief) It includes a dedicated Fusion Energy Sciences section setting out requested funding and program direction—an in-window federal budget-positioning action that matters for commercialization-adjacent R&D, national-lab and university performers, and companies positioning for federally funded collaborations and procurement down the fusion supply chain.
+[The U.S. Department of Energy published its FY 2027 request.](https://www.energy.gov/documents/doe-fy-2027-budget-brief) While total [Fusion Energy Sciences (FES)](https://www.energy.gov/documents/doe-fy-2027-volume-4-sc) falls from $805.7 million to $755.3 million, that drop is almost entirely because U.S. ITER falls from $170.7 million to $77.5 million. FES research rises from $635.0 million to $677.8 million, even as the overall Office of Science request shrinks from $8.25 billion to $7.14 billion. DOE is asking to spend less on fusion in total, but more on U.S. domestic capability-building and commercialization. The change from 10+ years ago is unimaginable: from cutting C-Mod and "leveraging international collaborations" (aka teaching China how to do fusion) to now explicitly talking about commercialization. Never thought I'd see the day... Also in the budget is $10M for the new [Office of Fusion](https://www.energy.gov/documents/doe-fy-2027-volume-4-fusion) to coordinate activities advancing fusion. Reading through it was a reminder that the U.S. DoE's total project cost, that they calim they will stay within, for ITER is $6.5B; at 9.09% of ITER, that puts the total cost for ITER at around $71.5B! But we'll never know the total due to how it is run.
 
-"The Department further requests $10 million for the Office of Fusion (OF) to coordinate activities advancing
-fusion."
-
-Fusion Energy Sciences down from 805,657 to 755,251.
-
-"Fusion R&D investments will accelerate efforts to close key science and technology gaps and win the fusion commercialization race."
-
-FES supports research to understand matter at very high temperatures and to support a competitive fusion power
-industry in the U.S. The Request is aligned with the recommendations of the recent Fusion Science &
-Technology Roadmap guided by the Long Range Plan from the Fusion Energy Sciences Advisory Committee
-(FESAC).
-The Request funds:
-• Fusion Innovation Research Engine Collaboratives: Multi-institutional, multi-disciplinary R&D centers
-to address critical science and technology (S&T) gaps outlined in the FESAC LRP, supporting public and
-private fusion efforts.
-• Partnerships with the private sector through the Milestone program, the Innovative Network for Fusion
-Energy (INFUSE) program, the Private Facilities Research (PFR) program, and the Public-Private
-Consortium Framework to support public-private partnerships towards developing and building small-tomidscale fusion technology capabilities aligned with the Fusion S&T Roadmap.
-• Fusion Nuclear Science: Support small-to-medium scale capabilities, establish a R&D activity in
-developing low-cost sources of volumetric neutron, and support of tritium-based test beds and loops and
-blanket test facilities.
-• Inertial Fusion Energy (IFE): Support for the IFE STAR Hubs and investment on laser beamlet testbeds.
-• DIII-D national fusion facility: To address development of high-confinement, steady-state operating
-scenarios in support of closing key gaps outlined in the FS&T Roadmap and to support the DOE Genesis
-Mission.
-• National Spherical Torus Experiment-Upgrade: Finalize recovery and repair activities and being
-commissioning and operations, installation of remaining diagnostics, and alignment to Roadmap and
-support of the Genesis Mission.
-• U.S. Contributions to ITER project focusing on the design, fabrication, and delivery of in-kind hardware
-components. 
-
-Office of Fusion (OF) is the coordinating office within the Department related to all fusion activities. OF will
-lead the Department in advancing a set of national priorities that establishes a national strategy to build,
-innovate and grow a leading, competitive and robust American-driven fusion energy industry, to close scientific
-and technological gaps on the critical path toward commercializing fusion energy.
-The FY 2027 Request for $10 million supports implementing the Administration’s objectives to advance bold,
-transformational leaps in U.S. science and technology (S&T) in fusion and ensure America remains the global
-S&T leader for generations to come. The FY 2027 Request supports a new office with funding for personnel,
-travel, and advisory and assistance.
-OF will collaborate with the fusion industry to research, develop and demonstrate capabilities that are needed to
-solve critical science, materials and technology gaps, such as the breeding and handling of fusion fuels and test
-components and capabilities to support fusion energy commercialization and deployment. This program helps
-realize the full potential of U.S. investments in technologies and to usher a burgeoning fusion private sector
-commercial industry in the U.S. toward maturity on the most rapid timeline. 
-
-Total, Fusion Energy Sciences 805,657 to 755,251
-FES Research 634,973 to 677,751 
-"Construction" US Contributions to ITER 170,684 to 77,500
-
-"Initiate evaluation of a mission need for a FPNS facility."
-"Initiate design of an Integrated Blanket and Fuel Cycle Test Facility"
-"DIII-D operations: Support 16 weeks of facility operations"
-"NSTX-U recovery and operations: Complete the recovery and repair activities including machine assembly.
-Commission all systems and begin experimental plasma operations."
-"Material Plasma Exposure eXperiment (MPEX): After completion of the MPEX project, initiate preparation
-for operation of this facility."
-"Realign project with reassessment of how ITER fits in the
-overall U.S. fusion strategy, including reviewing partnerships and investment approaches to quickly
-advance fusion energy."
-
-" In FY 2023, the entire U.S. ITER project was baselined, with a TPC of $6,500,000,000... U.S. Contributions to ITER are estimated to remain within the Total Project Cost of $6,500,000,000. The U.S. in-kind contribution represents 9.09 percent (1/11th) of the overall ITER project " "At the time of CD-1 approval in January 2008, the preliminary cost range was $1,450,000,000 to
-$2,200,000,000. "
-
-
-[Criteria for the economic viability of fusion power plants](https://arxiv.org/pdf/2604.07367)
+[Dennis Whyte (CFS co-founder) and his team at Rutherford Energy Ventures release their preprint *Criteria for the economic viability of fusion power plants*.](https://arxiv.org/pdf/2604.07367) In it they try to create a concept-agnostic framework for whether a fusion plant is profitable. The paper defines an economic gain metric, \(Q_{\text{econ}}\), by normalizing plant economics to the control surface \(S\) (the first-wall, blanket, or chamber boundary through which fusion energy has to be removed) and comparing energy sales against three main costs: consumable targets, replacement of that surface, and plant construction/financing. They are clear that \(Q_{\text{econ}} \ge 1\) is only a necessary condition, not proof of commercial viability. Basic viability requires fusion power density \(P_f/S\) of about \(2\,\text{MW/m}^2\), pushing back against the common idea that a plant can compensate for low power density with a cheaper first wall or blanket. The paper argues that fast, cheap replacement of the power-facing surface matters more than maximizing its lifetime: in one representative scan, example thresholds land around \(\eta_E \sim 0.3\) and replacement time \(\tau_{\text{rep}} \lesssim 0.3\) years. 
 
 [ARPA-E commits $135M to accelerate fusion commercialization.](https://www.latitudemedia.com/news/arpa-e-awards-record-135m-in-funding-to-speed-commercial-fusion-energy)
 

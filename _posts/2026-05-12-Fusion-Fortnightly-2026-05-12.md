@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Fusion Fortnightly | 2026-05-12"
-published: False
+published: True
 ---
 *No fluff, all facts.*
 
-Zap is doing fusion, fission, and fusion-fission. Type One Energy partners with Tokamak Energy and AECOM to build a UK stellarator power plant. Zap, Excimer, and SHINE announce leadership changes/additions.
+Zap is doing fusion, fission, and fusion-fission. Type One Energy partners with Tokamak Energy and AECOM to build a UK stellarator power plant. Helion builds new smaller machine to learn stuff.
 
 ---
 ## Companies

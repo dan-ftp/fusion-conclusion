@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Avalanch Energy's fusion reactor will work (or won't)"
-published: true
+published: False
 ---
 <p><img src="{{ '/content/images/2026/avalanch_energy_reactor.png' | relative_url }}"
      alt="How General Fusion's reactor will work (or won't)"></p>

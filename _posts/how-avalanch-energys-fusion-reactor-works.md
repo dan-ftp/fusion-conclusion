@@ -57,7 +57,9 @@ Integrated tritium management systems capable of extracting, purifying, and recy
 
 2026-02-20 [Avalanche Energy Awarded $1.25M AFWERX Contract to Accelerate Advanced Materials Development](https://www.avalanchefusion.com/news-release/avalanche-energy-awarded-1-25m-afwerx-contract-to-accelerate-advanced-materials-development). Nothing of note in the blog, need to find award for details.
 
-2026-04-08 [Avalanche Energy Awarded $5.2M DARPA Contract to Develop Radioisotope Power Technology](https://www.avalanchefusion.com/news-release/avalanche-energy-awarded-5-2m-darpa-contract-to-develop-radioisotope-power-technology). 
+2026-04-08 [Avalanche Energy Awarded $5.2M DARPA Contract to Develop Radioisotope Power Technology](https://www.avalanchefusion.com/news-release/avalanche-energy-awarded-5-2m-darpa-contract-to-develop-radioisotope-power-technology). "awarded a $5.2 million contract from the DARPA Rads to Watts program to develop next-gen technology for compact, resilient, nuclear batteries. The 30-month program will mature technologies that directly support Avalanche's mission to commercialize practical, portable fusion power." "the underlying physics is directly relevant to Avalanche's long-term fusion roadmap: converting energetic charged particles into electricity with high efficiency" "will first be used for radioisotope-produced alpha particles, but ultimately support direct energy conversion from the same particles produced in their fusion machines" "The very same fusion machines that produce high-energy alpha particles will also produce high-energy neutrons. The neutrons produced are also efficient at creating the same radioisotopes needed for the Rads to Watts program, creating a reinforcing supply-and-technology flywheel around Avalanche’s core fusion platform."
+
+2026-04-08 [How nuclear batteries could speed the race to fusion power](https://techcrunch.com/2026/04/08/how-nuclear-batteries-could-speed-the-race-to-fusion-power/) "They’ve been around for a while, but they’re not very effective. Existing radiovoltaics are easily damaged by the very radiation they harness and don’t produce that much electricity."
 
 
 

@@ -12,8 +12,7 @@ published: False
 
 tending to inspire awe usually because of elevated quality (as of beauty, nobility, or grandeur) or transcendent excellence
 
-
-# The sublimes of bad fusion concepts
+# The sublimes of specious fusion concepts
 
 [Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four "sublimes"](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that explain megaprojects:
 > * The “technological sublime” describes the excitement engineers and technologists get in pushing the envelope for what is possible in “longest-tallest-fastest” types of projects.
@@ -73,52 +72,26 @@ But, rather than being a sign of the founder being on to something and good inte
 
 ## The incumbent-failure sublime
 
-This one is especially common among alternative concepts.
+Tokamaks are too big. ITER is too slow. NIF is not a power plant. Stellarators are too complex. Magnets are expensive. Lasers are inefficient.
 
-Tokamaks are too big. ITER is too slow. NIF is not a power plant. Government programs are bureaucratic. Stellarators are too complex. Magnets are expensive. Lasers are inefficient.
-
-Much of this is true or at least directionally fair.
-
-But a critique of the incumbent is not validation of the alternative. ITER being slow does not make an electrostatic concept work. NIF not being a power plant does not make a tabletop fusion plant credible.
-
-The alternative still has to close on its own merits.
+A critique of the incumbent is not validation of the alternative. The alternative still has to close on its own merits.
 
 ## The single-bottleneck sublime
 
-Bad fusion stories often reduce the problem to one bottleneck.
+The magnets are the issue. The laser is the issue. The fuel is the issue. The materials are the issue.
 
-The magnets are the issue. The laser is the issue. The fuel is the issue. The regulation is the issue. The software is the issue. The materials are the issue.
+Fusion is a coupled system. Higher field helps confinement but increases stress and shielding challenges. Smaller size reduces capital cost but increases wall loading.
 
-Real fusion plants do not work like that.
-
-Fusion is a coupled system. Higher field helps confinement but increases stress and shielding challenges. Smaller size reduces capital cost but increases wall loading. Higher density improves fusion power but increases collisionality and radiation.
-
-There are no isolated miracles in a fusion power plant.
+There are no isolated miracles in fusion.
 
 ## The cheap-option sublime
 
 Some concepts survive because the next experiment is cheap enough to fund.
 
-For an investor, that may be reasonable. A $10 million or $20 million experiment can be a cheap way to buy optionality on a huge outcome. Even a long-shot concept can make financial sense.
+For an investor, that may be reasonable. A $10M experiment can be a cheap way to buy optionality on a huge outcome. It is also a form of [Pascal's wager](https://en.wikipedia.org/wiki/Pascal%27s_wager).
 
-But that logic should stay in its lane.
-
-“Cheap to test” does not mean “likely to become a power plant.” It means cheap to test.
-
-The fusion industry needs experiments. It also needs discipline in describing what those experiments prove.
+“Cheap to test” does not mean “more likely to become a power plant.” It means cheap to test.
 
 ## The conclusion
 
-The common pattern is substitution.
-
-A beautiful machine substitutes for a power balance. A clever distribution substitutes for a collisional calculation. A clean fuel substitutes for achievable plasma conditions. A simulation substitutes for a validated experiment. A milestone substitutes for reactor relevance. A founder story substitutes for technical evidence.
-
-Fusion is hard enough when the concept is sound. It becomes impossible when the story is doing the work of the physics.
-
-The test should be simple: after including major losses, realistic duty cycle, wall loading, materials damage, maintenance, fuel cycle, power conversion, and recirculating power, is there a credible path to useful electricity at plant scale?
-
-If not, the concept may still be interesting science. It may still be a neutron source. It may still be a useful experiment. It may even be a reasonable venture option.
-
-But it is not yet a credible fusion energy concept.
-
-No matter how sublime it feels.
+Fusion energy is its own sublime, often sold as the "Holy Grail" of energy. 

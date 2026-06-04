@@ -4,71 +4,70 @@ title: "The sublimes of specious fusion concepts"
 published: False
 ---
 
-[**sublime**](https://www.merriam-webster.com/dictionary/sublime) 
+[**sublime**](https://www.merriam-webster.com/dictionary/sublime) /səˈblaɪm/ *adjective*
 
-/səˈblaɪm/
-
-*adjective*
-
-tending to inspire awe usually because of elevated quality (as of beauty, nobility, or grandeur) or transcendent excellence
+tending to inspire awe usually because of elevated quality
 
 # The sublimes of specious fusion concepts
 
-[Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four "sublimes"](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that explain megaprojects:
+[Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four sublimes](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that he found through his research explained the common story arcs of megaprojects:
+
 > * The “technological sublime” describes the excitement engineers and technologists get in pushing the envelope for what is possible in “longest-tallest-fastest” types of projects.
 > * The “political sublime” describes the tendency politicians have for constructing monumental infrastructure to benefit themselves and their causes.
 > * The “economic sublime” describes the delight business people and trade unions get from making lots of money and jobs from megaprojects.
 > * Finally, the “aesthetic sublime” is the pleasure designers and people who appreciate good design derive from building and using iconic and beautiful megaprojects.
 
-In doing my review of various concepts, I realized specious fusion concepts have their own sublimes they use to attract resources.
+In reviewing fusion companies and reactor concepts, I have found a similar pattern. The weak concepts are sold with sublimes: ideas that seem so attractive they can make other hard problems disappear.
 
 ## The compactness sublime
 
-A compact fusion device sounds like the clean answer to the giant fusion projects typified by ITER, NIF, and others. Make it smaller and the costs come down. Make it simple and the timelines shrink. Make it look like a product instead of infrastructure.
+A compact fusion device sounds like the clean answer to the giant fusion projects typified by ITER, NIF, and others. Make it smaller and it will cost less. Make it simple and the timelines shrink. Make it look like a product instead of infrastructure.
 
-No one is building a fusion device bigger than it needs to be for their purposes. The problem is that fusion has fundamental limits to scale. Neutrons need a meter or two of shielding. Thermal plasmas need distance for insulation. Materials have limits to power density, stresses, etc. 
+No one is building a fusion device bigger than it needs to be for their purposes. The problem is that fusion has fundamental limits to scale. Neutrons need a meter or two of shielding. Thermal plasmas need distance for insulation. Materials have limits to power density, stresses, etc.
 
 ## The non-thermal sublime
 
-There are some that believe the laws of nature are like the laws of man, that they can pick which ones to follow, and choose not to follow the [laws of thermodynamics](https://en.wikipedia.org/wiki/Laws_of_thermodynamics). The want to play [Maxwell's demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon). They think they reduce energy losses from ions to electrons. They think they can keep ions non-thermal with minimal recirculating power.
+There are some who believe the laws of nature are like the laws of man, that they can pick which ones to follow, and choose not to follow the [laws of thermodynamics](https://en.wikipedia.org/wiki/Laws_of_thermodynamics). They want to play [Maxwell's demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon). They think they can reduce energy losses from ions to electrons. They think they can keep ions non-thermal with minimal recirculating power.
 
-But physics sets the house rules and the house always wins. [The Rider Thesis](https://dspace.mit.edu/entities/publication/7fa49f57-7e1a-4d6c-8026-008ed3eca441) is the boogeyman to Maxwell's demon. 
+But physics sets the house rules and the house always wins. [The Rider Thesis](https://dspace.mit.edu/entities/publication/7fa49f57-7e1a-4d6c-8026-008ed3eca441) is the boogeyman to Maxwell's demon.
 
 ## The aneutronic sublime
 
-Aneutronic fusion is the clean-fusion dream: no tritium, fewer neutrons, less activation, simpler licensing, and direct energy conversion. Some even go as far to falsely claim it has zero radiation production.
+Aneutronic fusion is the clean-fusion dream: no tritium, fewer neutrons, less activation, simpler licensing, and direct energy conversion. Some even go so far as to falsely claim it has zero radiation production.
 
 It is easy to see the appeal. Tritium breeding is hard. Neutron damage is hard. Remote maintenance is hard.
 
-But a harder fuel does not make the system easier. Aneutronic fuels buy their attractions with much harsher plasma requirements: higher temperatures, better confinement, better impurity control, and tighter radiation-loss limits.
+But a harder fuel does not make the system easier. Aneutronic fuels come with much harder plasma requirements: higher temperatures, better confinement, and better impurity control.
 
 ## The direct-conversion sublime
 
-Fusion is an advanced technology, why shouldn't it have an advanced energy conversion system, on that is [more efficient that just boiling water](https://www.reddit.com/r/sciencememes/comments/1p7193e/boiling_water/)?
+Fusion is an advanced technology; why shouldn't it have an advanced energy conversion system, one that is [more efficient than just boiling water](https://www.reddit.com/r/sciencememes/comments/1p7193e/boiling_water/)?
 
-Much of the energy is release in charged particles, which can then be converted by electric and/or magnetic fields directly into electricity.
+Much of the energy is released in charged particles, which can then be converted by electric and/or magnetic fields directly into electricity.
 
-The problem is that it is hardly as simple as the cartoon picture. Real particles scatter energy. Real plasmas radiate photons. Real collectors live in harsh fields and particle environments. While direct conversion could increase the conversion efficiency to electricity, real physics and engineering constraints far reduce the benifits from what is often sold.
+The problem is that it is hardly as simple as the cartoon picture. Real particles scatter energy. Real plasmas radiate photons. Real collectors live in harsh environments. While direct conversion could increase the conversion efficiency to electricity, real physics and engineering constraints greatly reduce the benefits from what is sold.
 
 ## The simulation sublime
 
 The plots are beautiful. The fields look clean. The particles stay confined. Net energy is one experiment away.
 
-Fusion is a complex, integrated field. All too often simplistic models are use to demonstrate that a clever new concept is the next ideal confinement device. In the comprimizes to build a solvable model, important physics is thrown out. The device never performs nearly as well as the initial models indicated.
+Fusion is a complex, integrated field. All too often, simplistic models are used to demonstrate that a clever new concept is the next ideal confinement device. In the compromises to build a solvable model, important physics is thrown out. The device never performs nearly as well as the initial models indicated.
 
-[All models are wrong. Some are useful.](https://en.wikipedia.org/wiki/All_models_are_wrong) The least useful model is the one that works because it excludes the physics that would kill the concept. 
+[All models are wrong. Some are useful.](https://en.wikipedia.org/wiki/All_models_are_wrong) The least useful model is the one that works because it excludes the physics that would kill the concept.
 
 ## The founder sublime
 
 Investors are vulnerable to a good founder story. They love the outsider genius, the person who sees what the establishment missed.
 
-Fusion is one of the most complex endevours humanity has undertaken. There is not a signle person on Earth who has a complete picture of how fusion energy will turn out. And the romantic idea of an outsider displacing the field is unlikely, they all come in missing some of the important fundamentals. Many of which are summarized in other sublimes here.
+Fusion is one of the most complex endeavors humanity has undertaken. There is not a single person on Earth who has a complete picture of how fusion energy will turn out. The romantic idea of an outsider displacing the field is unlikely; they all come in missing some of the important fundamentals, many of which are summarized in other sublimes here.
+
+The useful question is whether the concept survives review after the founder leaves the room.
 
 ## The secrecy sublime
 
-A company says the key breakthrough is proprietary. They cannot share the information with reviewers, even under NDA. They are scared that it will be stollen.
+A company says the key breakthrough is proprietary. They cannot share the information with reviewers, even under NDA. They are scared that it will be stolen.
 
-But, rather than being a sign of the founder being on to something and good intellectual property management, this is instead a sign of weekness of the idea. An inability to stand up to informed outside scrutiny.
+Fusion companies should protect real intellectual property. But if the central physics claim cannot be checked under NDA by competent reviewers, secrecy is no longer protection; it is insulation from reality.
 
 ## The incumbent-failure sublime
 
@@ -94,4 +93,10 @@ For an investor, that may be reasonable. A $10M experiment can be a cheap way to
 
 ## The conclusion
 
-Fusion energy is its own sublime, often sold as the "Holy Grail" of energy. 
+Every specious fusion concept has its own selection of sublimes. The machine is small. The ions are non-thermal. The fuel is clean. The conversion is direct. The simulation works. The founder saw what others missed. The details are secret. The next experiment is cheap.
+
+None of these are bad by themselves; some are in fact good.
+
+Fusion energy is its own sublime, often sold as the Holy Grail of energy. It should inspire awe; it would be one of the great achievements of humanity.
+
+That is why the field needs discipline. The sublimes cannot replace the integrated hard physics and engineering needed to make fusion work.

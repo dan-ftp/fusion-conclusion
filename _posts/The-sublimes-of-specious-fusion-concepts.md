@@ -1,35 +1,41 @@
 ---
 layout: post
 title: "The sublimes of specious fusion concepts"
-published: False
+published: True
 ---
+
+<img src="https://www.fusionconclusion.com/content/images/2026/sublime-sun.png" alt="sublime fusion" width="300">
+
+# The sublimes of specious fusion concepts
 
 [**sublime**](https://www.merriam-webster.com/dictionary/sublime) /səˈblaɪm/ *adjective*
 
 tending to inspire awe usually because of elevated quality
 
-# The sublimes of specious fusion concepts
+[**specious**](https://www.merriam-webster.com/dictionary/specious) /ˈspiːʃəs/ *adjective*
 
-[Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four sublimes](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that explain the common story arcs of megaprojects:
+having a false look of truth or genuineness; having deceptive attraction or allure
 
-> * The “technological sublime” describes the excitement engineers and technologists get in pushing the envelope for what is possible in “longest-tallest-fastest” types of projects.
-> * The “political sublime” describes the tendency politicians have for constructing monumental infrastructure to benefit themselves and their causes.
-> * The “economic sublime” describes the delight business people and trade unions get from making lots of money and jobs from megaprojects.
-> * Finally, the “aesthetic sublime” is the pleasure designers and people who appreciate good design derive from building and using iconic and beautiful megaprojects.
+[Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four sublimes](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that explain the common story arcs of megaprojects and "seduce decision makers to underestimate hidden risks, and to overestimate benefits":
 
-These sublimes convince decision makers to underestimate risks, and to overestimate returns from megaprojects. In reviewing fusion companies and reactor concepts, I have found a similar pattern. In particular, the weak concepts are sold with sublimes: ideas that seem so attractive they can make other hard problems all but disappear.
+> * The "technological sublime" describes the excitement engineers and technologists get in pushing the envelope for what is possible in "longest-tallest-fastest" types of projects.
+> * The "political sublime" describes the tendency politicians have for constructing monumental infrastructure to benefit themselves and their causes.
+> * The "economic sublime" describes the delight business people and trade unions get from making lots of money and jobs from megaprojects.
+> * Finally, the "aesthetic sublime" is the pleasure designers and people who appreciate good design derive from building and using iconic and beautiful megaprojects.
+
+In reviewing fusion companies and reactor concepts, I have found a similar pattern. There is a set of common sublimes that arise again and again: ideas that seem so attractive they can make other hard problems all but disappear.
 
 ## The compactness sublime
 
 A compact fusion device sounds like the clean answer to the giant fusion projects typified by ITER, NIF, and others. Make it smaller and it will cost less. Make it simple and the timelines shrink. Make it look like a product instead of infrastructure.
 
-No one is building a fusion device bigger than it needs to be for their purposes. The problem is that fusion has fundamental limits to scale. Neutrons need a meter or two of shielding. Thermal plasmas need distance for insulation. Materials have limits to power density, stresses, etc.
+No one is building a fusion device bigger than it needs to be for their purposes. The problem is that fusion has fundamental limits to scale. Neutrons need a meter or two of shielding, even for aneutronic fuels. Thermal plasmas need distance for insulation. Materials have limits to power density, stresses, etc.
 
 ## The non-thermal sublime
 
-There are some who believe the laws of nature are like the laws of man, that they can pick which ones to follow, and choose not to follow the [laws of thermodynamics](https://en.wikipedia.org/wiki/Laws_of_thermodynamics). They want to play [Maxwell's demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon). They think they can reduce energy losses from ions to electrons. They think they can keep ions non-thermal with minimal recirculating power.
+There are some who believe the laws of nature are like the laws of man, that they can pick which ones to follow and choose not to follow the [laws of thermodynamics](https://en.wikipedia.org/wiki/Laws_of_thermodynamics). They want to play [Maxwell's demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon). They think they can reduce energy losses from ions to electrons. They think they can keep ions non-thermal with minimal recirculating power.
 
-But physics sets the house rules and the house always wins. [The Rider Thesis](https://dspace.mit.edu/entities/publication/7fa49f57-7e1a-4d6c-8026-008ed3eca441) is the boogeyman to Maxwell's demon.
+But physics sets the house rules and the house always wins. [The Rider Thesis](https://dspace.mit.edu/entities/publication/7fa49f57-7e1a-4d6c-8026-008ed3eca441) is the boogeyman to Maxwell's demon in fusion.
 
 ## The aneutronic sublime
 
@@ -37,7 +43,7 @@ Aneutronic fusion is the clean-fusion dream: no tritium, fewer neutrons, less ac
 
 It is easy to see the appeal. Tritium breeding is hard. Neutron damage is hard. Remote maintenance is hard.
 
-But an aneutronic fuel does not make the system easier. Aneutronic fuels come with much harder plasma requirements: higher temperatures, better confinement, and stringent impurity control. These fuels also always produce neutrons via secondary reactions which make truly aneutronic fusion reactors a fiction.
+But an aneutronic fuel does not make the system easier. Aneutronic fuels come with much harder plasma requirements: higher temperatures, better confinement, and stringent impurity control. These fuels always produce high energy radiation via secondary reactions which make truly aneutronic fusion reactors a fiction.
 
 ## The direct-conversion sublime
 
@@ -45,7 +51,7 @@ Fusion is an advanced technology; why shouldn't it have an advanced energy conve
 
 Much of the energy is released in charged particles, which can then be converted by electric and/or magnetic fields directly into electricity.
 
-The problem is that it is hardly as simple as the cartoon picture. Real particles scatter energy. Real plasmas radiate photons. Real collectors live in harsh environments. While direct conversion could increase the conversion efficiency to electricity, the realities of physics and engineering constraints greatly reduce the benefits from what is purported.
+The problem is that it is hardly as simple as the cartoon picture. Real particles scatter energy. Real plasmas radiate photons. Real collectors need to survive harsh environments. While direct conversion could increase the conversion efficiency of fusion energy to electricity, the realities of physics and engineering constraints greatly reduce the benefits from what is purported.
 
 ## The simulation sublime
 
@@ -81,15 +87,15 @@ The magnets are the issue. The laser is the issue. The fuel is the issue. The ma
 
 Fusion is a coupled system. Higher field helps confinement but increases stress and shielding challenges. Smaller size reduces capital cost but increases wall loading.
 
-There are no isolated miracles in fusion.
+There are no isolated issues or miracles in fusion.
 
 ## The cheap-option sublime
 
 Some concepts survive because the next experiment is cheap enough to fund.
 
-For an investor, that may be reasonable. A $10M experiment can be a cheap way to buy optionality on a huge outcome. It is also a form of [Pascal's wager](https://en.wikipedia.org/wiki/Pascal%27s_wager).
+For an investor, that may be reasonable. A $10M experiment can be a cheap way to buy optionality on a huge outcome. It is also a form of [Pascal's wager](https://en.wikipedia.org/wiki/Pascal%27s_wager), a bet on a low-probability, high-impact outcome.
 
-“Cheap to test” does not mean “more likely to become a power plant.” It means cheap to test.
+While "expensive to test" does mean "less likely to become a power plant," the converse of "cheap to test" does not mean "more likely to become a power plant." It means cheap to test.
 
 ## The conclusion
 
@@ -97,6 +103,4 @@ Every specious fusion concept has its own selection of sublimes. The machine is 
 
 All too often, these sublimes seduce investors into funding concepts that will fail. The sublimes cannot replace the integrated and complicated physics and engineering needed to make fusion work. Fusion is hard. That is why the field needs discipline. 
 
-Ultimately, fusion energy is its own sublime. Once realized, it will be one of the great achievements of humanity. Fusion should inspire awe; but don't let its aura blind you into making a financial decision based on one of these sublimes. 
-
-
+Ultimately, fusion energy is its own sublime. Once realized, it will be one of the great achievements of humanity. Fusion should inspire awe; but don't let its aura blind you into making a financial decision based on one of these sublimes without understanding the whole picture.

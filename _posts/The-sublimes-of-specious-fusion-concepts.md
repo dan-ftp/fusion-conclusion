@@ -10,14 +10,14 @@ tending to inspire awe usually because of elevated quality
 
 # The sublimes of specious fusion concepts
 
-[Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four sublimes](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that he found through his research explained the common story arcs of megaprojects:
+[Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four sublimes](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that explain the common story arcs of megaprojects:
 
 > * The “technological sublime” describes the excitement engineers and technologists get in pushing the envelope for what is possible in “longest-tallest-fastest” types of projects.
 > * The “political sublime” describes the tendency politicians have for constructing monumental infrastructure to benefit themselves and their causes.
 > * The “economic sublime” describes the delight business people and trade unions get from making lots of money and jobs from megaprojects.
 > * Finally, the “aesthetic sublime” is the pleasure designers and people who appreciate good design derive from building and using iconic and beautiful megaprojects.
 
-In reviewing fusion companies and reactor concepts, I have found a similar pattern. The weak concepts are sold with sublimes: ideas that seem so attractive they can make other hard problems disappear.
+These sublimes convince decision makers to underestimate risks, and to overestimate returns from megaprojects. In reviewing fusion companies and reactor concepts, I have found a similar pattern. In particular, the weak concepts are sold with sublimes: ideas that seem so attractive they can make other hard problems all but disappear.
 
 ## The compactness sublime
 
@@ -33,11 +33,11 @@ But physics sets the house rules and the house always wins. [The Rider Thesis](h
 
 ## The aneutronic sublime
 
-Aneutronic fusion is the clean-fusion dream: no tritium, fewer neutrons, less activation, simpler licensing, and direct energy conversion. Some even go so far as to falsely claim it has zero radiation production.
+Aneutronic fusion is the clean-fusion dream: no tritium, fewer neutrons, less activation, simpler licensing, and direct energy conversion. Some even go so far as to falsely claim it has zero radiation production. 
 
 It is easy to see the appeal. Tritium breeding is hard. Neutron damage is hard. Remote maintenance is hard.
 
-But a harder fuel does not make the system easier. Aneutronic fuels come with much harder plasma requirements: higher temperatures, better confinement, and better impurity control.
+But an aneutronic fuel does not make the system easier. Aneutronic fuels come with much harder plasma requirements: higher temperatures, better confinement, and stringent impurity control. These fuels also always produce neutrons via secondary reactions which make truly aneutronic fusion reactors a fiction.
 
 ## The direct-conversion sublime
 
@@ -45,13 +45,13 @@ Fusion is an advanced technology; why shouldn't it have an advanced energy conve
 
 Much of the energy is released in charged particles, which can then be converted by electric and/or magnetic fields directly into electricity.
 
-The problem is that it is hardly as simple as the cartoon picture. Real particles scatter energy. Real plasmas radiate photons. Real collectors live in harsh environments. While direct conversion could increase the conversion efficiency to electricity, real physics and engineering constraints greatly reduce the benefits from what is sold.
+The problem is that it is hardly as simple as the cartoon picture. Real particles scatter energy. Real plasmas radiate photons. Real collectors live in harsh environments. While direct conversion could increase the conversion efficiency to electricity, the realities of physics and engineering constraints greatly reduce the benefits from what is purported.
 
 ## The simulation sublime
 
 The plots are beautiful. The fields look clean. The particles stay confined. Net energy is one experiment away.
 
-Fusion is a complex, integrated field. All too often, simplistic models are used to demonstrate that a clever new concept is the next ideal confinement device. In the compromises to build a solvable model, important physics is thrown out. The device never performs nearly as well as the initial models indicated.
+All too often, simplistic models are used to demonstrate that a clever new fusion concept is the next ideal confinement device. In the compromises to build a solvable model, important physics is thrown out. The device never performs nearly as well as the initial models indicated.
 
 [All models are wrong. Some are useful.](https://en.wikipedia.org/wiki/All_models_are_wrong) The least useful model is the one that works because it excludes the physics that would kill the concept.
 
@@ -95,8 +95,8 @@ For an investor, that may be reasonable. A $10M experiment can be a cheap way to
 
 Every specious fusion concept has its own selection of sublimes. The machine is small. The ions are non-thermal. The fuel is clean. The conversion is direct. The simulation works. The founder saw what others missed. The details are secret. The next experiment is cheap.
 
-None of these are bad by themselves; some are in fact good.
+All too often, these sublimes seduce investors into funding concepts that will fail. The sublimes cannot replace the integrated and complicated physics and engineering needed to make fusion work. Fusion is hard. That is why the field needs discipline. 
 
-Fusion energy is its own sublime, often sold as the Holy Grail of energy. It should inspire awe; it would be one of the great achievements of humanity.
+Ultimately, fusion energy is its own sublime. Once realized, it will be one of the great achievements of humanity. Fusion should inspire awe; but don't let its aura blind you into making a financial decision based on one of these sublimes. 
 
-That is why the field needs discipline. The sublimes cannot replace the integrated hard physics and engineering needed to make fusion work.
+

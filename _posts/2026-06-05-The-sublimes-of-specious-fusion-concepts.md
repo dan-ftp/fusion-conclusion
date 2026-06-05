@@ -12,9 +12,13 @@ published: True
 
 tending to inspire awe usually because of elevated quality
 
+---
+
 [**specious**](https://www.merriam-webster.com/dictionary/specious) /ˈspiːʃəs/ *adjective*
 
 having a false look of truth or genuineness; having deceptive attraction or allure
+
+---
 
 [Bent Flyvbjerg](https://en.wikipedia.org/wiki/Bent_Flyvbjerg), an academic expert on megaprojects, wrote about the [four sublimes](https://www.pmi.org/learning/library/what-you-should-know-megaprojects-11656) that explain the common story arcs of megaprojects and "seduce decision makers to underestimate hidden risks, and to overestimate benefits":
 

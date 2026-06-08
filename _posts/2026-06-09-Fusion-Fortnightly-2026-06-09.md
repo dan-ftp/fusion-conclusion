@@ -64,3 +64,18 @@ Spring Valley Acquisition Corp. III submitted an **amended Form F-4 (Amended For
 [U.S. Department of Energy-backed Antares advanced reactor at Idaho National Laboratory reached first criticality](https://apnews.com/article/advanced-nuclear-reactor-criticality-inl-692ff3056c02a8fa9dc6f035743a93d9).
 
 
+
+
+[Rich Huang of RichRich Capital LLC buys 5.14 % of Spring Valley Acquisition Corp. III, the General Fusion SPAC-to-be](https://www.sec.gov/Archives/edgar/data/2074850/000092189526001518/xslSCHEDULE_13G_X02/primary_doc.xml). Not clear who this Rich is from public information, but could he be ["the world's richest boy](https://en.wikipedia.org/wiki/Richie_Rich_(film)) all grown up?
+
+[General Fusion ammends its SEC Form F-4](https://www.sec.gov/Archives/edgar/data/2074850/000110465926070480/0001104659-26-070480-index.htm) with some financial updates.
+
+[Realta announced DOE's approval of their preconceptual design magnetic mirror Hammir](https://www.linkedin.com/posts/earlier-this-spring-we-put-the-hammir-down-share-7469795214421872641-HdR0/). The design point has 20+ T mirror coils (enabled by HTS), 500 MW fusion power, and Q_sci>5.
+
+[Hinetics completed the build of CRUISE, our 5 MW superconducting electric motor prototype](https://www.linkedin.com/posts/superconductivity-electricmachines-energyinnovation-share-7465092041824280576-C7Oj). 
+
+[Focused Energy raises $240M Series A](https://www.focused-energy.co/news-release/focused-energy-sets-a-new-benchmark-240-million-for-the-largest-series-a-financing-in-the-global-fusion-industry). It was supported by [Rothschild & Co](https://www.linkedin.com/posts/eva-maria-wiecko-559b642_globaladvisory-energy-sustainability-share-7467172816451366914-vsb5/). They're emphasizing that it is the "the largest fully secured Series A financing in the global fusion industry" and confusingly sometimes leaving out the "fully secured" part. That bit is in there because both the Inertia and Pacific Fusion Series A rounds were much larger, but they were tranched based on milestones.
+
+[Thea Energy raises $100M Series B](https://thea.energy/press-release/thea-energy-raises-100-million-series-b-funding-to-build-scalable-fusion-power-plants/).
+
+[Avalanche Energy plans to IPO](https://www.axios.com/pro/climate-deals/2026/05/27/avalanche-energy-jefferies-fusion-ipo). 

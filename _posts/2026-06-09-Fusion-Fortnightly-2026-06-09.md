@@ -10,6 +10,14 @@ Helion, Focused Energy, and Thea Energy raise big rounds. Pacific Fusion passes 
 
 ---
 
+## Fusion sublimes addendum
+
+It seems some people did not get an important point in my [The sublimes of specious fusion concepts](https://www.fusionconclusion.com/The-sublimes-of-specious-fusion-concepts/) article last week. The sublimes are (1) not limited to specious fusion concepts and (2) not all negative in and of themselves. In fact, many fusion companies that I consider credible have some number of the sublimes and that is a fine thing. The major point missed was that one should not be distracted by the sublimes in considering fusion companies/concepts, and instead should look at the whole, detailed picture of what is being proposed. But, perhaps ain't nobody got time for that.
+
+Also, I was disappointed no one got the image reference for that article. I suppose none of my readers listened to their local alt rock radio station while assembling thousands of dinning room chairs. [Sublime](https://en.wikipedia.org/wiki/Sublime_(band)) is a ska punk band with a [drugged-up sun logo](https://www.sublimelbc.com/). I had AI clean it up, as this is a professional newsletter...
+
+---
+
 ## Companies
 
 [Helion raises $465M Series G](https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power). This brings Helion's total raised to $1.5B, half of what CFS has raised. The valuation puts Helion in the same category as [Rippling, Magic Leap, Discord, and Mistral AI](https://news.crunchbase.com/unicorn-company-list/) and ~50% higher than comparable companies in the energy space like [CFS](https://news.crunchbase.com/unicorn-company-list/), [Fervo](https://stockanalysis.com/stocks/frvo/market-cap/), and [Oklo](https://stockanalysis.com/stocks/oklo/market-cap), the latter two of which are public. Feels a bit high to me, but what do I know.

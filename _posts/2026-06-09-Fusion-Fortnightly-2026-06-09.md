@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fusion Fortnightly | 2026-06-09"
-published: False
+published: True
 ---
 
 *No fluff, all facts.*

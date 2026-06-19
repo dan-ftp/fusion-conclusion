@@ -1,0 +1,2955 @@
+<style>
+  .cf-timeline-shell,
+  .cf-timeline-shell * {
+    box-sizing: border-box;
+  }
+
+  .cf-timeline-shell {
+    width: 100%;
+    max-width: 980px;
+    margin: 2.25rem auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #0f172a;
+  }
+
+  .cf-era {
+    margin: 1rem 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 12px 34px rgba(16, 24, 40, 0.06);
+    overflow: hidden;
+  }
+
+  .cf-era__summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.05rem 1.15rem;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .cf-era__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .cf-era__summary::marker {
+    content: "";
+  }
+
+  .cf-era__summary:focus-visible {
+    outline: 3px solid rgba(36, 87, 255, 0.26);
+    outline-offset: -3px;
+  }
+
+  .cf-era__summary-main {
+    min-width: 0;
+  }
+
+  .cf-era__label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.42rem;
+    border-radius: 999px;
+    padding: 0.18rem 0.55rem;
+    background: rgba(36, 87, 255, 0.08);
+    color: #2457ff;
+    font-size: 0.72rem;
+    line-height: 1.2;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .cf-era__title {
+    margin: 0;
+    font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+    line-height: 1.2;
+    color: #0f172a;
+  }
+
+  .cf-era__dek {
+    margin: 0.38rem 0 0;
+    max-width: 760px;
+    font-size: 0.94rem;
+    line-height: 1.45;
+    color: #5b6472;
+  }
+
+  .cf-era__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: flex-end;
+    min-width: 170px;
+  }
+
+  .cf-era__pill {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 999px;
+    padding: 0.18rem 0.55rem;
+    border: 1px solid #e5e7eb;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 0.74rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .cf-era__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.85rem;
+    height: 1.85rem;
+    margin-left: 0.25rem;
+    border-radius: 999px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    color: #2457ff;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 650;
+  }
+
+  .cf-era__icon::before {
+    content: "+";
+  }
+
+  .cf-era[open] > .cf-era__summary .cf-era__icon::before {
+    content: "−";
+  }
+
+  .cf-era__body {
+    padding: 0 1.15rem 1.15rem;
+    border-top: 1px solid #eef2f7;
+  }
+
+  .cf-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 1.75rem auto 0;
+    color: #0f172a;
+  }
+
+  .cf-timeline__svg,
+  .cf-timeline__cards {
+    position: absolute;
+    inset: 0;
+  }
+
+  .cf-timeline__svg {
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .cf-timeline__axis {
+    stroke: #d7dde5;
+    stroke-width: 2;
+  }
+
+  .cf-timeline__tick-line,
+  .cf-timeline__connector {
+    stroke: #d7dde5;
+    stroke-width: 2;
+  }
+
+  .cf-timeline__tick-circle {
+    fill: #ffffff;
+    stroke: #2457ff;
+    stroke-width: 2;
+  }
+
+  .cf-timeline__event-dot {
+    fill: #2457ff;
+  }
+
+  .cf-timeline__tick-label {
+    fill: #0f172a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .cf-timeline__event {
+    position: absolute;
+    top: 0;
+  }
+
+  .cf-timeline__card {
+    padding: 1rem 1.1rem;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(16, 24, 40, 0.06);
+  }
+
+  .cf-timeline__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.55rem;
+  }
+
+  .cf-timeline__badge,
+  .cf-timeline__year {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0.16rem 0.5rem;
+    font-size: 0.72rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .cf-timeline__badge {
+    color: #2457ff;
+    background: rgba(36, 87, 255, 0.08);
+  }
+
+  .cf-timeline__year {
+    color: #475569;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+  }
+
+  .cf-timeline__card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0f172a;
+  }
+
+  .cf-timeline__card h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .cf-timeline__card h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .cf-timeline__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .cf-timeline__links a {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #2457ff;
+    text-decoration: none;
+  }
+
+  .cf-timeline__links a:hover {
+    text-decoration: underline;
+  }
+
+  .cf-timeline__card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #5b6472;
+  }
+
+  .cf-timeline__event.is-left .cf-timeline__card {
+    text-align: right;
+  }
+
+  .cf-timeline__event.is-left .cf-timeline__meta,
+  .cf-timeline__event.is-left .cf-timeline__links {
+    justify-content: flex-end;
+  }
+
+  .cf-timeline__event.is-single .cf-timeline__card {
+    text-align: left;
+  }
+
+  .cf-timeline__fallback,
+  .cf-timeline__error,
+  .cf-timeline__empty,
+  .cf-timeline__loading {
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(16, 24, 40, 0.06);
+  }
+
+  .cf-timeline__loading {
+    color: #5b6472;
+  }
+
+  @media (max-width: 640px) {
+    .cf-timeline-shell {
+      margin: 1.5rem auto;
+    }
+
+    .cf-era__summary {
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+      padding: 1rem;
+    }
+
+    .cf-era__meta {
+      justify-content: flex-start;
+      min-width: 0;
+    }
+
+    .cf-era__icon {
+      position: absolute;
+      top: 0.9rem;
+      right: 0.9rem;
+    }
+
+    .cf-era__summary-main {
+      padding-right: 2.1rem;
+    }
+
+    .cf-era__body {
+      padding: 0 0.85rem 0.95rem;
+    }
+  }
+</style>
+
+<div id="china-fusion-timeline-d3" class="cf-timeline-shell">
+  <noscript>
+    <div class="cf-timeline__fallback">
+      This timeline uses JavaScript for responsive layout. If JavaScript is disabled, use the static timeline version instead.
+    </div>
+  </noscript>
+</div>
+
+<script type="application/json" id="china-fusion-timeline-d3-data">
+[
+  {
+    "id": 1,
+    "year": 1956,
+    "side": "left",
+    "title": "Long-Term Plan for the Development of Science and Technology",
+    "links": [
+      {
+        "href": "https://zh.wikisource.org/wiki/1956-1967%E5%B9%B4%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E8%BF%9C%E6%99%AF%E8%A7%84%E5%88%92%E7%BA%B2%E8%A6%81",
+        "text": "Long-Term Plan for the Development of Science and Technology"
+      }
+    ],
+    "body": "\"... learn to use the nuclear fusion of heavy hydrogen in water as a source of power ... research on the control of thermonuclear reactions should be carried out\"",
+    "group": "Policy"
+  },
+  {
+    "id": 2,
+    "year": 1958,
+    "side": "right",
+    "title": "Leigong",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html",
+        "text": "Leigong"
+      }
+    ],
+    "body": "Z-pinch that was one of China’s earliest fusion experiments. While a small-scale device (only a few thousand joules of energy), this has China entering the fusion race around the same time as much of the rest of the major countries.",
+    "group": "Experiment"
+  },
+  {
+    "id": 3,
+    "year": 1958,
+    "side": "right",
+    "title": "Xiaolong",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html",
+        "text": "Xiaolong"
+      }
+    ],
+    "body": "A pulsed-compression magnetic-mirror device with magnetic fields up to 1.6 T.",
+    "group": "Experiment"
+  },
+  {
+    "id": 4,
+    "year": 1961,
+    "side": "left",
+    "title": "Second Ministry controlled-thermonuclear-reaction major research project",
+    "links": [
+      {
+        "href": "https://www.hljszw.org.cn/home/book/info/get_id/110079.html",
+        "text": "Heilongjiang provincial history"
+      }
+    ],
+    "body": "A Heilongjiang provincial history records that the Chinese Academy of Sciences Northeast Institute of Technical Physics, established in 1961, undertook a major research project on controlled thermonuclear reactions assigned by the Second Ministry of Machine Building. This is an early ministry-level fusion research assignment before the later Third-FYP controlled-fusion planning, though it is not a full national plan document.",
+    "group": "Policy"
+  },
+  {
+    "id": 5,
+    "year": 1962,
+    "side": "right",
+    "title": "Jiaoxiang-1",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html",
+        "text": "Jiaoxiang-1"
+      }
+    ],
+    "body": "A theta-pinch experiment with little public information.",
+    "group": "Experiment"
+  },
+  {
+    "id": 6,
+    "year": 1963,
+    "side": "left",
+    "title": "Science and Technology Development Plan",
+    "links": [
+      {
+        "href": "https://zh.wikisource.org/wiki/1963-1972%E5%B9%B4%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92%E7%BA%B2%E8%A6%81",
+        "text": "Science and Technology Development Plan"
+      }
+    ],
+    "body": "\"... the prospect of achieving atomic fusion energy is foreseeable.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 7,
+    "year": 1964,
+    "side": "left",
+    "title": "Third Five-Year Plan",
+    "links": [
+      {
+        "href": "https://cpc.people.com.cn/BIG5/n1/2023/1011/c443712-40092793.html",
+        "text": "Third Five-Year Plan"
+      }
+    ],
+    "body": "Li Zhengwu, \"a pioneer in the field of nuclear fusion energy development in China ... presided over the preparation of the [third] five-year plan for controlled nuclear fusion research.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 8,
+    "year": 1964,
+    "side": "right",
+    "title": "Jiaoxiang-2",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html",
+        "text": "Jiaoxiang-2"
+      }
+    ],
+    "body": "A follow-on theta-pinch experiment.",
+    "group": "Experiment"
+  },
+  {
+    "id": 9,
+    "year": 1965,
+    "side": "right",
+    "title": "Southwestern Institute of Physics (SWIP)",
+    "links": [
+      {
+        "href": "https://www.swip.ac.cn/swip/english66/about_swip/index.html",
+        "text": "Southwestern Institute of Physics (SWIP)"
+      }
+    ],
+    "body": "SWIP was established in 1965 as China's first nuclear-fusion research institute.",
+    "group": "Institution"
+  },
+  {
+    "id": 10,
+    "year": 1970,
+    "side": "left",
+    "title": "Fourth-FYP approval path for 303 and 451 fusion-device projects",
+    "links": [
+      {
+        "href": "https://mmcs.cast.org.cn/kxjfc/kxjfc/lzw/nb/art/2023/art_1e15f9a302694540848956b9a7f9e7d7.html",
+        "text": "Li Zhengwu chronology"
+      },
+      {
+        "href": "https://mmcs.cast.org.cn/kxjfc/kxjfc/py/bd4982/art/2023/art_729a1f03bee24524aa0b677191125fa2.html",
+        "text": "Pan Yuan profile"
+      }
+    ],
+    "body": "Chinese scientist-biography sources record the 303 steady-state magnetic-mirror project and 451 tokamak project as Fourth-FYP-era state-backed fusion-device projects. The Li Zhengwu chronology says the 303 and 451 projects were approved by the State Planning Commission and the National Defense Science and Technology Commission, and that Southwest 585 Institute was listed as a Fourth Five-Year Plan national key construction unit; it also says the 451 project received formal State Planning Commission approval on October 6. A Pan Yuan profile gives a slightly different chronology, saying the tokamak shift was approved by the Second Ministry by the end of 1970 and formally issued by the State Planning Commission in 1972 with total investment of 65 million yuan. Taken together, the sources support treating 303 and 451 as state-backed Fourth-FYP construction projects, while leaving the exact approval sequence qualified.",
+    "group": "Policy"
+  },
+  {
+    "id": 11,
+    "year": 1971,
+    "side": "right",
+    "title": "Lingyun",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html",
+        "text": "Lingyun"
+      }
+    ],
+    "body": "One of China's earliest stellarator devices.",
+    "group": "Experiment"
+  },
+  {
+    "id": 12,
+    "year": 1978,
+    "side": "left",
+    "title": "Outline of the National Science and Technology Development Plan",
+    "links": [
+      {
+        "href": "https://www.93.gov.cn/zhuanti/kjxg/lsqk/lsqk4.htm",
+        "text": "Outline of the National Science and Technology Development Plan"
+      }
+    ],
+    "body": "\"Key scientific and technological research projects ... Research on controlled thermonuclear fusion, establishment of a controlled thermonuclear fusion experimental device.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 13,
+    "year": 1978,
+    "side": "left",
+    "title": "State Planning Commission approval of CAS fusion experimental facilities",
+    "links": [
+      {
+        "href": "https://www.cas.cn/zj/ys1/bn/200909/t20090928_2529239.shtml",
+        "text": "Chinese Academy of Sciences 1978 history"
+      }
+    ],
+    "body": "As part of a state push to modernize experimental facilities, the State Planning Commission approved 14 large and medium CAS projects by the end of 1978. For large controlled-thermonuclear-reaction experimental facilities, it approved Anhui Institute of Optics' controlled-experiment station to establish the No. 8 device, a tokamak, to narrow the gap with international levels. The same CAS account says China would actively carry out laser nuclear fusion and other route-exploration research to create conditions for opening up new energy.",
+    "group": "Policy"
+  },
+  {
+    "id": 14,
+    "year": 1978,
+    "side": "right",
+    "title": "Institute of Plasma Physics, Chinese Academy of Sciences (ASIPP)",
+    "links": [
+      {
+        "href": "https://english.hf.cas.cn/r/ResearchDivisions/IPP/",
+        "text": "Institute of Plasma Physics, Chinese Academy of Sciences (ASIPP)"
+      }
+    ],
+    "body": "Founded to research tokamaks for fusion energy.",
+    "group": "Institution"
+  },
+  {
+    "id": 15,
+    "year": 1980,
+    "side": "right",
+    "title": "SWIP superconducting magnetic mirror confinement apparatus",
+    "links": [
+      {
+        "href": "https://snf.ieeecsc.org/files/ieeecsc/slides/RN27.pdf",
+        "text": "History of Applied Superconductivity Research in China"
+      }
+    ],
+    "body": "This early Southwestern Institute of Physics magnetic-mirror program was a superconducting magnetic mirror confinement apparatus for nuclear-fusion research. A superconductivity-history review says Wang Kuiwu and others at SWIP began developing the apparatus in 1970, that it used two superconducting solenoids separated by 506 mm, and that the testing apparatus was completed and put into test in 1980 after roughly 10 years of work. I would use 1980 as the timeline year because that is the verified completion / test date; public sources do not give modern plasma-performance parameters.",
+    "group": "Experiment"
+  },
+  {
+    "id": 16,
+    "year": 1983,
+    "side": "left",
+    "title": "Nuclear Energy Development Technology Policy Meeting",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240717_1081912.html",
+        "text": "Nuclear Energy Development Technology Policy Meeting"
+      }
+    ],
+    "body": "\"Chinese Nuclear Society and China National Nuclear Corporation laid out a three-step plan for the development of nuclear energy: thermal fission reactors, fast fission reactors, and fusion reactors.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 17,
+    "year": 1984,
+    "side": "right",
+    "title": "HL-1",
+    "links": [
+      {
+        "href": "https://www.swip.ac.cn/swip/english66/about_swip/index.html",
+        "text": "HL-1"
+      }
+    ],
+    "body": "The first large-scale tokamak in China.",
+    "group": "Experiment"
+  },
+  {
+    "id": 18,
+    "year": 1984,
+    "side": "right",
+    "title": "HT-6B",
+    "links": [
+      {
+        "href": "https://www-pub.iaea.org/MTCD/Publications/PDF/CRCP-FUS-001webRev.pdf",
+        "text": "IAEA World Survey of Fusion Devices 2022"
+      },
+      {
+        "href": "https://www.sciencedirect.com/science/article/abs/pii/S0920379601001867",
+        "text": "Fusion activities in China"
+      }
+    ],
+    "body": "HT-6B was an early ASIPP small conventional tokamak and one of the predecessors to HT-6M, HT-7, and EAST. The IAEA World Survey says the IR-T1 tokamak in Iran was based on HT-6B, which was originally built in China in 1984; it lists representative HT-6B / IR-T1 parameters of major radius 0.45 m, minor radius 0.125 m, plasma current 0.04 MA, toroidal field 0.9 T, and pulse length 0.03 s. A China fusion review separately identifies HT-6B as part of ASIPP’s early tokamak program.",
+    "group": "Experiment"
+  },
+  {
+    "id": 19,
+    "year": 1985,
+    "side": "right",
+    "title": "Laser-12 (also known as Shenguang and SG-I)",
+    "links": [
+      {
+        "href": "https://www.researching.cn/ArticlePdf/m00001/2010/37/9/006.pdf",
+        "text": "Laser-12 (later Shenguang and then SG-I)"
+      }
+    ],
+    "body": "China's first major laser fusion experiment, located at the High-Power Laser Physics Joint Laboratory. Two-laser beam facility with laser energy up to 2 kJ.",
+    "group": "Experiment"
+  },
+  {
+    "id": 20,
+    "year": 1985,
+    "side": "right",
+    "title": "HT-6M",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/abs/pii/S0920379601001867",
+        "text": "HT-6M"
+      },
+      {
+        "href": "https://www.osti.gov/etdeweb/servlets/purl/20047794",
+        "text": "HT-6M pellet-injection parameters"
+      }
+    ],
+    "body": "HT-6M was ASIPP’s upgraded small tokamak and is described in the fusion literature as having run since 1985. Published descriptions give HT-6M a major radius of about 0.65 m and minor radius of about 0.2 m, with heating and current-drive work including a 1 MW ICRH system and lower-hybrid current drive; pellet-fueling papers report typical HT-6M electron temperatures around 500 eV, making it an important pre-HT-7 platform for heating, fueling, and tokamak-operations development.",
+    "group": "Experiment"
+  },
+  {
+    "id": 21,
+    "year": 1986,
+    "side": "left",
+    "title": "863 Program begins, later including fusion-fission hybrid and ICF work",
+    "links": [
+      {
+        "href": "https://www.qstheory.cn/2021-03/19/c_1127228818.htm",
+        "text": "863 Program history"
+      },
+      {
+        "href": "https://www.muhn.edu.cn/xgb/info/1095/1547.htm",
+        "text": "863 energy-field advanced reactor reference"
+      },
+      {
+        "href": "https://www.tsinghua.org.cn/info/1951/37759.htm",
+        "text": "Li Zhengwu profile"
+      }
+    ],
+    "body": "The national 863 Program was approved in 1986 and formally implemented in 1987 as China's strategic high-technology R&D program. Its pre-2000 fusion relevance appears first through advanced nuclear-reactor and fusion-fission hybrid work, with later sources describing the 863 energy field as covering fast reactors, high-temperature gas-cooled reactors, and fusion-fission hybrid reactors. Li Zhengwu's fusion-fission hybrid concept was later listed by the national 863 Program as an advanced nuclear-reactor topic in the energy field. Treat this as fusion-adjacent unless the timeline explicitly includes hybrid reactor policy.",
+    "group": "Policy"
+  },
+  {
+    "id": 22,
+    "year": 1990,
+    "side": "left",
+    "title": "Controlled fusion described as a national long-term planning key project",
+    "links": [
+      {
+        "href": "https://cn.govopendata.com/renminribao/1990/1/14/8/",
+        "text": "People's Daily, January 14, 1990"
+      }
+    ],
+    "body": "A People's Daily republication of Wang Ganchang's January 1990 Guangming Daily article stated that controlled thermonuclear fusion research would make major progress over the following decade and that controlled nuclear-fusion research had already been listed as a key project in national long-term planning. This is useful evidence of policy status, but the article does not name the underlying plan document.",
+    "group": "Policy"
+  },
+  {
+    "id": 23,
+    "year": 1991,
+    "side": "left",
+    "title": "HT-7 project approval and national major-science-engineering management",
+    "links": [
+      {
+        "href": "https://lssf01.cas.cn/lssf/xwhd/cmsm/200909/t20090918_4508533.html",
+        "text": "CAS Major Science and Technology Infrastructure page"
+      }
+    ],
+    "body": "CAS records that the HT-7 superconducting tokamak was formally initiated in March 1991 after China accepted and radically rebuilt the former Soviet T-7 device. The device was completed in May 1994, and in August 1994 CAS formally approved it for inclusion in national major-science-engineering management. This may be redundant with the existing HT-7 experiment card, but it documents the state-backed project-approval layer behind China's first superconducting tokamak.",
+    "group": "Policy"
+  },
+  {
+    "id": 24,
+    "year": 1993,
+    "side": "left",
+    "title": "863 Program Inertial-Confinement Fusion Theme established",
+    "links": [
+      {
+        "href": "https://casad.cas.cn/mtbd2022/202403/t20240318_5009022.html",
+        "text": "Chinese Academy of Sciences Academicians article"
+      },
+      {
+        "href": "https://www.nea.gov.cn/2011-11/21/c_131259307.htm",
+        "text": "National Energy Administration republication"
+      }
+    ],
+    "body": "After Wang Ganchang, Wang Daheng, and Yu Min wrote to central leaders in 1988, China formed an ICF overall-planning and project-demonstration expert group. In March 1993, the ICF theme expert group directly under the national 863 Program was formally established. He Xiantu later described the 863 ICF theme as setting national ICF development goals and organizing laser drivers and unit technologies, target-physics theory, target-physics experiments, precision diagnostics, and target fabrication as a coordinated five-in-one development system.",
+    "group": "Policy"
+  },
+  {
+    "id": 25,
+    "year": 1994,
+    "side": "right",
+    "title": "HL-1M",
+    "links": [
+      {
+        "href": "https://www.swip.ac.cn/swip/english66/about_swip/index.html",
+        "text": "HL-1M"
+      }
+    ],
+    "body": "The upgraded successor tokamak to HL-1, reaching respectable performance with 5.4 × 10¹⁹ m⁻³ plasma density and 26 ms energy confinement time.",
+    "group": "Experiment"
+  },
+  {
+    "id": 26,
+    "year": 1995,
+    "side": "right",
+    "title": "HT-7",
+    "links": [
+      {
+        "href": "https://english.ipp.cas.cn/syxw/201305/t20130531_274918.html",
+        "text": "HT-7"
+      }
+    ],
+    "body": "China's first superconducting tokamak and the fourth superconducting tokamak worldwide, rebuilt from the former Soviet T-7 tokamak. It achieved a 400 s plasma discharge at modest performance but was a good platform to support long-pulse experiments on EAST.",
+    "group": "Experiment"
+  },
+  {
+    "id": 27,
+    "year": 1997,
+    "side": "right",
+    "title": "SG-II",
+    "links": [
+      {
+        "href": "https://www.researching.cn/ArticlePdf/m00001/2010/37/9/006.pdf",
+        "text": "SG-II"
+      }
+    ],
+    "body": "Next generation laser fusion facility delivering up to 6 kJ of laser power in 1 ns on the fusion target. Later upgraded to almost 20 kJ of laser power.",
+    "group": "Experiment"
+  },
+  {
+    "id": 28,
+    "year": 1998,
+    "side": "left",
+    "title": "HT-7U / EAST approved as a Ninth-FYP national major science project",
+    "links": [
+      {
+        "href": "https://lssf01.cas.cn/lssf/xwhd/cmsm/200909/t20090918_4508533.html",
+        "text": "CAS Major Science and Technology Infrastructure page"
+      }
+    ],
+    "body": "The HT-7U superconducting tokamak nuclear-fusion experimental device, later renamed EAST, was approved in 1998 as a Ninth-FYP national major science project. CAS says the EAST plan marked China's entry into experimental research on large fusion devices under near-reactor-core parameter conditions. In July 1998, the State Planning Commission issued investment document [1998] No. 1303 approving CAS and ASIPP to build HT-7U; in October 2000, it approved the start of construction.",
+    "group": "Policy"
+  },
+  {
+    "id": 29,
+    "year": 2002,
+    "side": "right",
+    "title": "HL-2A",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/abs/pii/S092037960500339X",
+        "text": "HL-2A"
+      }
+    ],
+    "body": "China's first tokamak with a divertor, a critical magnetic system for power exhaust. It was comparable in performance to other \"medium\"-sized tokamaks at 1.65 m major radius, toroidal magnetic field up to 2.8 T, and 11 MW of heating power.",
+    "group": "Experiment"
+  },
+  {
+    "id": 30,
+    "year": 2002,
+    "side": "right",
+    "title": "SUNIST",
+    "links": [
+      {
+        "href": "https://www.sunist.org/wordpress/",
+        "text": "SUNIST"
+      },
+      {
+        "href": "https://startorus.com/planning/",
+        "text": "SUNIST chronology"
+      }
+    ],
+    "body": "SUNIST is Tsinghua University’s spherical tokamak and China’s first spherical-tokamak experiment. It achieved first plasma on November 4, 2002, with about 40 kA plasma current and 0.06 T magnetic field; later public parameters list major / minor radius of 0.3 / 0.23 m, toroidal magnetic field below 0.27 T, plasma current below 120 kA, and electron density around 1 × 10¹⁹ m⁻³.",
+    "group": "Experiment"
+  },
+  {
+    "id": 31,
+    "year": 2006,
+    "side": "left",
+    "title": "11th Five-Year Plan",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/200811/t20081129_65771.html",
+        "text": "11th Five-Year Plan"
+      }
+    ],
+    "body": "\"Taking the opportunity of participating in the construction and research of the International Thermonuclear Experimental Reactor (ITER), we will focus on the research of large-scale superconducting magnet technology, microwave heating and driving technology, neutral beam injection heating technology, cladding technology, large-scale real-time separation and purification of tritium technology, divertor technology, numerical simulation, plasma control and diagnostic technology, and key material technologies required for demonstration reactors as well as deepening research on high-temperature plasma physics and exploring certain non-tokamak pathways with energy as the goal.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 32,
+    "year": 2006,
+    "side": "left",
+    "title": "ITER Joint Implementation Agreement formally signed at the PRC Embassy in France",
+    "links": [
+      {
+        "href": "https://fr.china-embassy.gov.cn/zgzfg/zgsg/kjc/zfkjhz/200611/t20061123_3140653.htm",
+        "text": "ITER Joint Implementation Agreement formally signed at the PRC Embassy in France"
+      }
+    ],
+    "body": "\"China's accession to the ITER programme is both a strategic necessity to fundamentally solve the energy problem and has practical implications in many aspects ... By participating in the construction and operation of ITER and fully mastering relevant knowledge and technologies, my country may catch up with the world's advanced level of magnetic confinement fusion research in a shorter time, greatly accelerating the process of fusion energy development in my country.\" -Minister Xu Guanhua of the Chinese Ministry of Science and Technology",
+    "group": "Policy"
+  },
+  {
+    "id": 33,
+    "year": 2006,
+    "side": "left",
+    "title": "National Medium- and Long-Term Science and Technology Development Plan (2006–2020)",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/200811/t20081129_65774.html",
+        "text": "National Medium- and Long-Term Science and Technology Development Plan (2006–2020)"
+      },
+      {
+        "href": "https://www.nea.gov.cn/2006-03/01/c_131057832.htm",
+        "text": "NEA Implementation Opinion"
+      }
+    ],
+    "body": "China's 2006–2020 national S&T plan placed fusion inside the country's long-term advanced-energy technology portfolio, listing \"magnetic-confinement nuclear fusion\" under \"advanced energy technologies.\" A related NEA implementation opinion reinforced the point by calling for accelerated research on \"frontier technologies such as magnetic-confinement nuclear fusion\" as part of China's strategic energy-technology reserve.",
+    "group": "Policy"
+  },
+  {
+    "id": 34,
+    "year": 2006,
+    "side": "right",
+    "title": "Experimental Advanced Superconducting Tokamak (EAST)",
+    "links": [
+      {
+        "href": "https://www.iter.org/node/20687/chinese-tokamak-east-achieves-first-plasma",
+        "text": "Experimental Advanced Superconducting Tokamak (EAST)"
+      }
+    ],
+    "body": "The largest superconducting tokamak with a divertor at the time it was built. EAST marks China's arrival on fielding world-class fusion experiments; it has been one of the most important long-pulse tokamaks operated to date. With a major radius of 1.9 m and a toroidal field up to 3.5 T, it has sustained high-performance plasmas for over 1,000 seconds.",
+    "group": "Experiment"
+  },
+  {
+    "id": 35,
+    "year": 2006,
+    "side": "right",
+    "title": "SG-III prototype / SG-IIIYX",
+    "links": [
+      {
+        "href": "https://wuli.iphy.ac.cn/en/article/id/31773",
+        "text": "SG-IIIYX"
+      }
+    ],
+    "body": "SG-IIIYX, the Shenguang-III prototype laser facility, was completed in 2006 and began inertial-confinement-fusion experiments in 2007, including hohlraum and implosion physics. It should be separated from the full SG-III entry because it was an earlier prototype-class experimental platform used for SG-III-relevant target physics and diagnostic development before the later full-energy SG-III facility.",
+    "group": "Experiment"
+  },
+  {
+    "id": 36,
+    "year": 2007,
+    "side": "left",
+    "title": "National Nuclear Power Development Plan",
+    "links": [
+      {
+        "href": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/200711/P020191104623376736968.pdf",
+        "text": "National Nuclear Power Development Plan"
+      }
+    ],
+    "body": "The NDRC nuclear-power plan formalized fusion as the long-range endpoint of China's nuclear-energy pathway, describing the route as \"thermal-neutron reactors--fast-neutron reactors--controlled nuclear-fusion reactors\" and directing China to combine independent development with international cooperation to \"actively explore fusion-reactor technology.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 37,
+    "year": 2007,
+    "side": "left",
+    "title": "ITER Special Program enters implementation",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/bmyjs/201107/W020110715401069371162.pdf",
+        "text": "MOST Basic Research Department Work Report"
+      }
+    ],
+    "body": "MOST reported that the ITER special program \"formally entered the implementation stage\" in October 2007 and that China used ITER participation to deploy domestic research work to \"accelerate the process of magnetic-confinement fusion-energy R&D in China.\" During the 11th FYP period, the program launched \"32 projects\" with total funding of \"1.12 billion yuan,\" making the post-ITER domestic buildout a policy-program milestone rather than just an international-cooperation event.",
+    "group": "Policy"
+  },
+  {
+    "id": 38,
+    "year": 2007,
+    "side": "right",
+    "title": "J-TEXT",
+    "links": [
+      {
+        "href": "https://www-pub.iaea.org/mtcd/meetings/pdfplus/2010/cn180/cn180_papers/ov_p-8.pdf",
+        "text": "J-TEXT"
+      }
+    ],
+    "body": "Reconstructed at Huazhong University of Science and Technology from the TEXT-U tokamak from the University of Texas at Austin. This was a modest experiment with a major radius of 1.05 m, toroidal magnetic field up to 3 T, and pulse length up to 0.4 s.",
+    "group": "Experiment"
+  },
+  {
+    "id": 39,
+    "year": 2010,
+    "side": "left",
+    "title": "Guidance on Talent Cultivation for Magnetic-Confinement Fusion Research",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2016/201608/t20160801_126927.html",
+        "text": "MOST Normative Document List"
+      }
+    ],
+    "body": "MOST's official normative-document list records a June 13, 2010 guidance document titled \"Guidance on Promoting Talent Cultivation for Magnetic-Confinement Fusion Research,\" issued by MOST, the Ministry of Education, the Chinese Academy of Sciences, and China National Nuclear Corporation as MOST Basic Research Document [2010] No. 317. The source verifies the document's existence and issuing metadata, showing that fusion workforce formation had become an explicit national policy concern.",
+    "group": "Policy"
+  },
+  {
+    "id": 40,
+    "year": 2011,
+    "side": "left",
+    "title": "12th Five-Year Plan",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2011/201107/t20110713_88228.html",
+        "text": "12th Five-Year Plan"
+      }
+    ],
+    "body": "\"Using participation in the construction of the International Thermonuclear Experimental Reactor (ITER) device as an opportunity, launch and implement a fusion energy research special program.... Accelerate fusion energy development research in China; complete design, certification, and manufacturing-technology R&D for the ITER procurement packages undertaken by China in ITER device construction; fully digest and absorb ITER's overall design and related technologies; carry out overall design research for China's future magnetic-confinement fusion reactor; accelerate talent cultivation; and build China's fusion energy research and innovation system.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 41,
+    "year": 2012,
+    "side": "left",
+    "title": "National Magnetic-Confinement Fusion Energy Development 12th-FYP Special Plan",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/bmgz/201608/t20160808_127107.html",
+        "text": "MOST Decision on Expired Policy Documents"
+      }
+    ],
+    "body": "MOST's official policy-document record identifies a dedicated \"National Magnetic-Confinement Fusion Energy Development 12th Five-Year Special Plan,\" issued by MOST on June 13, 2012 as MOST Basic Research Document [2012] No. 731. The record notes that \"the applicable period of this document has expired.\" The source verifies the existence of a field-specific 12th-FYP plan for magnetic-confinement fusion energy, but it does not reproduce the full plan text.",
+    "group": "Policy"
+  },
+  {
+    "id": 42,
+    "year": 2013,
+    "side": "left",
+    "title": "National Major Science and Technology Infrastructure Construction Medium- and Long-Term Plan (2012–2030)",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/szyw/yw/201303/t20130306_99983.html",
+        "text": "National Major Science and Technology Infrastructure Construction Medium- and Long-Term Plan"
+      }
+    ],
+    "body": "The State Council infrastructure plan placed \"nuclear fusion\" among fields where some facilities should reach \"internationally leading levels.\" In the energy-science section, it called for improving the \"fully superconducting tokamak nuclear-fusion experimental device,\" actively participating in ITER, maintaining China's advanced position in magnetic-confinement fusion, and launching \"high-efficiency, safe fusion-reactor research facilities\" at the appropriate time to accelerate fusion energy toward practical application.",
+    "group": "Policy"
+  },
+  {
+    "id": 43,
+    "year": 2013,
+    "side": "right",
+    "title": "Keda Mirror with AXisymmetricity (KMAX)",
+    "links": [
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/37012739/",
+        "text": "Keda Mirror with AXisymmetricity (KMAX)"
+      }
+    ],
+    "body": "Tandem-mirror experiment with very modest peak magnetic field of 0.32 T.",
+    "group": "Experiment"
+  },
+  {
+    "id": 44,
+    "year": 2014,
+    "side": "right",
+    "title": "Yingguang-1",
+    "links": [
+      {
+        "href": "https://www.hplpb.com.cn/en/article/doi/10.11884/HPLPB201729.170077",
+        "text": "Yingguang-1"
+      }
+    ],
+    "body": "An FRC experiment with moderate densities (3.5 × 10²² m⁻³) and a cool plasma (200 eV).",
+    "group": "Experiment"
+  },
+  {
+    "id": 45,
+    "year": 2014,
+    "side": "right",
+    "title": "Julong-I / Primary Test Stand (PTS)",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/pii/S2468080X16000066",
+        "text": "Primary Test Stand review"
+      }
+    ],
+    "body": "Julong-I, also referred to as the Primary Test Stand or PTS, is CAEP’s multi-module pulsed-power / Z-pinch facility for high-energy-density physics and Z-pinch-driven ICF research. Published reviews describe PTS as China’s first pulsed-power facility beyond 10 TW, with nominal current around 10 MA and roughly 90 ns rise time; I would place it in 2014 because Chinese public reporting identifies that year as the point when the Julong-I project passed national-level appraisal, although design and construction work began earlier.",
+    "group": "Experiment"
+  },
+  {
+    "id": 46,
+    "year": 2015,
+    "side": "right",
+    "title": "SG-III",
+    "links": [
+      {
+        "href": "https://www.cambridge.org/core/journals/high-power-laser-science-and-engineering/article/laser-performance-of-the-sgiii-laser-facility/4E9D5D0025FEF84F60793737E44E9CFE",
+        "text": "SG-III"
+      }
+    ],
+    "body": "New 180 kJ, 3 ns laser fusion facility at 10% scale of the US National Ignition Facility.",
+    "group": "Experiment"
+  },
+  {
+    "id": 47,
+    "year": 2015,
+    "side": "right",
+    "title": "Keda Torus eXperiment (KTX)",
+    "links": [
+      {
+        "href": "https://conferences.iaea.org/event/98/contributions/11837/",
+        "text": "Keda Torus eXperiment (KTX)"
+      }
+    ],
+    "body": "A reversed-field-pinch experiment that achieved modest density 10¹⁹ m⁻³ and temperature 800 eV.",
+    "group": "Experiment"
+  },
+  {
+    "id": 48,
+    "year": 2015,
+    "side": "right",
+    "title": "China Fusion Engineering Test Reactor (CFETR)",
+    "links": [
+      {
+        "href": "https://english.ipp.cas.cn/syxw/201812/t20181214_275108.html",
+        "text": "China Fusion Engineering Test Reactor (CFETR)"
+      }
+    ],
+    "body": "Conceptual design finished. CFETR was planned to be the Chinese successor to ITER.",
+    "group": "Planned Reactor"
+  },
+  {
+    "id": 49,
+    "year": 2016,
+    "side": "left",
+    "title": "Energy Technology Revolution Innovation Action Plan (2016–2030)",
+    "links": [
+      {
+        "href": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/201606/W020190905517012835441.pdf",
+        "text": "Energy Technology Revolution Innovation Action Plan (2016 to 2030)"
+      }
+    ],
+    "body": "\"R&D efforts will focus on the design and construction of ITER; core plasma physics and fusion reactor engineering technologies; the indigenous design and construction of a Fusion Engineering Test Platform (FETP); and the design, construction, and operation of large tokamak fusion devices. [Expected outcome:] Fully master internationally advanced key nuclear fusion technologies and fusion-reactor construction engineering technologies. [2020 goal:] The parameters and quality of fusion-reactor plasmas will be improved, laying the foundation for the design and construction of a Fusion Engineering Test Platform (FETP). [2030 goal:] The Fusion Engineering Test Platform (FETP) will be operating successfully, and China will have mastered the experimental, operational, and control technologies for burning plasma in a fusion reactor core. [2050 outlook:] Build a fusion prototype power plant on the order of 1 GW, achieving the commercial application of fusion energy.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 50,
+    "year": 2016,
+    "side": "left",
+    "title": "13th Five-Year Plan",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/201608/t20160810_127174.html",
+        "text": "13th Five-Year Plan"
+      }
+    ],
+    "body": "\"Fully participate in the management of the ITER international organization, strengthen China's fusion-energy R&D capabilities; use participation in the ITER program as an opportunity to bring more relevant domestic institutions into international R&D, enhance China's capacity to participate in the management of major science-and-engineering projects, and establish a model for China’s participation in the management of international mega-science projects.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 51,
+    "year": 2016,
+    "side": "left",
+    "title": "13th Five-Year Plan: Energy Technology Innovation",
+    "links": [
+      {
+        "href": "https://zfxxgk.nea.gov.cn/auto83/201701/t20170113_2490.htm",
+        "text": "13th Five-Year Plan: Energy Technology Innovation"
+      },
+      {
+        "href": "https://zfxxgk.nea.gov.cn/auto83/201701/P020170113571241558665.pdf",
+        "text": "[PDF]"
+      }
+    ],
+    "body": "\"Carry out the detailed engineering design of the China Fusion Engineering Test Reactor (CFETR), and, using the existing physics design database, conduct validation experiments related to CFETR physics on the Experimental Advanced Superconducting Tokamak (EAST) and the HL-2M Tokamak. Conduct preliminary research on key fusion-reactor technologies, and develop fusion-reactor technologies not covered by ITER, such as tritium technology and fusion materials.\n\nOn the inertial-confinement fusion-energy side, around solutions for the overall technical route of the Z-FFR experimental reactor, obtain validation results for key technologies and parameters, providing core technical support for the formulation of the Z-FFR experimental reactor plan and for its design and development. The research areas are key technologies including ignition-target design, high-repetition-rate drivers, subcritical blankets, and materials.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 52,
+    "year": 2016,
+    "side": "left",
+    "title": "Radiation Safety Management Notice for Magnetic-Confinement Fusion Experimental Devices",
+    "links": [
+      {
+        "href": "https://www.mee.gov.cn/gkml/hbb/bgth/201609/t20160928_364868.htm",
+        "text": "Radiation Safety Management Notice for Magnetic-Confinement Fusion Experimental Devices"
+      }
+    ],
+    "body": "The former Ministry of Environmental Protection issued China's first dedicated radiation-safety management notice for magnetic-confinement fusion experimental devices, noting that China had \"already built several magnetic-confinement fusion experimental devices.\" It defined these devices as research facilities that use magnetic fields to confine plasma for \"controlled nuclear-fusion and plasma-physics research,\" and placed their radiation safety under supervision by reference to nuclear-technology-use \"ray-generating device\" licensing.",
+    "group": "Policy"
+  },
+  {
+    "id": 53,
+    "year": 2016,
+    "side": "right",
+    "title": "SG-II-U",
+    "links": [
+      {
+        "href": "https://lssf.cas.cn/en/facilities/material/sgii/equipment/202505/t20250527_5070305.html",
+        "text": "SG-II-U"
+      }
+    ],
+    "body": "SG-II-U is the upgraded Shenguang-II high-power laser facility. CAS’s large-research-infrastructure platform says SG-II-U commenced operation in 2016 and, after a 2023 upgrade, achieved 16-beam laser output at the 10 kJ class; the facility served as a technology demonstrator for larger fusion-scale laser systems, including large-aperture plasma-electro-optic switches, multipass amplification, and adaptive optics.",
+    "group": "Experiment"
+  },
+  {
+    "id": 54,
+    "year": 2017,
+    "side": "left",
+    "title": "13th-FYP Plan for National Major Science and Technology Infrastructure Construction",
+    "links": [
+      {
+        "href": "https://www.ndrc.gov.cn/xxgk/zcfb/ghwb/201701/W020190905497895917256.pdf",
+        "text": "13th-FYP Plan for National Major Science and Technology Infrastructure Construction"
+      }
+    ],
+    "body": "The NDRC's 13th-FYP infrastructure plan listed the \"Comprehensive Research Facility for Key Systems of a Fusion Reactor Main Machine\" among priority facilities to start during the plan period. The plan stated that \"nuclear fusion energy is one of the fundamental ways to solve humanity's energy problem\" and framed the facility as a way to support advanced, safe, and reliable Chinese fusion-reactor development and to accelerate \"the process of practical application of fusion energy.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 55,
+    "year": 2017,
+    "side": "right",
+    "title": "Chinese First Quasi-axisymmetric Stellarator (CFQS)",
+    "links": [
+      {
+        "href": "https://www.jstage.jst.go.jp/article/pfr/14/0/14_3402074/_article",
+        "text": "Chinese First Quasi-axisymmetric Stellarator (CFQS)"
+      }
+    ],
+    "body": "A small-scale stellarator to test out physics projections.",
+    "group": "Experiment"
+  },
+  {
+    "id": 56,
+    "year": 2018,
+    "side": "right",
+    "title": "Comprehensive Research Facility for Fusion Technology (CRAFT)",
+    "links": [
+      {
+        "href": "https://english.hf.cas.cn/nr/bth/202203/t20220328_303131.html",
+        "text": "Comprehensive Research Facility for Fusion Technology (CRAFT)"
+      }
+    ],
+    "body": "China broke ground for CRAFT in Hefei as a large fusion-engineering test complex for magnets, heating systems, divertors, materials, and other reactor technologies. If built to the full plan, this will be the world's premier magnetic fusion R&D facility with programs on all of the major subsystems needed to make fusion work technically.",
+    "group": "R&D Facility"
+  },
+  {
+    "id": 57,
+    "year": 2019,
+    "side": "right",
+    "title": "EXL-50 / Xuanlong-50",
+    "links": [
+      {
+        "href": "https://en.ennresearch.com/researchfield/Compactfusion/device/",
+        "text": "EXL-50"
+      }
+    ],
+    "body": "EXL-50, also called Xuanlong-50, is ENN’s medium-scale spherical-torus experiment. ENN says the device was designed and constructed between 2018 and 2019 and began full-field experimental research in April 2020; it has a major radius of about 50 cm, toroidal field around 0.5 T, and focuses on central-solenoid-free operation and non-inductive current drive by ECRH, routinely achieving 50–180 kA plasma current with current flattops of at least 2 s.",
+    "group": "Experiment"
+  },
+  {
+    "id": 58,
+    "year": 2020,
+    "side": "right",
+    "title": "HL-3 (previously HL-2M)",
+    "links": [
+      {
+        "href": "https://en.cnnc.com.cn/2020-12/07/c_1023230.htm",
+        "text": "HL-3 (previously called HL-2M)"
+      }
+    ],
+    "body": "A medium-sized tokamak experiment to explore advanced operation.",
+    "group": "Experiment"
+  },
+  {
+    "id": 59,
+    "year": 2020,
+    "side": "right",
+    "title": "Nanchang University Spherical Tokamak (NCST)",
+    "links": [
+      {
+        "href": "https://www.ncu.edu.cn/info/1010/48381.htm",
+        "text": "NCST commissioning"
+      },
+      {
+        "href": "https://doi.org/10.1063/5.0074127",
+        "text": "NCST magnetic diagnostics"
+      }
+    ],
+    "body": "NCST is Nanchang University’s spherical tokamak, developed with cooperation from ASIPP and other Chinese fusion institutions. Nanchang University says the platform was launched in 2016 and formally put into use on November 28, 2020, and describes it as China’s first device able to use compression merging to start plasma current; published diagnostic work lists representative design parameters of roughly R = 0.4 m, a = 0.24 m, toroidal field around 0.36 T, and plasma current up to about 100 kA.",
+    "group": "Experiment"
+  },
+  {
+    "id": 60,
+    "year": 2021,
+    "side": "left",
+    "title": "CPC Central Committee and State Council Carbon-Neutrality Working Guidance",
+    "links": [
+      {
+        "href": "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211024_957580.shtml",
+        "text": "Working Guidance for Carbon Peaking and Carbon Neutrality"
+      }
+    ],
+    "body": "The top-level dual-carbon guidance put fusion into China's low-carbon frontier-technology agenda. Under \"strengthen basic research and lay out frontier technologies,\" it directed China to pursue low-carbon frontier technologies including \"controlled nuclear fusion,\" alongside high-efficiency solar cells, renewable hydrogen, and zero-carbon industrial-process redesign.",
+    "group": "Policy"
+  },
+  {
+    "id": 61,
+    "year": 2021,
+    "side": "left",
+    "title": "State Council Action Plan for Carbon Dioxide Peaking Before 2030",
+    "links": [
+      {
+        "href": "https://www.mee.gov.cn/zcwj/gwywj/202110/t20211026_957879.shtml",
+        "text": "Action Plan for Carbon Dioxide Peaking Before 2030"
+      }
+    ],
+    "body": "The State Council carbon-peak action plan gave fusion a second place inside the dual-carbon implementation stack. In its green and low-carbon technology innovation action, the plan called for \"strengthening applied basic research,\" \"actively developing advanced nuclear-power technology,\" and stronger research on frontier disruptive technologies including \"controlled nuclear fusion\"; it also called for active participation in ITER and other international mega-science projects.",
+    "group": "Policy"
+  },
+  {
+    "id": 62,
+    "year": 2022,
+    "side": "left",
+    "title": "14th Five-Year Plan",
+    "links": [
+      {
+        "href": "https://zfxxgk.nea.gov.cn/1310524241_16479412513081n.pdf",
+        "text": "14th Five-Year Plan"
+      }
+    ],
+    "body": "\"Support early-stage R&D on controlled nuclear fusion and actively carry out international cooperation.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 63,
+    "year": 2022,
+    "side": "right",
+    "title": "HUST Field-Reversed Configuration (HFRC)",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/pii/S092037962200134X",
+        "text": "HUST Field-Reversed Configuration (HFRC)"
+      }
+    ],
+    "body": "University-scale experiment for basic plasma physics.",
+    "group": "Experiment"
+  },
+  {
+    "id": 64,
+    "year": 2023,
+    "side": "right",
+    "title": "SG-IV",
+    "links": [
+      {
+        "href": "https://www.reuters.com/world/china/images-show-china-building-huge-fusion-research-facility-analysts-say-2025-01-28/",
+        "text": "SG-IV"
+      }
+    ],
+    "body": "Possibly NIF-class MJ laser fusion facility begins construction with very little public information.",
+    "group": "Experiment"
+  },
+  {
+    "id": 65,
+    "year": 2023,
+    "side": "right",
+    "title": "SUNIST-2",
+    "links": [
+      {
+        "href": "https://startorus.com/planning/",
+        "text": "SUNIST-2"
+      }
+    ],
+    "body": "SUNIST-2 is the Tsinghua University / Startorus spherical tokamak built to validate repeated magnetic reconnection and spherical-tokamak confinement at higher field. Startorus says SUNIST-2 was completed in July 2023 and achieved first plasma; public parameters list major radius 0.53 m, minor radius 0.33 m, toroidal magnetic field 1 T, plasma current 500 kA, and an ion-temperature target of 1.5 keV.",
+    "group": "Experiment"
+  },
+  {
+    "id": 66,
+    "year": 2024,
+    "side": "left",
+    "title": "Implementation Opinion on Promoting Innovation and Development of Future Industries",
+    "links": [
+      {
+        "href": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2024/art_ad15b0f08a714fd8888c0e31468b8c54.html",
+        "text": "Implementation Opinion on Promoting Innovation and Development of Future Industries"
+      }
+    ],
+    "body": "The MIIT-led future-industries policy moved fusion from long-range energy research into explicit future-industry cultivation. The document identified \"future energy\" as one of six future-industry directions and said it should focus on \"nuclear energy, nuclear fusion, hydrogen energy, biomass energy, and other key fields,\" while building a full-chain future-energy equipment system covering \"collection, storage, transportation, and application.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 67,
+    "year": 2024,
+    "side": "left",
+    "title": "Shanghai Nuclear Power Industry High-Quality Development Action Plan (2024–2027)",
+    "links": [
+      {
+        "href": "https://www.shanghai.gov.cn/xnysj/20250610/47e53483b4b8463fbf7e39541526557e.html",
+        "text": "Shanghai Nuclear Power Industry High-Quality Development Action Plan (2024–2027)"
+      }
+    ],
+    "body": "Shanghai's local nuclear-industry plan went well beyond generic national language by naming specific fusion technical routes and enabling technologies. It called for R&D on \"compact magnetic-confinement high-temperature-superconducting tokamak devices,\" \"double-cone-collision inertial-confinement laser nuclear fusion,\" and \"magneto-inertial-confinement nuclear fusion,\" and also directed work to break through large-size, high-current-density, high-field HTS magnet technology and \"carry out work on key nuclear-fusion technologies and equipment.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 68,
+    "year": 2024,
+    "side": "right",
+    "title": "HH70",
+    "links": [
+      {
+        "href": "https://stcsm.sh.gov.cn/news/20240702/e0940adf99fb412da09491b2dbdb0187.html",
+        "text": "HH70"
+      }
+    ],
+    "body": "First fully high-temperature-superconducting tokamak built by a Chinese private fusion company, Energy Singularity. A small-scale experiment (major radius of 0.7 m and toroidal magnetic field of 1 T) mostly as a demonstration platform.",
+    "group": "Experiment"
+  },
+  {
+    "id": 69,
+    "year": 2024,
+    "side": "right",
+    "title": "EXL-50U / Xuanlong-50U",
+    "links": [
+      {
+        "href": "https://en.ennresearch.com/researchfield/Compactfusion/Experiment/",
+        "text": "EXL-50U"
+      }
+    ],
+    "body": "EXL-50U is ENN’s upgraded Xuanlong spherical-torus device, upgraded from EXL-50 by 2023 and achieving first plasma in January 2024. ENN lists EXL-50U parameters including diameter 3.87 m, height 4.55 m, major radius 0.6–0.8 m, minor radius 0.32–0.5 m, B_T = 1.2 T at R = 0.6 m, central-solenoid flux of 1.2 Wb, TF flattop durations of 2 s at 1.2 T and 8 s at 0.6 T, and plasma current of 0.5–1.5 MA.",
+    "group": "Experiment"
+  },
+  {
+    "id": 70,
+    "year": 2024,
+    "side": "right",
+    "title": "CFQS-T",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/abs/pii/S0920379625006386",
+        "text": "CFQS-T"
+      },
+      {
+        "href": "https://conferences.iaea.org/event/392/contributions/35823/attachments/19813/36448/4_Haifeng%20Liu_Construction%20Progress%20of%20Chinese%20First%20Quasi-axisymmetric%20Stellarator%20%28CFQS%29.pdf",
+        "text": "CFQS construction progress"
+      }
+    ],
+    "body": "CFQS-T is the first experimental phase of the Chinese First Quasi-axisymmetric Stellarator, designed by Southwest Jiaotong University with Japan’s NIFS and constructed by SWJTU. CFQS-T was commissioned in August 2024; initial experiments used low magnetic field below 0.1 T and low heating power below 30 kW, while the full CFQS design has major radius 1.0 m, averaged minor radius about 0.25 m, magnetic field about 1 T, toroidal periodic number 2, and a planned second phase by the end of 2026 at 1 T with about 500 kW heating.",
+    "group": "Experiment"
+  },
+  {
+    "id": 71,
+    "year": 2024,
+    "side": "right",
+    "title": "Negative Triangularity Spherical Tokamak (NTST)",
+    "links": [
+      {
+        "href": "https://startorus.com/progress-news/300.html",
+        "text": "NTST construction notice"
+      },
+      {
+        "href": "https://startorus.com/planning/",
+        "text": "NTST parameters"
+      }
+    ],
+    "body": "NTST is Startorus Fusion’s planned negative-triangularity spherical tokamak and follow-on to SUNIST-2. Startorus said in November 2024 that it was ready to start construction; the company lists target parameters of major radius 0.8 m, minor radius 0.5 m, toroidal magnetic field 1 T, plasma current 1 MA, and ion temperature 5 keV, with the device intended to validate magnets, vacuum systems, cryogenics, power supplies, plasma control, and heat-exhaust technologies for the later CTRFR-1 device.",
+    "group": "Experiment"
+  },
+  {
+    "id": 72,
+    "year": 2025,
+    "side": "left",
+    "title": "Atomic Energy Law of the People's Republic of China",
+    "links": [
+      {
+        "href": "https://ecro.mee.gov.cn/fgbz/fl/202509/t20250928_1128379.html",
+        "text": "Atomic Energy Law"
+      },
+      {
+        "href": "https://nnsa.mee.gov.cn/ywdt/gzdt/202509/t20250918_1127719.html",
+        "text": "NNSA Interpretation"
+      }
+    ],
+    "body": "China's Atomic Energy Law brought fusion into statute. The law defines atomic energy to include energy released by \"nuclear fission, nuclear fusion, nuclear decay, and other nuclear reactions,\" states that the country encourages and supports \"controlled thermonuclear fusion\" research and development, and requires a supervision system \"suited to the characteristics of controlled thermonuclear fusion\" with fusion fuel and fusion devices or facilities managed by \"graded and classified management.\" NNSA described this as \"fusion entering law for the first time.\"",
+    "group": "Policy"
+  },
+  {
+    "id": 73,
+    "year": 2025,
+    "side": "left",
+    "title": "Notice on Radiation Safety Management for Fusion Devices",
+    "links": [
+      {
+        "href": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202504/t20250407_1106558.html",
+        "text": "Notice on Radiation Safety Management for Fusion Devices"
+      }
+    ],
+    "body": "MEE's 2025 notice modernized fusion-device radiation regulation, stating that China's fusion research had entered a \"rapid-development stage.\" It defined fusion devices to include \"plasma-physics experimental devices, deuterium-tritium fusion experimental devices, and fusion-energy application devices,\" placed radiation safety under MEE supervision by reference to nuclear-technology-use facilities, established risk-based \"classified management,\" linked environmental-impact review to radiation-safety licensing, and repealed the 2016 magnetic-confinement-only notice.",
+    "group": "Policy"
+  },
+  {
+    "id": 74,
+    "year": 2025,
+    "side": "right",
+    "title": "CTRFR-1",
+    "links": [
+      {
+        "href": "https://startorus.com/planning/",
+        "text": "CTRFR-1 parameters"
+      },
+      {
+        "href": "https://startorus.cn/process/",
+        "text": "CTRFR-1 engineering progress"
+      }
+    ],
+    "body": "CTRFR-1 is Startorus Fusion’s medium-sized high-temperature-superconducting spherical-tokamak validation device for repeated-magnetic-reconnection reactor technology. Startorus says it is in design and that the device is intended to validate the technical viability of repeated magnetic reconnection reactors; public target parameters list major radius 1.0 m, minor radius 0.56 m, toroidal magnetic field 3–5 T, plasma current 3 MA, and ion temperature 10 keV. The company’s engineering-progress page says recent SUNIST-2 reconnection-heating work lays the foundation for CTRFR-1 and reports full-scale HTS TF and CS coil testing, but I have not found a public first-plasma date.",
+    "group": "Experiment"
+  },
+  {
+    "id": 75,
+    "year": 2025,
+    "side": "right",
+    "title": "HHMAX-901",
+    "links": [
+      {
+        "href": "https://www.hhmax-energy.com/diyidaizhuangzhi.html",
+        "text": "HHMAX-901"
+      }
+    ],
+    "body": "HHMAX-901 is Hanhai Fusion’s first-generation linear FRC formation-compression-collision device. Hanhai says the device design was fixed in February 2025 after physics and engineering iterations, its vacuum and support systems were built, assembled, leak-checked, and insulation-tested, and the device achieved plasma lighting in July 2025; the company says the device benchmarks Helion’s sixth-generation machine, but public numeric plasma parameters are not yet disclosed.",
+    "group": "Experiment"
+  },
+  {
+    "id": 76,
+    "year": 2025,
+    "side": "right",
+    "title": "CN-H1 stellarator",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/pii/S1738573325000555",
+        "text": "CN-H1 ECRH study"
+      },
+      {
+        "href": "https://english.usc.edu.cn/info/1082/2004.htm",
+        "text": "University of South China CN-H1"
+      }
+    ],
+    "body": "CN-H1 is the restored and reconstructed H1-NF stellarator from the Australian National University, now at the University of South China. A 2025 paper says H1-NF has been transported to China and is being restored as CN-H1, with planned 2.45 GHz microwave and 28 GHz ECRH for plasma initiation and sustainment; the University of South China says it is accelerating CN-H1 construction and upgrading to support core-level stellarator plasma-physics research, but I have not found a public first-plasma confirmation.",
+    "group": "Experiment"
+  },
+  {
+    "id": 77,
+    "year": 2025,
+    "side": "right",
+    "title": "HL-4 / Huanliu-4",
+    "links": [
+      {
+        "href": "https://m.cyol.com/gb/articles/2025-09/25/content_pQ0wb6TYBE.html",
+        "text": "HL-4"
+      }
+    ],
+    "body": "HL-4, or Huanliu-4, is the temporarily named high-temperature-superconducting fusion experiment planned by China Fusion Energy Corp. in Shanghai. Chinese reporting says the device will be built to verify HTS magnet technology developed at the company’s Shanghai R&D base and that China Fusion is pursuing a compact magnetic-confinement fusion route; public sources do not yet disclose the device’s plasma radius, magnetic field, current, heating power, or first-plasma schedule.",
+    "group": "Experiment"
+  },
+  {
+    "id": 78,
+    "year": 2026,
+    "side": "left",
+    "title": "15th Five-Year Plan",
+    "links": [
+      {
+        "href": "https://www.qstheory.cn/20260313/8d9257101d6045f28d03a013be7c71b3/c.html",
+        "text": "15th Five-Year Plan"
+      },
+      {
+        "href": "https://www.ndrc.gov.cn/fzggw/wld/zsj/zyhd/202603/t20260306_1404063.html",
+        "text": "NDRC 15th-FYP implementation remarks"
+      }
+    ],
+    "body": "\"Aim at key fields that will lead future development, build a full-chain cultivation system for future industries, and promote quantum technology, biomanufacturing, hydrogen energy and nuclear fusion energy, brain-computer interfaces, embodied intelligence, sixth-generation mobile communications, and other fields to become new economic growth points.\" NDRC later said the 15th-FYP period would advance \"a series of major projects and programs, including controlled nuclear fusion,\" tying fusion to both future-industry cultivation and major-project implementation.",
+    "group": "Policy"
+  },
+  {
+    "id": 79,
+    "year": 2026,
+    "side": "right",
+    "title": "Nova-1 / Nova One",
+    "links": [
+      {
+        "href": "https://www.yicaiglobal.com/news/novafusionx-raises-usd1025-million-sets-china-record-for-private-fusion-startups",
+        "text": "Nova One"
+      }
+    ],
+    "body": "Nova-1, also called Nova One, is NovaFusionX’s proof-of-concept fusion device. Yicai reports that the device has entered engineering construction and is expected to achieve first plasma discharge by the end of 2026; NovaFusionX also says it aims to reach 100 million degrees Celsius in 2027, but public reporting does not yet provide the device’s radius, magnetic field, plasma current, confinement time, heating system, or detailed performance target.",
+    "group": "Experiment"
+  },
+  {
+    "id": 80,
+    "year": 2026,
+    "side": "right",
+    "title": "FLAME",
+    "links": [
+      {
+        "href": "https://www.chinanews.com.cn/sh/2026/03-07/10582906.shtml",
+        "text": "FLAME"
+      }
+    ],
+    "body": "A field-reversed magnetic mirror experiment that's achieved very modest conditions of 100 eV temperature and <10¹⁹ m⁻³ density.",
+    "group": "Experiment"
+  },
+  {
+    "id": 81,
+    "year": 2027,
+    "side": "right",
+    "title": "EHL-2 / HeLong-2",
+    "links": [
+      {
+        "href": "https://en.ennresearch.com/researchfield/Compactfusion/EHL_2/",
+        "text": "EHL-2"
+      }
+    ],
+    "body": "EHL-2, or ENN HeLong-2, is ENN’s next-generation spherical torus planned as a platform for proton-boron fusion physics and technology. ENN says EHL-2 is in the physics-design stage and estimates construction completion by mid-2027; target parameters include plasma major radius R0 = 1.05 m, aspect ratio A = 1.85, maximum central toroidal magnetic field B0 = 3 T, plasma toroidal current Ip = 3 MA, 17 MW neutral-beam ion heating, and 6 MW ECRH for current localization and MHD control.",
+    "group": "Experiment"
+  },
+  {
+    "id": 82,
+    "year": 2027,
+    "side": "right",
+    "title": "Burning Plasma Experimental Superconducting Tokamak (BEST)",
+    "links": [
+      {
+        "href": "https://www.cnnpn.cn/article/50426.html",
+        "text": "BEST Research Plan"
+      },
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      }
+    ],
+    "body": "BEST is ASIPP’s compact high-field D-T burning-plasma tokamak under construction in Hefei. The first BEST Research Plan describes a major radius of 3.6 m and central magnetic field of 6.15 T, with construction planned for completion and first plasma around the end of 2027; its mission includes D-T burning-plasma physics, Q ≥ 1 operation with advanced scenarios approaching Q ≈ 5, tungsten plasma-facing components, high-field superconducting magnets, high-heat-flux divertor technology, tritium handling, and breeding-blanket test ports.",
+    "group": "Experiment"
+  },
+  {
+    "id": 83,
+    "year": 2029,
+    "side": "right",
+    "title": "HH170 / Honghuang-170",
+    "links": [
+      {
+        "href": "https://energysingularity.cn/en/devices.html",
+        "text": "HH170"
+      },
+      {
+        "href": "https://www.news.cn/tech/20260409/9d8c6b3774624d528b674596f9e2186f/c.html",
+        "text": "HH170 schedule"
+      }
+    ],
+    "body": "HH170 is Energy Singularity’s planned next-generation high-field compact all-HTS tokamak. Energy Singularity’s device page lists HH170 with center field 10 T, major radius 150 cm, all-HTS magnet type, and a target equivalent Q > 2; Xinhua reported on April 9, 2026 that the company is advancing HH170 and plans to build it within the next three years, so I would use 2029 as the conservative timeline placement rather than the older 2027 schedule sometimes cited in earlier press.",
+    "group": "Experiment"
+  },
+  {
+    "id": 84,
+    "year": 2029,
+    "side": "right",
+    "title": "Yanfusion first-generation QI stellarator",
+    "links": [
+      {
+        "href": "https://www.yanfusion.com/stellarator",
+        "text": "Yanfusion stellarator program"
+      }
+    ],
+    "body": "Yanfusion, Chinese name 岩超聚能, says it will build two generations of quasi-isodynamic stellarators, with the first generation being a medium-sized experimental device using a hybrid HTS+LTS superconducting magnet system and expected completion in 2029. The company describes the design as using an advanced QI stellarator configuration and AI-enabled magnetic-field, coil, control, and experimental-analysis methods, but it has not publicly released numerical device parameters such as major radius, magnetic field, heating power, or first-plasma target.",
+    "group": "Experiment"
+  }
+]
+</script>
+
+<script>
+(function () {
+  const shell = document.getElementById("china-fusion-timeline-d3");
+  const dataNode = document.getElementById("china-fusion-timeline-d3-data");
+  if (!shell || !dataNode) return;
+
+  const BREAKPOINT = 860;
+
+  const eras = [
+    {
+      id: "foundations",
+      start: 1956,
+      end: 1978,
+      label: "Era 1",
+      title: "Foundations and first machines",
+      dek: "Fusion enters China’s long-range science planning, early pinch and mirror devices appear, and the first dedicated fusion institutions take shape.",
+      open: false
+    },
+    {
+      id: "consolidation",
+      start: 1980,
+      end: 1998,
+      label: "Era 2",
+      title: "Tokamak consolidation and laser-fusion buildout",
+      dek: "China builds the HL and HT tokamak lines, develops the Shenguang laser-fusion program, and turns superconducting tokamaks into national infrastructure.",
+      open: false
+    },
+    {
+      id: "iter-era",
+      start: 2002,
+      end: 2013,
+      label: "Era 3",
+      title: "ITER as an accelerant",
+      dek: "ITER participation helps convert fusion from a physics program into a coordinated national technology program with magnets, heating, blankets, tritium, controls, and diagnostics on the agenda.",
+      open: false
+    },
+    {
+      id: "engineering-scale-up",
+      start: 2014,
+      end: 2021,
+      label: "Era 4",
+      title: "Engineering test platforms and route diversification",
+      dek: "CFETR, CRAFT, SG-III, advanced tokamak work, FRCs, RFPs, stellarators, and dual-carbon policy broaden the program beyond one experimental line.",
+      open: false
+    },
+    {
+      id: "future-industry",
+      start: 2022,
+      end: 2029,
+      label: "Era 5",
+      title: "Commercialization, regulation, and future industry",
+      dek: "Fusion moves into future-industry policy, formal regulation, private-company hardware programs, and the next wave of high-field and burning-plasma machines.",
+      open: false
+    }
+  ];
+
+  const data = JSON.parse(dataNode.textContent);
+  const controllers = new Map();
+  let d3Promise = null;
+
+  function loadD3() {
+    if (window.d3) return Promise.resolve(window.d3);
+    if (d3Promise) return d3Promise;
+
+    d3Promise = new Promise(function (resolve, reject) {
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/d3@7";
+      script.onload = function () { resolve(window.d3); };
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+
+    return d3Promise;
+  }
+
+  function formatYear(year) {
+    return Number.isInteger(year) ? String(year) : year.toFixed(1);
+  }
+
+  function pluralize(count, singular, plural) {
+    return count + " " + (count === 1 ? singular : plural);
+  }
+
+  function groupCounts(items) {
+    return items.reduce(function (counts, item) {
+      counts[item.group] = (counts[item.group] || 0) + 1;
+      return counts;
+    }, {});
+  }
+
+  function countLabel(items) {
+    const counts = groupCounts(items);
+    const importantGroups = ["Policy", "Experiment", "Institution", "R&D Facility", "Planned Reactor"];
+    return importantGroups
+      .filter(function (group) { return counts[group]; })
+      .map(function (group) { return counts[group] + " " + group.toLowerCase(); })
+      .join(" · ");
+  }
+
+  function eraItems(era) {
+    return data
+      .filter(function (item) { return item.year >= era.start && item.year <= era.end; })
+      .sort(function (a, b) { return (a.year - b.year) || (a.id - b.id); });
+  }
+
+  function buildShell() {
+    shell.innerHTML = "";
+
+    eras.forEach(function (era) {
+      const items = eraItems(era);
+      const details = document.createElement("details");
+      details.className = "cf-era";
+      details.dataset.eraId = era.id;
+      if (era.open) details.open = true;
+
+      const summary = document.createElement("summary");
+      summary.className = "cf-era__summary";
+
+      const main = document.createElement("div");
+      main.className = "cf-era__summary-main";
+
+      const label = document.createElement("span");
+      label.className = "cf-era__label";
+      label.textContent = era.label;
+      main.appendChild(label);
+
+      const title = document.createElement("h3");
+      title.className = "cf-era__title";
+      title.textContent = era.title;
+      main.appendChild(title);
+
+      const dek = document.createElement("p");
+      dek.className = "cf-era__dek";
+      dek.textContent = era.dek;
+      main.appendChild(dek);
+
+      const meta = document.createElement("div");
+      meta.className = "cf-era__meta";
+
+      const years = document.createElement("span");
+      years.className = "cf-era__pill";
+      years.textContent = era.start + "–" + era.end;
+      meta.appendChild(years);
+
+      const total = document.createElement("span");
+      total.className = "cf-era__pill";
+      total.textContent = pluralize(items.length, "entry", "entries");
+      meta.appendChild(total);
+
+      const groups = countLabel(items);
+      if (groups) {
+        const groupPill = document.createElement("span");
+        groupPill.className = "cf-era__pill";
+        groupPill.textContent = groups;
+        meta.appendChild(groupPill);
+      }
+
+      const icon = document.createElement("span");
+      icon.className = "cf-era__icon";
+      icon.setAttribute("aria-hidden", "true");
+      meta.appendChild(icon);
+
+      summary.appendChild(main);
+      summary.appendChild(meta);
+
+      const body = document.createElement("div");
+      body.className = "cf-era__body";
+
+      const timeline = document.createElement("div");
+      timeline.className = "cf-timeline";
+      timeline.id = "china-fusion-timeline-d3-" + era.id;
+      timeline.innerHTML = '<div class="cf-timeline__loading">Open this section to load the timeline.</div>';
+      body.appendChild(timeline);
+
+      details.appendChild(summary);
+      details.appendChild(body);
+      shell.appendChild(details);
+
+      details.addEventListener("toggle", function () {
+        if (details.open) renderEraWhenReady(era, timeline, items);
+      });
+
+      if (details.open) renderEraWhenReady(era, timeline, items);
+    });
+  }
+
+  function renderEraWhenReady(era, root, items) {
+    const existing = controllers.get(root);
+    if (existing) {
+      requestAnimationFrame(existing.layout);
+      return;
+    }
+
+    root.innerHTML = '<div class="cf-timeline__loading">Loading timeline…</div>';
+
+    loadD3()
+      .then(function (d3) {
+        if (!items.length) {
+          root.innerHTML = '<div class="cf-timeline__empty">No entries are assigned to this era.</div>';
+          return;
+        }
+        const controller = renderTimeline(d3, root, items, era.start, era.end);
+        controllers.set(root, controller);
+      })
+      .catch(function () {
+        root.innerHTML = '<div class="cf-timeline__error">The interactive D3 timeline could not load because the D3 script failed to download.</div>';
+      });
+  }
+
+  function tickStep(startYear, endYear) {
+    const span = endYear - startYear;
+    if (span <= 8) return 1;
+    if (span <= 15) return 2;
+    if (span <= 30) return 5;
+    return 10;
+  }
+
+  function timelineTicks(d3, startYear, endYear) {
+    const step = tickStep(startYear, endYear);
+    const first = Math.ceil(startYear / step) * step;
+    const ticks = d3.range(first, endYear + 0.0001, step);
+    ticks.push(startYear, endYear);
+    return Array.from(new Set(ticks))
+      .filter(function (tick) { return tick >= startYear && tick <= endYear; })
+      .sort(function (a, b) { return a - b; });
+  }
+
+  function renderTimeline(d3, root, sourceItems, startYear, endYear) {
+    root.innerHTML = "";
+
+    const timelineData = sourceItems.map(function (item) {
+      return Object.assign({}, item, { links: item.links ? item.links.slice() : [] });
+    });
+
+    const svg = d3.select(root)
+      .append("svg")
+      .attr("class", "cf-timeline__svg")
+      .attr("aria-hidden", "true");
+
+    const cardsLayer = d3.select(root)
+      .append("div")
+      .attr("class", "cf-timeline__cards");
+
+    const events = cardsLayer.selectAll("article")
+      .data(timelineData, function (d) { return d.id; })
+      .join("article")
+      .attr("class", "cf-timeline__event");
+
+    events.each(function (d) {
+      const article = d3.select(this);
+      article.html("");
+
+      const card = article.append("div").attr("class", "cf-timeline__card");
+      const meta = card.append("div").attr("class", "cf-timeline__meta");
+
+      meta.append("span")
+        .attr("class", "cf-timeline__badge")
+        .text(d.group);
+
+      meta.append("span")
+        .attr("class", "cf-timeline__year")
+        .text(formatYear(d.year));
+
+      const heading = card.append("h3");
+      if (d.links && d.links.length) {
+        heading.append("a")
+          .attr("href", d.links[0].href)
+          .attr("target", "_blank")
+          .attr("rel", "noreferrer noopener")
+          .text(d.title);
+      } else {
+        heading.text(d.title);
+      }
+
+      if (d.links && d.links.length > 1) {
+        const links = card.append("div").attr("class", "cf-timeline__links");
+        d.links.slice(1).forEach(function (link) {
+          links.append("a")
+            .attr("href", link.href)
+            .attr("target", "_blank")
+            .attr("rel", "noreferrer noopener")
+            .text(link.text);
+        });
+      }
+
+      card.append("p").text(d.body);
+    });
+
+    function laneItems(singleColumn) {
+      if (singleColumn) {
+        return [timelineData.slice().sort(function (a, b) {
+          return (a.year - b.year) || (a.id - b.id);
+        })];
+      }
+
+      return ["left", "right"].map(function (side) {
+        return timelineData
+          .filter(function (d) { return d.side === side; })
+          .sort(function (a, b) {
+            return (a.year - b.year) || (a.id - b.id);
+          });
+      });
+    }
+
+    function layout() {
+      const width = root.clientWidth || 980;
+      const singleColumn = width < BREAKPOINT;
+
+      const topPad = 36;
+      const bottomPad = 42;
+      const narrowMobile = singleColumn && width < 360;
+      const connectorGap = singleColumn ? (narrowMobile ? 16 : 30) : 56;
+      const axisX = singleColumn ? (narrowMobile ? 20 : 34) : width / 2;
+      const desktopCardWidth = Math.min(420, Math.max(260, (width / 2) - connectorGap - 32));
+      const mobileCardWidth = Math.max(160, width - axisX - connectorGap - 8);
+      const cardWidth = singleColumn ? mobileCardWidth : desktopCardWidth;
+      const packGap = singleColumn ? 16 : 18;
+      const minPixelsPerYear = singleColumn ? 12 : 10;
+
+      events
+        .classed("is-single", singleColumn)
+        .classed("is-left", function (d) { return !singleColumn && d.side === "left"; })
+        .classed("is-right", function (d) { return singleColumn || d.side === "right"; })
+        .style("width", cardWidth + "px")
+        .style("left", function (d) {
+          if (singleColumn) {
+            d.x = axisX + connectorGap;
+          } else if (d.side === "left") {
+            d.x = (width / 2) - connectorGap - cardWidth;
+          } else {
+            d.x = (width / 2) + connectorGap;
+          }
+          return d.x + "px";
+        })
+        .style("transform", "translateY(0px)");
+
+      events.each(function (d) {
+        d.cardHeight = Math.ceil(this.getBoundingClientRect().height);
+      });
+
+      let pixelsPerYear = minPixelsPerYear;
+      laneItems(singleColumn).forEach(function (items) {
+        for (let i = 1; i < items.length; i += 1) {
+          const prev = items[i - 1];
+          const curr = items[i];
+          const deltaYears = curr.year - prev.year;
+          if (deltaYears > 0) {
+            const needed = ((prev.cardHeight / 2) + (curr.cardHeight / 2) + packGap) / deltaYears;
+            pixelsPerYear = Math.max(pixelsPerYear, needed);
+          }
+        }
+      });
+
+      const rawScale = d3.scaleLinear()
+        .domain([startYear, endYear])
+        .range([topPad, topPad + (endYear - startYear) * pixelsPerYear]);
+
+      let maxBottom = rawScale(endYear);
+
+      laneItems(singleColumn).forEach(function (items) {
+        let previousBottom = -Infinity;
+
+        items.forEach(function (item) {
+          const rawY = rawScale(item.year);
+          let top = rawY - (item.cardHeight / 2);
+
+          if (top < previousBottom + packGap) {
+            top = previousBottom + packGap;
+          }
+
+          item.top = top;
+          item.y = top + (item.cardHeight / 2);
+          item.bottom = top + item.cardHeight;
+          previousBottom = item.bottom;
+          maxBottom = Math.max(maxBottom, item.bottom);
+        });
+      });
+
+      const height = Math.ceil(maxBottom + bottomPad);
+      root.style.height = height + "px";
+      cardsLayer.style("height", height + "px");
+
+      events.style("transform", function (d) {
+        return "translateY(" + Math.round(d.top) + "px)";
+      });
+
+      const ticks = timelineTicks(d3, startYear, endYear);
+
+      svg
+        .attr("width", width)
+        .attr("height", height)
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .attr("preserveAspectRatio", "xMidYMin meet");
+
+      svg.selectAll("*").remove();
+
+      svg.append("line")
+        .attr("class", "cf-timeline__axis")
+        .attr("x1", axisX)
+        .attr("x2", axisX)
+        .attr("y1", topPad)
+        .attr("y2", height - bottomPad);
+
+      svg.selectAll(".cf-timeline__connector")
+        .data(timelineData, function (d) { return d.id; })
+        .join("line")
+        .attr("class", "cf-timeline__connector")
+        .attr("x1", axisX)
+        .attr("x2", function (d) {
+          if (singleColumn || d.side === "right") {
+            return d.x;
+          }
+          return d.x + cardWidth;
+        })
+        .attr("y1", function (d) { return d.y; })
+        .attr("y2", function (d) { return d.y; });
+
+      svg.selectAll(".cf-timeline__event-dot")
+        .data(timelineData, function (d) { return d.id; })
+        .join("circle")
+        .attr("class", "cf-timeline__event-dot")
+        .attr("cx", axisX)
+        .attr("cy", function (d) { return d.y; })
+        .attr("r", 4);
+
+      const tickGroups = svg.selectAll(".cf-timeline__tick")
+        .data(ticks)
+        .join("g")
+        .attr("class", "cf-timeline__tick")
+        .attr("transform", function (d) {
+          return "translate(" + axisX + "," + rawScale(d) + ")";
+        });
+
+      tickGroups.append("circle")
+        .attr("class", "cf-timeline__tick-circle")
+        .attr("r", 6);
+
+      tickGroups.append("text")
+        .attr("class", "cf-timeline__tick-label")
+        .attr("x", singleColumn ? 8 : -18)
+        .attr("y", singleColumn ? -10 : 4)
+        .attr("text-anchor", singleColumn ? "start" : "end")
+        .text(function (d) { return d; });
+    }
+
+    layout();
+
+    let raf = null;
+    let lastWidth = root.clientWidth || 0;
+    const rerender = function () {
+      const currentWidth = root.clientWidth || 0;
+      if (Math.abs(currentWidth - lastWidth) < 1) return;
+      lastWidth = currentWidth;
+
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(layout);
+    };
+
+    if (typeof ResizeObserver !== "undefined") {
+      const observer = new ResizeObserver(rerender);
+      observer.observe(root);
+    } else {
+      window.addEventListener("resize", rerender);
+    }
+
+    return { layout: layout };
+  }
+
+  buildShell();
+})();
+</script>
+
+<!-- CFETR/CRAFT/BEST focused timeline start -->
+<style>
+  .cf-timeline-intro {
+    margin: 0 0 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 12px 34px rgba(16, 24, 40, 0.06);
+    padding: 1.05rem 1.15rem;
+  }
+
+  .cf-timeline-intro h2 {
+    margin: 0;
+    font-size: clamp(1.18rem, 1.7vw, 1.55rem);
+    line-height: 1.18;
+    color: #0f172a;
+  }
+
+  .cf-timeline-intro p {
+    margin: 0.48rem 0 0;
+    max-width: 820px;
+    font-size: 0.96rem;
+    line-height: 1.48;
+    color: #5b6472;
+  }
+</style>
+
+<div id="china-cfetr-craft-best-timeline-d3" class="cf-timeline-shell">
+  <noscript>
+    <div class="cf-timeline__fallback">
+      This timeline uses JavaScript for responsive layout. If JavaScript is disabled, use the static timeline version instead.
+    </div>
+  </noscript>
+</div>
+
+<script type="application/json" id="china-cfetr-craft-best-timeline-d3-data">
+[
+  {
+    "id": 1,
+    "year": 2011,
+    "side": "left",
+    "title": "CFETR design effort established",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/kjbgz/201509/t20150914_121598.html",
+        "text": "MOST CFETR concept-design report"
+      }
+    ],
+    "body": "MOST later described the CFETR overall-design project as having been established in 2011. This is the first firm public marker I found for the large Chinese next-step reactor effort that later sat above CRAFT and BEST in the roadmap.",
+    "group": "Planned Reactor"
+  },
+  {
+    "id": 2,
+    "year": 2013,
+    "side": "left",
+    "title": "National infrastructure plan calls for fusion-reactor research facilities",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/szyw/yw/201303/t20130306_99983.html",
+        "text": "National Major Science and Technology Infrastructure Plan"
+      }
+    ],
+    "body": "The State Council infrastructure plan called for improving EAST, participating in ITER, maintaining China's position in magnetic-confinement fusion, and launching efficient and safe fusion-reactor research facilities at the appropriate time.",
+    "group": "Policy"
+  },
+  {
+    "id": 3,
+    "year": 2014,
+    "side": "right",
+    "title": "Public CFETR roadmap targets a 2030-era reactor step",
+    "links": [
+      {
+        "href": "https://fire.pppl.gov/FPA14_Chinese_CFETR_Wan.pdf",
+        "text": "Chinese CFETR roadmap presentation"
+      }
+    ],
+    "body": "A 2014 roadmap presentation described CFETR as the Chinese successor to ITER, with hoped-for construction around 2020 and completion around 2030. The first phase was framed around Q = 1–5, more than 200 MW fusion power, steady-state operation, and tritium breeding with TBR greater than one.",
+    "group": "Planned Reactor"
+  },
+  {
+    "id": 4,
+    "year": 2015,
+    "side": "right",
+    "title": "CFETR engineering concept design completed",
+    "links": [
+      {
+        "href": "https://www.most.gov.cn/kjbgz/201509/t20150914_121598.html",
+        "text": "MOST CFETR concept-design report"
+      }
+    ],
+    "body": "MOST reported that the CFETR team had completed the engineering concept design by August 2015 and presented the device as complementary to ITER. This locked in the large-reactor direction before BEST existed publicly.",
+    "group": "Planned Reactor"
+  },
+  {
+    "id": 5,
+    "year": 2016,
+    "side": "left",
+    "title": "Energy Technology Revolution plan sets a 2030 fusion platform goal",
+    "links": [
+      {
+        "href": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/201606/W020190905517012835441.pdf",
+        "text": "Energy Technology Revolution Innovation Action Plan"
+      }
+    ],
+    "body": "The 2016–2030 energy-technology plan called for fusion-reactor engineering technologies, indigenous design and construction of a fusion engineering test platform, and successful platform operation by 2030 with command of burning-plasma operation and control.",
+    "group": "Policy"
+  },
+  {
+    "id": 6,
+    "year": 2017,
+    "side": "left",
+    "title": "13th-FYP energy plan assigns detailed CFETR design work",
+    "links": [
+      {
+        "href": "https://zfxxgk.nea.gov.cn/auto83/201701/t20170113_2490.htm",
+        "text": "13th Five-Year Plan for Energy Technology Innovation"
+      }
+    ],
+    "body": "The 13th-FYP energy-technology plan directed China to carry out CFETR detailed engineering design, validate CFETR physics on EAST and HL-2M, and develop reactor technologies not covered by ITER, including tritium technology and fusion materials.",
+    "group": "Policy"
+  },
+  {
+    "id": 7,
+    "year": 2017,
+    "side": "right",
+    "title": "CRAFT enters the national infrastructure queue",
+    "links": [
+      {
+        "href": "https://www.ndrc.gov.cn/xxgk/zcfb/ghwb/201701/W020190905497895917256.pdf",
+        "text": "13th-FYP major infrastructure plan"
+      }
+    ],
+    "body": "The 13th-FYP national major-infrastructure plan listed the Comprehensive Research Facility for Key Systems of a Fusion Reactor Main Machine as a priority facility. This became CRAFT, the engineering base for magnets, divertors, heating, tritium, materials, and other reactor systems.",
+    "group": "R&D Facility"
+  },
+  {
+    "id": 8,
+    "year": 2018,
+    "side": "right",
+    "title": "CRAFT campus breaks ground in Hefei",
+    "links": [
+      {
+        "href": "https://english.hf.cas.cn/nr/bth/202203/t20220328_303131.html",
+        "text": "HFIPS CRAFT overview"
+      }
+    ],
+    "body": "China broke ground for CRAFT in Hefei as the large fusion-engineering complex meant to mature the key systems needed for future reactor construction. It became the physical base that later made a compact D-T machine at Hefei more plausible.",
+    "group": "R&D Facility"
+  },
+  {
+    "id": 9,
+    "year": 2019,
+    "side": "right",
+    "title": "CRAFT construction launches as a 2019–2025 national project",
+    "links": [
+      {
+        "href": "https://firefusionpower.org/FPA21-2_CN_ASIPP_Fusion_Song.pdf",
+        "text": "ASIPP 2021 fusion-activities presentation"
+      },
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      }
+    ],
+    "body": "ASIPP later described CRAFT as a national project supporting future devices, including BEST and CFETR, with a 2019–2025 schedule. The BEST plan says CRAFT construction began in September 2019 and hosts specialized platforms for superconducting magnets, plasma heating, breeding blankets, tritium, and other critical components.",
+    "group": "R&D Facility"
+  },
+  {
+    "id": 10,
+    "year": 2019,
+    "side": "left",
+    "title": "National fusion R&D call focuses on CFETR and burning-plasma issues",
+    "links": [
+      {
+        "href": "https://www.research.pku.edu.cn/docs/2019-11/20191121090216294182.pdf",
+        "text": "2019 magnetic-confinement fusion R&D call"
+      }
+    ],
+    "body": "The national magnetic-confinement fusion call funded CFETR engineering design, validation on EAST and HL-2M, fast-particle physics, alpha-particle and MHD interaction, D-T plasma theory and simulation, and burning-plasma effects. Those became part of the problem set BEST was later designed to attack directly.",
+    "group": "Policy"
+  },
+  {
+    "id": 11,
+    "year": 2021,
+    "side": "left",
+    "title": "CFETR design project reported complete",
+    "links": [
+      {
+        "href": "https://firefusionpower.org/FPA21-2_CN_ASIPP_Fusion_Song.pdf",
+        "text": "ASIPP 2021 fusion-activities presentation"
+      }
+    ],
+    "body": "ASIPP reported that the MOST-backed CFETR design project had been completed in 2021, after 87 tasks and more than 800 participants. The same presentation gave representative CFETR parameters of R = 7.2 m, a = 2.2 m, B_T = 6.5 T, and fusion power of 200–1500 MW.",
+    "group": "Planned Reactor"
+  },
+  {
+    "id": 12,
+    "year": 2021,
+    "side": "right",
+    "title": "BEST design activities begin",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      }
+    ],
+    "body": "The BEST Research Plan gives February 2021 as the start of BEST design activities. This is the first firm date I found for BEST itself, after a decade of CFETR planning and two years into CRAFT construction.",
+    "group": "Experiment"
+  },
+  {
+    "id": 13,
+    "year": 2021,
+    "side": "right",
+    "title": "BEST advisory review supports the concept",
+    "links": [
+      {
+        "href": "https://firefusionpower.org/FPA21-2_CN_ASIPP_Fusion_Song.pdf",
+        "text": "ASIPP 2021 fusion-activities presentation"
+      }
+    ],
+    "body": "The BEST Program Advisory Committee met on July 29–30, 2021 and supported the device concept. That puts BEST at expert-review maturity before it appeared widely in public materials.",
+    "group": "Experiment"
+  },
+  {
+    "id": 14,
+    "year": 2021,
+    "side": "right",
+    "title": "Earliest public BEST presentation found",
+    "links": [
+      {
+        "href": "https://firefusionpower.org/FPA21-2_CN_ASIPP_Fusion_Song.pdf",
+        "text": "ASIPP 2021 fusion-activities presentation"
+      }
+    ],
+    "body": "On December 15, 2021, ASIPP presented BEST as a new planned D-T device to support CFETR at lower risk and cost. The presentation described a burning-plasma tokamak with R = 3.6 m, a = 1.1 m, B_T = 6.15 T, and a role in alpha-particle behavior and integrated steady-state control.",
+    "group": "Experiment"
+  },
+  {
+    "id": 15,
+    "year": 2023,
+    "side": "right",
+    "title": "BEST construction begins at the CRAFT campus",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      }
+    ],
+    "body": "BEST facility construction began on June 30, 2023 at the CRAFT campus in Hefei. This moved the intermediate D-T step from design into civil construction and hardware integration.",
+    "group": "Experiment"
+  },
+  {
+    "id": 16,
+    "year": 2023,
+    "side": "left",
+    "title": "BEST environmental-review process discloses the site and buildings",
+    "links": [
+      {
+        "href": "https://ie.ah.cn/?c=39&m=1026",
+        "text": "BEST first EIA disclosure"
+      }
+    ],
+    "body": "The first EIA notice identified the BEST site in Hefei, the project entity, and major buildings including the main hall, control hall, cryogenic hall, tritium plant, diagnostics hall, pre-assembly hall, and hot cell. The disclosure moved BEST into the formal construction and licensing record.",
+    "group": "Policy"
+  },
+  {
+    "id": 17,
+    "year": 2024,
+    "side": "left",
+    "title": "CFEDR framing makes BEST the gap-filling tokamak",
+    "links": [
+      {
+        "href": "https://indico.euro-fusion.org/event/3045/contributions/11876/attachments/5506/9655/CFETR-Eurofusion%20Workshop_20240203%28VC%29.pdf",
+        "text": "CFETR/EUROfusion workshop presentation"
+      }
+    ],
+    "body": "A 2024 CFETR/EUROfusion presentation states the logic bluntly: ITER D-T is beyond 2040, CFETR engineering design is complete, CRAFT construction has launched, and the gap should be filled by a new tokamak. The presentation describes BEST as an essential step for CFEDR while keeping CFEDR's mission as the logical evolution of CFETR.",
+    "group": "Planned Reactor"
+  },
+  {
+    "id": 18,
+    "year": 2025,
+    "side": "right",
+    "title": "BEST total assembly officially starts",
+    "links": [
+      {
+        "href": "https://nnsa.mee.gov.cn/ywdt/hyzx/202505/t20250507_1118989.html",
+        "text": "NNSA assembly report"
+      },
+      {
+        "href": "https://paper.people.com.cn/rmrb/pc/content/202505/06/content_30071345.html",
+        "text": "People's Daily assembly coverage"
+      }
+    ],
+    "body": "On May 1, 2025, BEST entered engineering total assembly. Official reporting described assembly of the superconducting magnet system, feeders, Dewar, cold shield, blanket, and divertor, with tens of thousands of parts and total installed mass around 6,000 tons.",
+    "group": "Experiment"
+  },
+  {
+    "id": 19,
+    "year": 2025,
+    "side": "right",
+    "title": "First key main-machine component installed",
+    "links": [
+      {
+        "href": "https://english.news.cn/20251001/8de89c4021bd4a3ab9e637720a00fdb3/c.html",
+        "text": "Xinhua Dewar-base report"
+      },
+      {
+        "href": "https://english.cas.cn/newsroom/news/202510/t20251010_1089035.shtml",
+        "text": "CAS Dewar-base report"
+      }
+    ],
+    "body": "On October 1, 2025, the Dewar base was installed in Hefei. The component weighs more than 400 tons, is roughly 18 m in diameter and 5 m high, and supports the vacuum and cryogenic envelope for the superconducting tokamak.",
+    "group": "Experiment"
+  },
+  {
+    "id": 20,
+    "year": 2025,
+    "side": "left",
+    "title": "BEST Research Plan and international burning-plasma program launched",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/eurofusion-news/eurofusion-asipp-best-research-plan/",
+        "text": "EUROfusion BEST Research Plan announcement"
+      },
+      {
+        "href": "https://www.cas.cn/cm/202511/t20251124_5089673.shtml",
+        "text": "CAS international program launch"
+      }
+    ],
+    "body": "In November 2025, ASIPP and EUROfusion released the first BEST Research Plan and CAS launched an international burning-plasma science program in Hefei. The plan frames BEST as both a CFEDR risk-reduction platform and an international source of D-T data before ITER D-T operation.",
+    "group": "Experiment"
+  },
+  {
+    "id": 21,
+    "year": 2026,
+    "side": "right",
+    "title": "BEST remains under construction",
+    "links": [
+      {
+        "href": "https://english.news.cn/20260416/6dcac55285aa43169db18e1d67252f72/c.html",
+        "text": "Xinhua April 2026 construction status"
+      }
+    ],
+    "body": "As of April 2026, official photo coverage still showed BEST under construction at Hefei Future Science City. I found no official confirmation that BEST had completed construction or achieved first plasma by May 2026.",
+    "group": "Experiment"
+  },
+  {
+    "id": 22,
+    "year": 2027,
+    "side": "right",
+    "title": "Projected construction completion and first plasma",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      },
+      {
+        "href": "https://english.news.cn/20251001/8de89c4021bd4a3ab9e637720a00fdb3/c.html",
+        "text": "Xinhua 2027 completion target"
+      }
+    ],
+    "body": "The public schedule points to BEST construction completion by late 2027 and first plasma around the end of 2027 or the 2027–2028 boundary. The first operating phase is expected to use hydrogen and deuterium at reduced field and current to commission the main systems.",
+    "group": "Future Target"
+  },
+  {
+    "id": 23,
+    "year": 2028,
+    "side": "left",
+    "title": "Initial H/D and deuterium campaigns",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      }
+    ],
+    "body": "After first plasma, BEST is expected to move through H/D commissioning and deuterium scenario development. The goals include startup, current and position control, heating and current drive, disruption mitigation, wall conditioning, fueling, divertor control, tungsten impurity control, and diagnostics.",
+    "group": "Future Target"
+  },
+  {
+    "id": 24,
+    "year": 2030,
+    "side": "right",
+    "title": "Target: D-T scientific breakeven before the end of 2030",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      },
+      {
+        "href": "https://en.people.cn/n3/2026/0117/c90000-20415588.html",
+        "text": "2030 power-generation reporting"
+      }
+    ],
+    "body": "The tight technical target is Q ≥ 1 D-T operation before the end of 2030. Chinese official media also describe an around-2030 goal to demonstrate net fusion power gain and fusion-based electricity generation; that language should be treated as an aspirational project target until the detailed electrical-system scope is public.",
+    "group": "Future Target"
+  },
+  {
+    "id": 25,
+    "year": 2035,
+    "side": "right",
+    "title": "Long-pulse and higher-Q burning-plasma campaigns feed CFEDR",
+    "links": [
+      {
+        "href": "https://euro-fusion.org/wp-content/uploads/2025/11/BEST-Research-Plan-v1.1.pdf",
+        "text": "BEST Research Plan PDF"
+      },
+      {
+        "href": "https://indico.euro-fusion.org/event/3045/contributions/11876/attachments/5506/9655/CFETR-Eurofusion%20Workshop_20240203%28VC%29.pdf",
+        "text": "CFEDR gap-filling presentation"
+      }
+    ],
+    "body": "The 2030–2035 program is where BEST is expected to move from initial breakeven toward long-pulse fusion-technology work, alpha-particle physics, and advanced scenarios approaching Q ≈ 5. The strategic purpose is to reduce CFEDR risk before China commits the larger engineering-demonstration machine.",
+    "group": "Future Target"
+  }
+]
+</script>
+
+<script>
+(function () {
+  const shell = document.getElementById("china-cfetr-craft-best-timeline-d3");
+  const dataNode = document.getElementById("china-cfetr-craft-best-timeline-d3-data");
+  if (!shell || !dataNode) return;
+
+  const BREAKPOINT = 860;
+
+  const eras = [
+    {
+      id: "cfetr-target",
+      start: 2011,
+      end: 2017,
+      label: "Focused era 1",
+      title: "CFETR sets the reactor target",
+      dek: "China defines a domestic next-step reactor mission: D-T burning plasma, steady-state operation, tritium breeding, reactor materials, and a national engineering platform.",
+      open: false
+    },
+    {
+      id: "craft-buildout",
+      start: 2018,
+      end: 2020,
+      label: "Focused era 2",
+      title: "CRAFT turns the target into engineering infrastructure",
+      dek: "Hefei becomes the engineering base for the magnets, divertors, heating, tritium, blanket, and materials systems that CFETR and BEST both need.",
+      open: false
+    },
+    {
+      id: "best-insertion",
+      start: 2021,
+      end: 2026,
+      label: "Focused era 3",
+      title: "BEST fills the D-T burning-plasma gap",
+      dek: "After CFETR design work matures and ITER D-T slips farther out, ASIPP inserts a compact high-field D-T tokamak below CFEDR to retire physics and technology risk earlier.",
+      open: true
+    },
+    {
+      id: "best-campaigns",
+      start: 2027,
+      end: 2035,
+      label: "Focused era 4",
+      title: "Projected BEST campaigns and CFEDR risk reduction",
+      dek: "The public schedule moves from construction completion and first plasma to H/D commissioning, D-T breakeven, long-pulse operation, and higher-Q burning-plasma studies.",
+      open: false
+    }
+  ];
+
+  const data = JSON.parse(dataNode.textContent);
+  const controllers = new Map();
+  let d3Promise = null;
+
+  function loadD3() {
+    if (window.d3) return Promise.resolve(window.d3);
+    if (d3Promise) return d3Promise;
+
+    d3Promise = new Promise(function (resolve, reject) {
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/d3@7";
+      script.onload = function () { resolve(window.d3); };
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+
+    return d3Promise;
+  }
+
+  function formatYear(year) {
+    return Number.isInteger(year) ? String(year) : year.toFixed(1);
+  }
+
+  function pluralize(count, singular, plural) {
+    return count + " " + (count === 1 ? singular : plural);
+  }
+
+  function groupCounts(items) {
+    return items.reduce(function (counts, item) {
+      counts[item.group] = (counts[item.group] || 0) + 1;
+      return counts;
+    }, {});
+  }
+
+  function countLabel(items) {
+    const counts = groupCounts(items);
+    const importantGroups = ["Policy", "Experiment", "Institution", "R&D Facility", "Planned Reactor", "Future Target"];
+    return importantGroups
+      .filter(function (group) { return counts[group]; })
+      .map(function (group) { return counts[group] + " " + group.toLowerCase(); })
+      .join(" · ");
+  }
+
+  function eraItems(era) {
+    return data
+      .filter(function (item) { return item.year >= era.start && item.year <= era.end; })
+      .sort(function (a, b) { return (a.year - b.year) || (a.id - b.id); });
+  }
+
+  function buildShell() {
+    shell.innerHTML = "";
+
+    const intro = document.createElement("section");
+    intro.className = "cf-timeline-intro";
+
+    const label = document.createElement("span");
+    label.className = "cf-era__label";
+    label.textContent = "Focused timeline";
+    intro.appendChild(label);
+
+    const title = document.createElement("h2");
+    title.textContent = "CFETR, CRAFT, and BEST";
+    intro.appendChild(title);
+
+    const dek = document.createElement("p");
+    dek.textContent = "The China roadmap did not simply jump from EAST to BEST. CFETR set the reactor ambition, CRAFT built the engineering base, and BEST appears to have been inserted as a nearer D-T burning-plasma step before CFEDR.";
+    intro.appendChild(dek);
+
+    shell.appendChild(intro);
+
+    eras.forEach(function (era) {
+      const items = eraItems(era);
+      const details = document.createElement("details");
+      details.className = "cf-era";
+      details.dataset.eraId = era.id;
+      if (era.open) details.open = true;
+
+      const summary = document.createElement("summary");
+      summary.className = "cf-era__summary";
+
+      const main = document.createElement("div");
+      main.className = "cf-era__summary-main";
+
+      const label = document.createElement("span");
+      label.className = "cf-era__label";
+      label.textContent = era.label;
+      main.appendChild(label);
+
+      const title = document.createElement("h3");
+      title.className = "cf-era__title";
+      title.textContent = era.title;
+      main.appendChild(title);
+
+      const dek = document.createElement("p");
+      dek.className = "cf-era__dek";
+      dek.textContent = era.dek;
+      main.appendChild(dek);
+
+      const meta = document.createElement("div");
+      meta.className = "cf-era__meta";
+
+      const years = document.createElement("span");
+      years.className = "cf-era__pill";
+      years.textContent = era.start + "–" + era.end;
+      meta.appendChild(years);
+
+      const total = document.createElement("span");
+      total.className = "cf-era__pill";
+      total.textContent = pluralize(items.length, "entry", "entries");
+      meta.appendChild(total);
+
+      const groups = countLabel(items);
+      if (groups) {
+        const groupPill = document.createElement("span");
+        groupPill.className = "cf-era__pill";
+        groupPill.textContent = groups;
+        meta.appendChild(groupPill);
+      }
+
+      const icon = document.createElement("span");
+      icon.className = "cf-era__icon";
+      icon.setAttribute("aria-hidden", "true");
+      meta.appendChild(icon);
+
+      summary.appendChild(main);
+      summary.appendChild(meta);
+
+      const body = document.createElement("div");
+      body.className = "cf-era__body";
+
+      const timeline = document.createElement("div");
+      timeline.className = "cf-timeline";
+      timeline.id = "china-cfetr-craft-best-timeline-d3-" + era.id;
+      timeline.innerHTML = '<div class="cf-timeline__loading">Open this section to load the timeline.</div>';
+      body.appendChild(timeline);
+
+      details.appendChild(summary);
+      details.appendChild(body);
+      shell.appendChild(details);
+
+      details.addEventListener("toggle", function () {
+        if (details.open) renderEraWhenReady(era, timeline, items);
+      });
+
+      if (details.open) renderEraWhenReady(era, timeline, items);
+    });
+  }
+
+  function renderEraWhenReady(era, root, items) {
+    const existing = controllers.get(root);
+    if (existing) {
+      requestAnimationFrame(existing.layout);
+      return;
+    }
+
+    root.innerHTML = '<div class="cf-timeline__loading">Loading timeline…</div>';
+
+    loadD3()
+      .then(function (d3) {
+        if (!items.length) {
+          root.innerHTML = '<div class="cf-timeline__empty">No entries are assigned to this era.</div>';
+          return;
+        }
+        const controller = renderTimeline(d3, root, items, era.start, era.end);
+        controllers.set(root, controller);
+      })
+      .catch(function () {
+        root.innerHTML = '<div class="cf-timeline__error">The interactive D3 timeline could not load because the D3 script failed to download.</div>';
+      });
+  }
+
+  function tickStep(startYear, endYear) {
+    const span = endYear - startYear;
+    if (span <= 8) return 1;
+    if (span <= 15) return 2;
+    if (span <= 30) return 5;
+    return 10;
+  }
+
+  function timelineTicks(d3, startYear, endYear) {
+    const step = tickStep(startYear, endYear);
+    const first = Math.ceil(startYear / step) * step;
+    const ticks = d3.range(first, endYear + 0.0001, step);
+    ticks.push(startYear, endYear);
+    return Array.from(new Set(ticks))
+      .filter(function (tick) { return tick >= startYear && tick <= endYear; })
+      .sort(function (a, b) { return a - b; });
+  }
+
+  function renderTimeline(d3, root, sourceItems, startYear, endYear) {
+    root.innerHTML = "";
+
+    const timelineData = sourceItems.map(function (item) {
+      return Object.assign({}, item, { links: item.links ? item.links.slice() : [] });
+    });
+
+    const svg = d3.select(root)
+      .append("svg")
+      .attr("class", "cf-timeline__svg")
+      .attr("aria-hidden", "true");
+
+    const cardsLayer = d3.select(root)
+      .append("div")
+      .attr("class", "cf-timeline__cards");
+
+    const events = cardsLayer.selectAll("article")
+      .data(timelineData, function (d) { return d.id; })
+      .join("article")
+      .attr("class", "cf-timeline__event");
+
+    events.each(function (d) {
+      const article = d3.select(this);
+      article.html("");
+
+      const card = article.append("div").attr("class", "cf-timeline__card");
+      const meta = card.append("div").attr("class", "cf-timeline__meta");
+
+      meta.append("span")
+        .attr("class", "cf-timeline__badge")
+        .text(d.group);
+
+      meta.append("span")
+        .attr("class", "cf-timeline__year")
+        .text(formatYear(d.year));
+
+      const heading = card.append("h3");
+      if (d.links && d.links.length) {
+        heading.append("a")
+          .attr("href", d.links[0].href)
+          .attr("target", "_blank")
+          .attr("rel", "noreferrer noopener")
+          .text(d.title);
+      } else {
+        heading.text(d.title);
+      }
+
+      if (d.links && d.links.length > 1) {
+        const links = card.append("div").attr("class", "cf-timeline__links");
+        d.links.slice(1).forEach(function (link) {
+          links.append("a")
+            .attr("href", link.href)
+            .attr("target", "_blank")
+            .attr("rel", "noreferrer noopener")
+            .text(link.text);
+        });
+      }
+
+      card.append("p").text(d.body);
+    });
+
+    function laneItems(singleColumn) {
+      if (singleColumn) {
+        return [timelineData.slice().sort(function (a, b) {
+          return (a.year - b.year) || (a.id - b.id);
+        })];
+      }
+
+      return ["left", "right"].map(function (side) {
+        return timelineData
+          .filter(function (d) { return d.side === side; })
+          .sort(function (a, b) {
+            return (a.year - b.year) || (a.id - b.id);
+          });
+      });
+    }
+
+    function layout() {
+      const width = root.clientWidth || 980;
+      const singleColumn = width < BREAKPOINT;
+
+      const topPad = 36;
+      const bottomPad = 42;
+      const narrowMobile = singleColumn && width < 360;
+      const connectorGap = singleColumn ? (narrowMobile ? 16 : 30) : 56;
+      const axisX = singleColumn ? (narrowMobile ? 20 : 34) : width / 2;
+      const desktopCardWidth = Math.min(420, Math.max(260, (width / 2) - connectorGap - 32));
+      const mobileCardWidth = Math.max(160, width - axisX - connectorGap - 8);
+      const cardWidth = singleColumn ? mobileCardWidth : desktopCardWidth;
+      const packGap = singleColumn ? 16 : 18;
+      const minPixelsPerYear = singleColumn ? 12 : 10;
+
+      events
+        .classed("is-single", singleColumn)
+        .classed("is-left", function (d) { return !singleColumn && d.side === "left"; })
+        .classed("is-right", function (d) { return singleColumn || d.side === "right"; })
+        .style("width", cardWidth + "px")
+        .style("left", function (d) {
+          if (singleColumn) {
+            d.x = axisX + connectorGap;
+          } else if (d.side === "left") {
+            d.x = (width / 2) - connectorGap - cardWidth;
+          } else {
+            d.x = (width / 2) + connectorGap;
+          }
+          return d.x + "px";
+        })
+        .style("transform", "translateY(0px)");
+
+      events.each(function (d) {
+        d.cardHeight = Math.ceil(this.getBoundingClientRect().height);
+      });
+
+      let pixelsPerYear = minPixelsPerYear;
+      laneItems(singleColumn).forEach(function (items) {
+        for (let i = 1; i < items.length; i += 1) {
+          const prev = items[i - 1];
+          const curr = items[i];
+          const deltaYears = curr.year - prev.year;
+          if (deltaYears > 0) {
+            const needed = ((prev.cardHeight / 2) + (curr.cardHeight / 2) + packGap) / deltaYears;
+            pixelsPerYear = Math.max(pixelsPerYear, needed);
+          }
+        }
+      });
+
+      const rawScale = d3.scaleLinear()
+        .domain([startYear, endYear])
+        .range([topPad, topPad + (endYear - startYear) * pixelsPerYear]);
+
+      let maxBottom = rawScale(endYear);
+
+      laneItems(singleColumn).forEach(function (items) {
+        let previousBottom = -Infinity;
+
+        items.forEach(function (item) {
+          const rawY = rawScale(item.year);
+          let top = rawY - (item.cardHeight / 2);
+
+          if (top < previousBottom + packGap) {
+            top = previousBottom + packGap;
+          }
+
+          item.top = top;
+          item.y = top + (item.cardHeight / 2);
+          item.bottom = top + item.cardHeight;
+          previousBottom = item.bottom;
+          maxBottom = Math.max(maxBottom, item.bottom);
+        });
+      });
+
+      const height = Math.ceil(maxBottom + bottomPad);
+      root.style.height = height + "px";
+      cardsLayer.style("height", height + "px");
+
+      events.style("transform", function (d) {
+        return "translateY(" + Math.round(d.top) + "px)";
+      });
+
+      const ticks = timelineTicks(d3, startYear, endYear);
+
+      svg
+        .attr("width", width)
+        .attr("height", height)
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .attr("preserveAspectRatio", "xMidYMin meet");
+
+      svg.selectAll("*").remove();
+
+      svg.append("line")
+        .attr("class", "cf-timeline__axis")
+        .attr("x1", axisX)
+        .attr("x2", axisX)
+        .attr("y1", topPad)
+        .attr("y2", height - bottomPad);
+
+      svg.selectAll(".cf-timeline__connector")
+        .data(timelineData, function (d) { return d.id; })
+        .join("line")
+        .attr("class", "cf-timeline__connector")
+        .attr("x1", axisX)
+        .attr("x2", function (d) {
+          if (singleColumn || d.side === "right") {
+            return d.x;
+          }
+          return d.x + cardWidth;
+        })
+        .attr("y1", function (d) { return d.y; })
+        .attr("y2", function (d) { return d.y; });
+
+      svg.selectAll(".cf-timeline__event-dot")
+        .data(timelineData, function (d) { return d.id; })
+        .join("circle")
+        .attr("class", "cf-timeline__event-dot")
+        .attr("cx", axisX)
+        .attr("cy", function (d) { return d.y; })
+        .attr("r", 4);
+
+      const tickGroups = svg.selectAll(".cf-timeline__tick")
+        .data(ticks)
+        .join("g")
+        .attr("class", "cf-timeline__tick")
+        .attr("transform", function (d) {
+          return "translate(" + axisX + "," + rawScale(d) + ")";
+        });
+
+      tickGroups.append("circle")
+        .attr("class", "cf-timeline__tick-circle")
+        .attr("r", 6);
+
+      tickGroups.append("text")
+        .attr("class", "cf-timeline__tick-label")
+        .attr("x", singleColumn ? 8 : -18)
+        .attr("y", singleColumn ? -10 : 4)
+        .attr("text-anchor", singleColumn ? "start" : "end")
+        .text(function (d) { return d; });
+    }
+
+    layout();
+
+    let raf = null;
+    let lastWidth = root.clientWidth || 0;
+    const rerender = function () {
+      const currentWidth = root.clientWidth || 0;
+      if (Math.abs(currentWidth - lastWidth) < 1) return;
+      lastWidth = currentWidth;
+
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(layout);
+    };
+
+    if (typeof ResizeObserver !== "undefined") {
+      const observer = new ResizeObserver(rerender);
+      observer.observe(root);
+    } else {
+      window.addEventListener("resize", rerender);
+    }
+
+    return { layout: layout };
+  }
+
+  buildShell();
+})();
+</script>
+<!-- CFETR/CRAFT/BEST focused timeline end -->

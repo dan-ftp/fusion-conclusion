@@ -1,0 +1,488 @@
+<style>
+  .scaled-timeline {
+    --start: 1955;
+    --end: 2030;
+    --year-step: 150px;   /* increase for more vertical spacing */
+    --top-pad: 40px;
+    --axis-x: 110px;
+    --card-gap: 56px;
+
+    --line: #d7dde5;
+    --text: #0f172a;
+    --muted: #5b6472;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --accent: #2457ff;
+
+    position: relative;
+    max-width: 980px;
+    margin: 3rem auto;
+    min-height: calc((var(--end) - var(--start)) * var(--year-step) + (2 * var(--top-pad)));
+  }
+
+  .scaled-timeline::before {
+    content: "";
+    position: absolute;
+    left: var(--axis-x);
+    top: var(--top-pad);
+    bottom: var(--top-pad);
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--line) 4%,
+      var(--line) 96%,
+      transparent 100%
+    );
+  }
+
+  .scaled-timeline__tick {
+    position: absolute;
+    left: var(--axis-x);
+    top: calc(var(--top-pad) + (var(--year) - var(--start)) * var(--year-step));
+    width: 0;
+    height: 0;
+  }
+
+  .scaled-timeline__tick::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: #fff;
+    border: 2px solid var(--accent);
+    transform: translate(-50%, -50%);
+  }
+
+  .scaled-timeline__label {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .scaled-timeline__event {
+    position: absolute;
+    left: calc(var(--axis-x) + var(--card-gap));
+    top: calc(var(--top-pad) + (var(--year) - var(--start)) * var(--year-step) + var(--shift, 0px));
+    transform: translateY(-50%);
+    width: calc(100% - var(--axis-x) - var(--card-gap) - 20px);
+  }
+
+  .scaled-timeline__event::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 50%;
+    width: 36px;
+    height: 2px;
+    background: var(--line);
+    transform: translateY(-50%);
+  }
+
+  .timeline-card {
+    padding: 1rem 1.1rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(16, 24, 40, 0.06);
+  }
+
+  .timeline-card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: var(--text);
+  }
+
+  .timeline-card h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .timeline-card h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .timeline-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  @media (max-width: 860px) {
+    .scaled-timeline {
+      --axis-x: 28px;
+      --card-gap: 34px;
+    }
+
+    .scaled-timeline__label {
+      left: 18px;
+      right: auto;
+      top: -18px;
+      transform: none;
+    }
+
+    .scaled-timeline__event {
+      width: calc(100% - var(--axis-x) - var(--card-gap) - 8px);
+    }
+
+    .scaled-timeline__event::before {
+      left: -22px;
+      width: 22px;
+    }
+  }
+
+  .scaled-timeline {
+  --axis-x: 50%;
+}
+
+.scaled-timeline::before,
+.scaled-timeline__tick {
+  left: 50%;
+}
+
+.scaled-timeline__event {
+  width: calc(50% - var(--card-gap) - 28px);
+}
+
+.scaled-timeline__event--left {
+  left: auto;
+  right: calc(50% + var(--card-gap));
+}
+
+.scaled-timeline__event--left::before {
+  left: auto;
+  right: -36px;
+}
+
+.scaled-timeline__event--left .timeline-card {
+  text-align: right;
+}
+
+@media (max-width: 860px) {
+  .scaled-timeline__event--left {
+    right: auto;
+    left: calc(var(--axis-x) + var(--card-gap));
+  }
+
+  .scaled-timeline__event--left::before {
+    right: auto;
+    left: -22px;
+  }
+
+  .scaled-timeline__event--left .timeline-card {
+    text-align: left;
+  }
+}
+</style>
+
+<div class="scaled-timeline">
+
+  <!-- 5-year ticks -->
+  <div class="scaled-timeline__tick" style="--year: 1955;"><span class="scaled-timeline__label">1955</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1960;"><span class="scaled-timeline__label">1960</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1965;"><span class="scaled-timeline__label">1965</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1970;"><span class="scaled-timeline__label">1970</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1975;"><span class="scaled-timeline__label">1975</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1980;"><span class="scaled-timeline__label">1980</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1985;"><span class="scaled-timeline__label">1985</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1990;"><span class="scaled-timeline__label">1990</span></div>
+  <div class="scaled-timeline__tick" style="--year: 1995;"><span class="scaled-timeline__label">1995</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2000;"><span class="scaled-timeline__label">2000</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2005;"><span class="scaled-timeline__label">2005</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2010;"><span class="scaled-timeline__label">2010</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2015;"><span class="scaled-timeline__label">2015</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2020;"><span class="scaled-timeline__label">2020</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2025;"><span class="scaled-timeline__label">2025</span></div>
+  <div class="scaled-timeline__tick" style="--year: 2030;"><span class="scaled-timeline__label">2030</span></div>
+
+  <!-- event cards -->
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 1956;">
+  <h3>
+    <a href="https://zh.wikisource.org/wiki/1956-1967%E5%B9%B4%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E8%BF%9C%E6%99%AF%E8%A7%84%E5%88%92%E7%BA%B2%E8%A6%81">
+      Long-Term Plan for the Development of Science and Technology
+    </a>
+  </h3>
+  <p>
+    "will soon further learn to use the nuclear fusion of heavy hydrogen in water as a source of power ... research on the control of thermonuclear reactions should be carried out"
+  </p>
+</article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 1958;">
+  <h3><a href="https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html">Leigong</a></h3>
+  <p>Leigong Z-pinch started in 1958 as one of China’s earliest fusion experiments.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 1958;">
+  <h3><a href="https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html">Xiaolong</a></h3>
+  <p>Xiaolong started in 1958 as a pulsed-compression magnetic-mirror device.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 1962;">
+  <h3><a href="https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html">Jiaoxiang-1</a></h3>
+  <p>Jiaoxiang-1 started in 1962 as an early theta-pinch experimental device.</p>
+</article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 1963;">
+  <h3>
+    <a href="https://zh.wikisource.org/wiki/1963-1972%E5%B9%B4%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92%E7%BA%B2%E8%A6%81">
+      Science and Technology Development Plan
+    </a>
+  </h3>
+  <p>
+    "the prospect of achieving huge atomic fusion energy is foreseeable"
+  </p>
+</article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 1964;">
+  <h3>
+    <a href="https://cpc.people.com.cn/BIG5/n1/2023/1011/c443712-40092793.html">
+      Third Five-Year Plan
+    </a>
+  </h3>
+  <p>
+    Li Zhengwu, "a pioneer in the field of nuclear fusion energy development in China ... presided over the preparation of the [third] five-year plan for controlled nuclear fusion research"
+  </p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 1964;">
+  <h3><a href="https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html">Jiaoxiang-2</a></h3>
+  <p>Jiaoxiang-2 started in 1964 as a follow-on theta-pinch device.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 1965;">
+    <h3><a href="https://www.swip.ac.cn/swip/english66/about_swip/index.html">Southwestern Institute of Physics (SWIP)</a></h3>
+    <p>SWIP was established in 1965 as China’s first nuclear-fusion research institute.</p>
+  </article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 1965;">
+  <h3><a href="https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240725_1082474.html">Lingyun</a></h3>
+  <p>Lingyun began construction in the mid-1960s as one of China’s earliest stellarator devices.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 1978;">
+    <h3><a href="https://english.hf.cas.cn/r/ResearchDivisions/IPP/">Institute of Plasma Physics, Chinese Academy of Sciences (ASIPP)</a></h3>
+    <p>ASIPP was founded in September 1978 to research tokamaks for fusion energy.</p>
+  </article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 1978;">
+  <h3>
+    <a href="https://www.93.gov.cn/zhuanti/kjxg/lsqk/lsqk4.htm">
+      Outline of the National Science and Technology Development Plan
+    </a>
+  </h3>
+  <p>"Key scientific and technological research projects ... Research on controlled thermonuclear fusion, Establishment of a controlled thermonuclear fusion experimental device."</p>
+</article>
+  
+<article class="scaled-timeline__event timeline-card" style="--year: 1980;">
+    <h3><a href="https://www.researching.cn/ArticlePdf/m00001/2010/37/9/006.pdf">Laser-12 (later Shenguang and then SG-I)</a></h3>
+    <p>Laser fusion facilities at the High-Power Laser Physics Joint Laboratory.</p>
+  </article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 1983;">
+  <h3>
+    <a href="https://nnsa.mee.gov.cn/ztzl/haqshmhsh/haqrdmyyt/202407/202407/t20240717_1081912.html">
+      Nuclear Energy Development Technology Policy Meeting
+    </a>
+  </h3>
+  <p>"Chinese Nuclear Society and China National Nuclear Corporationy laid out a three-step plan for the development of nuclear energy: thermal fission reactors, fast fission reactors, and fusion reactors."</p>
+</article>
+  
+<article class="scaled-timeline__event timeline-card" style="--year: 1984;">
+    <h3><a href="https://www.swip.ac.cn/swip/english66/about_swip/index.html">HL-1</a></h3>
+    <p>HL-1 was completed in 1984 at SWIP and is the first large-scale tokamak in China.</p>
+  </article>
+
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 1994;">
+    <h3><a href="https://www.swip.ac.cn/swip/english66/about_swip/index.html">HL-1M</a></h3>
+    <p>HL-1M was commissioned in 1994 at SWIP and was the upgraded successor to HL-1.</p>
+  </article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 1995;;">
+    <h3><a href="https://english.ipp.cas.cn/syxw/201305/t20130531_274918.html">HT-7</a></h3>
+    <p>HT-7 entered service at ASIPP in 1995 as China’s first superconducting tokamak.</p>
+  </article>
+  
+<article class="scaled-timeline__event timeline-card" style="--year: 2000;">
+    <h3><a href="https://www.researching.cn/ArticlePdf/m00001/2010/37/9/006.pdf">SG-II</a></h3>
+    <p>New laser fusion facility begins operation in 2000.</p>
+  </article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 2002;">
+    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S092037960500339X">HL-2A</a></h3>
+    <p>HL-2A started operation in 2002 as China’s first tokamak with a divertor.</p>
+  </article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 2006;">
+    <h3><a href="https://www.iter.org/node/20687/chinese-tokamak-east-achieves-first-plasma">Experimental Advanced Superconducting Tokamak (EAST)</a></h3>
+    <p>EAST achieved first plasma in Hefei, it was the largest superconducting tokamak with a divertor at the time.</p>
+  </article>
+
+  <article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2006;">
+  <h3>
+    <a href="https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/200811/t20081129_65771.html">
+      11th Five-Year Plan
+    </a>
+  </h3>
+  <p>"Taking the opportunity of participating in the construction and research of the International Thermonuclear Experimental Reactor (ITER), we will focus on the research of large-scale superconducting magnet technology, microwave heating and driving technology, neutral beam injection heating technology, cladding technology, large-scale real-time separation and purification of tritium technology, divertor technology, numerical simulation, plasma control and diagnostic technology, and key material technologies required for demonstration reactors as well as deepening research on high-temperature plasma physics and exploring certain non-tokmak pathways with energy as the goal."</p>
+</article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2006;">
+  <h3>
+    <a href="https://fr.china-embassy.gov.cn/zgzfg/zgsg/kjc/zfkjhz/200611/t20061123_3140653.htm">
+      ITER Joint Implementation Agreement formally signed — PRC Embassy in France
+    </a>
+  </h3>
+  <p>
+    "China's accession to the ITER programme is both a strategic necessity to fundamentally solve the energy problem and has practical implications in many aspects ... By participating in the construction and operation of ITER and fully mastering relevant knowledge and technologies, my [Minister Xu Guanhua of the Chinese Ministry of Science and Technology] country may catch up with the world's advanced level of magnetic confinement fusion research in a shorter time, greatly accelerating the process of fusion energy development in my country."
+  </p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2007;">
+    <h3><a href="https://www-pub.iaea.org/mtcd/meetings/pdfplus/2010/cn180/cn180_papers/ov_p-8.pdf">J-TEXT</a></h3>
+    <p>J-TEXT was reconstructied at Huazhong University of Science and Technology from the TEXT-U tokamak from the University of Texas at Austin.</p>
+  </article>
+
+  <article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2011;">
+  <h3>
+    <a href="https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2011/201107/t20110713_88228.html">
+      12th Five-Year Plan
+    </a>
+  </h3>
+  <p>
+    "Using participation in the construction of the International Thermonuclear Experimental Reactor (ITER) device as an opportunity, launch and implement a fusion energy research special program.... Accelerate fusion energy development research in China; complete design, certification, and manufacturing-technology R&amp;D for the ITER procurement packages undertaken by China in ITER device construction; fully digest and absorb ITER’s overall design and related technologies; carry out overall design research for China’s future magnetic-confinement fusion reactor; accelerate talent cultivation; and build China’s fusion energy research and innovation system."
+  </p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2013;">
+  <h3><a href="https://pubmed.ncbi.nlm.nih.gov/37012739/">Keda Mirror with AXisymmetricity (KMAX)</a></h3>
+  <p>KMAX started in 2013 as an axisymmetric tandem-mirror experiment.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2014;">
+  <h3><a href="https://www.hplpb.com.cn/en/article/doi/10.11884/HPLPB201729.170077">Yingguang-1</a></h3>
+  <p>Yingguang-1 started in 2014 as an FRC test device.</p>
+  
+<article class="scaled-timeline__event timeline-card" style="--year: 2015;">
+    <h3><a href="https://www.cambridge.org/core/journals/high-power-laser-science-and-engineering/article/laser-performance-of-the-sgiii-laser-facility/4E9D5D0025FEF84F60793737E44E9CFE?utm_source=chatgpt.com">SG-III</a></h3>
+    <p>New 180 kJ laser fusion facility begins operation in 2015.</p>
+  </article>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2015;">
+    <h3><a href="https://english.ipp.cas.cn/syxw/201812/t20181214_275108.html">China Fusion Engineering Test Reactor (CFETR)</a></h3>
+    <p>CFETR is the Chinese successor to ITER. Chinese scientists finished CFETR’s conceptual design in 2015.</p>
+  </article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 2015;">
+  <h3><a href="https://conferences.iaea.org/event/98/contributions/11837/">Keda Torus eXperiment (KTX)</a></h3>
+  <p>KTX started in 2015 as a reversed-field-pinch experiment.</p>
+</article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2016;">
+  <h3>
+    <a href="https://www.ndrc.gov.cn/xxgk/zcfb/tz/201606/W020190905517012835441.pdf">
+      Energy Technology Revolution Innovation Action Plan (2016–2030)
+    </a>
+  </h3>
+  <p>
+    "R&D efforts will focus on the design and construction of ITER; core plasma physics and fusion reactor engineering technologies; the indigenous design and construction of a Fusion Engineering Test Platform (FETP); and the design, construction, and operation of large tokamak fusion devices. [Expected outcome:] Fully master internationally advanced key nuclear fusion technologies and fusion-reactor construction engineering technologies. [2020 goal:] The parameters and quality of fusion-reactor plasmas will be improved, laying the foundation for the design and construction of a Fusion Engineering Test Platform (FETP). [2030 goal:] The Fusion Engineering Test Platform (FETP) will be operating successfully, and China will have mastered the experimental, operational, and control technologies for burning plasma in a fusion reactor core. [2050 outlook:] Build a fusion prototype power plant on the order of 1 GW, achieving the commercial application of fusion energy."
+  </p>
+</article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2016;;">
+  <h3>
+    <a href="https://www.most.gov.cn/xxgk/xinxifenlei/gjkjgh/201608/t20160810_127174.html">
+      13th Five-Year Plan
+    </a>
+  </h3>
+  <p>
+    "Fully participate in the management of the ITER international organization, strengthen China’s fusion-energy R&D capabilities; use participation in the ITER program as an opportunity to bring more relevant domestic institutions into international R&D, enhance China’s capacity to participate in the management of major science-and-engineering projects, and establish a model for China’s participation in the management of international mega-science projects."
+  </p>
+</article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2016;">
+  <h3>
+    <a href="https://zfxxgk.nea.gov.cn/auto83/201701/t20170113_2490.htm">
+      13th Five-Year Plan — Energy Technology Innovation
+    </a>
+    <a href="https://zfxxgk.nea.gov.cn/auto83/201701/P020170113571241558665.pdf">[PDF]</a>
+  </h3>
+  <p>
+    "Carry out the detailed engineering design of the China Fusion Engineering Test Reactor (CFETR), and, using the existing physics design database, conduct validation experiments related to CFETR physics on the Experimental Advanced Superconducting Tokamak (EAST) and the HL-2M Tokamak. Conduct preliminary research on key fusion-reactor technologies, and develop fusion-reactor technologies not covered by ITER, such as tritium technology and fusion materials.
+
+On the inertial-confinement fusion-energy side, around solutions for the overall technical route of the Z-FFR experimental reactor, obtain validation results for key technologies and parameters, providing core technical support for the formulation of the Z-FFR experimental reactor plan and for its design and development. The research areas are key technologies including ignition-target design, high-repetition-rate drivers, subcritical blankets, and materials."
+  </p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2017;">
+  <h3><a href="https://www.jstage.jst.go.jp/article/pfr/14/0/14_3402074/_article">Chinese First Quasi-axisymmetric Stellarator (CFQS)</a></h3>
+  <p>CFQS started in 2017 as a quasi-axisymmetric stellarator project.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2018;">
+    <h3><a href="https://english.hf.cas.cn/nr/bth/202203/t20220328_303131.html">Comprehensive Research Facility for Fusion Technology (CRAFT)</a></h3>
+    <p>China broke ground for CRAFT in Hefei as a large fusion-engineering test complex for magnets, heating systems, divertors, materials, and other reactor technologies.</p>
+  </article>
+
+  <article class="scaled-timeline__event timeline-card" style="--year: 2020;">
+    <h3><a href="https://en.cnnc.com.cn/2020-12/07/c_1023230.htm">HL-3</a></h3>
+    <p>HL-3 (previously called HL-2M) first plasma on December 4, 2020, giving China its next-generation advanced magnetic-confinement experimental device in Chengdu.</p>
+  </article>
+
+  <article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2022;">
+  <h3>
+    <a href="https://zfxxgk.nea.gov.cn/1310524241_16479412513081n.pdf">
+      14th Five-Year Plan
+    </a>
+  </h3>
+  <p>
+    "Support early-stage R&D on controlled nuclear fusion and actively carry out international cooperation."
+  </p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2022;">
+  <h3><a href="https://www.sciencedirect.com/science/article/pii/S092037962200134X">HUST Field-Reversed Configuration (HFRC)</a></h3>
+  <p>HFRC entered its initial operation stage by 2022.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2023;">
+  <h3><a href="https://www.reuters.com/world/china/images-show-china-building-huge-fusion-research-facility-analysts-say-2025-01-28/">SG-IV</a></h3>
+  <p>NIF-class MJ laser fusion facility begins construction in 2023.</p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2024;">
+    <h3><a href="https://stcsm.sh.gov.cn/news/20240702/e0940adf99fb412da09491b2dbdb0187.html">HH70</a></h3>
+    <p>HH70 achieved first plasma in June 2024 as the world’s first fully high-temperature-superconducting tokamak built by a Chinese private fusion company.</p>
+  </article>
+
+<article class="scaled-timeline__event scaled-timeline__event--left timeline-card" style="--year: 2026;">
+  <h3>
+    <a href="https://www.qstheory.cn/20260313/8d9257101d6045f28d03a013be7c71b3/c.html">
+      15th Five-Year Plan
+    </a>
+  </h3>
+  <p>
+    "Aim to lead key areas of future development, build a full-chain cultivation system for future industries, and promote ... nuclear fusion energy ... to become new economic growth points ...  Establish a mechanism for future industrial investment growth and risk sharing, organize and implement future industrial development demonstration projects, and explore diversified technical routes, typical application scenarios, feasible business models, and market supervision rules. Lay out a number of national future industry research institutes and concept verification centers, and build a number of future industry pilot zones based on regions with outstanding advantages in scientific and educational resources and strong industrial foundations."
+  </p>
+</article>
+
+<article class="scaled-timeline__event timeline-card" style="--year: 2026;">
+  <h3><a href="https://www.chinanews.com.cn/sh/2026/03-07/10582906.shtml">FLAME</a></h3>
+  <p>FLAME started in 2026 using a field-reversed magnetic mirror approach.</p>
+</article>
+
+</div>

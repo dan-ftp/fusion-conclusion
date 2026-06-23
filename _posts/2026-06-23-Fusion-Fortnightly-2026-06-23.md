@@ -11,9 +11,13 @@ published: False
 
 [General Fusion claims compressional heating of plasmas in LM26](https://generalfusion.com/post/general-fusion-achieves-compressional-plasma-heating-with-lm26-magnetized-target-fusion-machine/). But, if you dig into the [paper](https://generalfusion.com/wp-content/uploads/2026/06/The_Science_of_Compressional_Heating_in_LM26.pdf) submitted for peer review, you see that it was only the electrons which were heated (this is nice although there is some ambiguity as to how much and the balance of compressional versus ohmic heating) and the ions (which matter for fusion) remained largely unchanged. This is consistent with my [previous analysis](https://www.fusionconclusion.com/how-general-fusions-reactor-will-work-or-wont/) of the progress, or lack there of, the company has made towards its fusion target over the years. It can densify the plasma through compression but not get the ion heating needed to get to fusion conditions. It also reinforced my hypothesis that it was underperformance of the ill-named Lawson Machine 26 (they predicted the machine would exceed the Lawson parameter in 2026) that caused the present inside investors to not want to continue to invest in the company, forcing it to de-SPAC to get money to continue to operate. 
 
+[OpenStar publishes their concept paper on *Deuterium–tritium levitated dipole fusion power plants*](https://www.sciencedirect.com/science/article/pii/S0920379626002516). 
+
 [Helion announced that it had received two Washington Department of Health licenses for Orion](https://www.helionenergy.com/newsroom/helion-clears-key-regulatory-milestone-on-the-path-to-building-and-operating-the-worlds-first-fusion-power-plant). The licenses are for [Radioactive Materials](https://doh.wa.gov/community-and-environment/radiation/radioactive-materials/licensing) and [Radioactive Air Emissions](https://doh.wa.gov/community-and-environment/radiation/radioactive-air-emissions/licensees).
 
-[General Fusion named Time's Top Greentech Company of 2026](https://time.com/article/2026/06/09/world-top-greentech-companies-2026/), further reinforcing the irrelevance of Time.
+[General Fusion named Time's Top Greentech Company of 2026](https://time.com/article/2026/06/09/world-top-greentech-companies-2026/). Although it does not appear to be a pay-to-play to get on the list, it is pay-to-use the award announcment. So maybe Time picks out the companies in a position for most wanting the publicity to put high on the list, as it surely couldn't be for fusion performance, strong finances, or actually impacting the environment just yet.
+
+[CFS announces investment by Abu Dhabi-Based Plynth Energy](https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-abu-dhabi-based-plynth-energy/). Plynth is a fusion-focused fund. This investment announcement is nearly a year after CFS announced its Series B2. [Axios](https://www.axios.com/pro/climate-deals/2026/06/16/cfs-plynth-deal-price) claimes it was 9-figures. 
 
 [Focused Energy plans to spin-off of SourceLight](https://www.focused-energy.co/news-release/from-cutting-edge-research-to-industry-focused-energy-plans-spin-off-of-sourcelight). This is to make a clean separation of the fusion energy focus of Focused Energy from the other technologies that have been in development at the company, including here SourceLight's Laser-Driven Radiation Sources for materials inspection.
 
@@ -26,6 +30,14 @@ published: False
 [SHINE partners with newcleo on nuclear waste reprocessing](https://www.shinefusion.com/blog/shine-and-newcleo-partner-to-advance-u-s-spent-nuclear-fuel-recycling). [newcleo](https://en.wikipedia.org/wiki/Newcleo) is a European fission company founded in 2021 developing lead-cooled fast reactors, as such it does not yet have spent fuel that needs reprocessing, but is interested in working with SHINE on doing so as well as using material that SHINE has reprocessed, using neutrons from it's DT fusion accelerators, from others. In related news, [SHINE was one of five companies selected by the DoE to talk about transforming Cold War-era plutonium to nuclear reactor fuel](https://www.neimagazine.com/news/us-plutonium-fuel-partners-in-advanced-talks/).
 
 [First Light Fusion is now using its fusion equipment for orbital imact studies](https://firstlightfusion.com/media/first-light-fusion-successfully-recreates-orbital-impact-velocities-at-texas-am-engineering-experiment-station/). It's VIPER velocity amplifier is able to achieve projectile velocities >12 km/s.
+
+[General Fusion filed its SEC Form 424B3](https://www.sec.gov/Archives/edgar/data/2074850/000110465926073425/0001104659-26-073425-index.htm). It describes all of the financial details of what the shareholders are voting on for the merger. It also [ammended the SEC Form 8-K](https://www.sec.gov/Archives/edgar/data/2074850/000110465926071408/0001104659-26-071408-index.htm), giving General Fusion SAFE holders the right to vote on it. 
+
+[TAE and TMTG files SEC Form 8-k](https://www.sec.gov/Archives/edgar/data/1849635/000114036126024736/ef20075853_425.htm). They restate their goal of completing the merger by the end of the year. Interestingly, the spin-off of Truth Social is no longer being persued. 
+
+[American Fusion files SEC Schedule 13D](https://www.sec.gov/Archives/edgar/data/96664/000107997326000817/xslSCHEDULE_13D_X02/primary_doc.xml). It indicates that the CEO Richard C. Hawkins owns 8.59% common shares in the company.
+
+[Pinnacle Consulting Services files Schedule 13G for American Fusion](https://www.sec.gov/Archives/edgar/data/96664/000107997326000818/xslSCHEDULE_13G_X02/primary_doc.xml). Pinnacle Consulting Services, controlled by [Robert L. Hymers III](https://www.linkedin.com/in/robert-l-hymers-iii-cpa-9ba6474/), disclosed beneficial ownership of 145.1 million AMFN shares, or 8.99%.
 
 ## People
 
@@ -44,7 +56,11 @@ ORNL is hiring directors of the [Fusion Engineering and Applied Materials](https
 ---
 ## Governemnt
 
-[The United States Department of Energy released its finalized Fusion Science and Technology Roadmap](https://www.energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate).
+[The United States Department of Energy released its finalized Fusion Science and Technology Roadmap](https://www.energy.gov/documents/fusion-st-roadmap-060926pdf). I started to write my thoughts on this, but it was turning into a rant that I'll probably make into its own post. Overall, it is a fairly nice plan. But the second page tells the whole story: "Disclaimer → The activities outlined in the Fusion Science and Technology Roadmap are focused on prioritizing strategic directions for the United States (U.S.) Department of Energy to further collaborate with the U.S. Fusion Industry. This Roadmap does not commit the Department of Energy to specific funding levels. Future funding is subject to Congressional appropriations." Without funding, it is just another nice plan.
+
+[Canada releases nuclear energy strategy](https://natural-resources.canada.ca/energy-sources/nuclear-energy-uranium/nuclear-energy-strategy-canada#P4). Naturally, it focuses on being a leader in the fusion fuel cycle due to the extensive tritium production from its CANDU reactors.
+
+[Japan plans ¥3.1 T ($19 B) in public-private fusion investment by FY2040, aims for a 2030s power-generation demonstration, and targets 30% global market share](https://datazoo.jp/n/%E9%AB%98%E5%B8%82%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%AE%E6%88%90%E9%95%B7%E6%88%A6%E7%95%A5%2B%E6%A0%B8%E8%9E%8D%E5%90%88%E7%99%BA%E9%9B%BB%E3%81%AB3%E5%85%86%E5%86%86%E6%8A%95%E8%B3%87%E3%81%B8/25098432).
 
 [China expands IPO support to “future industries” including fusion](https://www.reuters.com/legal/government/china-support-ipos-by-future-industry-startups-large-model-companies-2026-06-17/). China has a “fifth listing standard” for strategic tech firms that may not yet be profitable to go public. They have now made it explicitly to include the future industries in their five-year plans.
 
@@ -58,43 +74,8 @@ ORNL is hiring directors of the [Fusion Engineering and Applied Materials](https
 
 [Project WISER, a "wind tunnel" stellarator project is launched](https://euro-fusion.org/eurofusion-news/europe-advances-stellarator-fusion-research-with-the-launch-of-project-wiser/). WISER, while not a small machine (R = 5 m, B = 1.9 T) is smaller and lower field than what is projected for commercial-scale stellarators. Centered around the Spanish fusion ecosystem, €500 is earmarked to support the project through construction.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-General Fusion announced on June 15, 2026 that [its joint Form F-4 with Spring Valley Acquisition Corp. III had been declared effective by the SEC](https://generalfusion.com/post/general-fusions-joint-f-4-with-spring-valley-acquisition-corp-iii-in-connection-with-proposed-business-combination-declared-effective-by-sec/). The company said the SEC effectiveness occurred on June 12 and advances the transaction toward a shareholder vote and closing, after which the combined company is expected to trade on Nasdaq as GFUZ. This is a material public-market milestone because it moves General Fusion’s de-SPAC process into its final stages.
-
-TAE Technologies and Trump Media & Technology Group filed a June 10, 2026 [merger update on Form 8-K and Rule 425 materials](https://www.sec.gov/Archives/edgar/data/1849635/000114036126024735/ef20075853_8k.htm). The filing said the parties remained focused on completing their previously announced merger as soon as possible, with a target of the fourth quarter of 2026 or sooner. This qualifies as a material public-market update because it resets transaction timing in an active deal involving a major fusion company.
-
-Trump Media’s [Form 8-K tied to the TAE merger](https://www.sec.gov/Archives/edgar/data/1849635/000114036126024735/ef20075853_8k.htm) is the clearest in-window securities-law update on the TAE public-markets process. It furnishes a merger-status press release, states that the parties remain focused on closing the TAE transaction on the revised timetable, and, just as important, records that TMTG, TAE, and Texas Ventures Acquisition III have stopped pursuing the previously discussed spin-off of Truth Social and other media assets. For diligence, this matters because it narrows deal structure, resets expectations around post-closing asset separation, and updates the filed record on transaction sequencing, governance discretion, and litigation-risk framing.
-
-Spring Valley’s [Rule 425 communication announcing effectiveness of the General Fusion registration statement](https://www.sec.gov/Archives/edgar/data/2074850/000110465926074098/tm2617985d1_425.htm) is the key legal step moving the General Fusion de-SPAC from registration into active solicitation. The filing states that the joint Form F-4 was declared effective, that the definitive proxy statement was filed and mailed, and that Spring Valley fixed the record date and shareholder meeting for the merger vote. It also confirms the contemplated post-closing name and ticker changes. For investors, boards, lenders, and expert-witness work, this is the formal transition from preliminary disclosure to a live shareholder-approval process.
-
-Spring Valley’s [separately filed Rule 425 transcript of General Fusion’s Web Summit keynote](https://www.sec.gov/Archives/edgar/data/2074850/000110465926074659/tm2618107d1_425.htm) is a distinct securities-record item, not just marketing noise. By putting Greg Twinney’s presentation into the filed merger record, the parties preserved public statements about General Fusion’s commercialization thesis, claimed path to grid-ready power, liquid-lithium design logic, major technical milestones for LM26, and intended route toward a first-of-a-kind plant. That matters because filed management statements can shape diligence, disclosure comparisons, reliance disputes, and later expert analysis of what the market was formally told during solicitation.
-
-Spring Valley’s [later Rule 425 filing of a paid PR Newswire article about the General Fusion transaction](https://www.sec.gov/Archives/edgar/data/2074850/000110465926075217/tm2618231d1_425.htm) is legally notable because it brings a sponsored market-facing article into the SEC record and preserves the compensation disclaimer and conflict language alongside the promotional claims. The article reiterates the implied pro forma valuation, PIPE and trust-capital assumptions, shareholder-vote setup, and expected listing path, while expressly warning readers not to treat the piece as investment advice. For securities-law diligence, that combination of paid promotion, conflict disclosure, and transaction detail is precisely the sort of communication that can matter later.
-
-American Fusion CEO Richard C. Hawkins’ [Schedule 13D](https://www.sec.gov/Archives/edgar/data/96664/000107997326000817/xslSCHEDULE_13D_X02/primary_doc.xml) is an in-window control-and-ownership record with real diligence value. It reports beneficial ownership of 120,000,000 common shares, or 8.59% of the class, and identifies Hawkins as chief executive officer, secretary, and director. The filing also states that his shares were received through the reverse acquisition of Kepler Fusion and related acquisitions and that he may buy or sell depending on market conditions and company prospects. For investors and counterparties, this is a useful read on insider concentration, acquisition provenance, and future trading optionality.
-
-Pinnacle Consulting Services’ [Schedule 13G for American Fusion](https://www.sec.gov/Archives/edgar/data/96664/000107997326000818/xslSCHEDULE_13G_X02/primary_doc.xml) is another meaningful in-window ownership filing. It reports sole voting and dispositive power over 145,149,958 common shares, equal to 8.99% of the class, and checks the Rule 13d-1(c) box rather than the passive institutional route under Rule 13d-1(b). Given American Fusion’s recent warrant-financing disclosures and thin capital position outside this window, the filing matters because it helps map who can move stock, influence financing outcomes, or become relevant in any later dispute over dilution, control, or related-party dynamics.
-
-
-
-
+---
+## Other
 
 [Financial Times writes a story on the fusion supply chain](https://www.ft.com/content/73d5d6a0-31d5-458b-81fa-01dec3dd465a). Not much new in there for those in the industry. There will be lots of demand if/when fusion ramps up but there's still uncertainty of timing and technology specifics.
 

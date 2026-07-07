@@ -5,7 +5,7 @@ published: false
 ---
 <p><em>No fluff, all facts.</em></p>
 
-Date range: 2026-06-23 to 2026-07-06 (inclusive).
+[Shareholders approve General Fusion deSPAC](https://generalfusion.com/post/spring-valley-acquisition-corp-iii-shareholders-approve-business-combination-with-general-fusion/). Such a "yes" vote is more of a formality these days as only low single digit percentage don't make it through this stage. The realy SPAC shareholder confidence will be seen on redemption, at which $234M is at stake and the redemption numbers will be in the closing K-8. They can vote yes on the merger and still redeam their investment plus initial interest and warranets; effectively sheilding them from the downside and keeping the upside. After this it has to get through some regulatory approvals and then likely trades as GFUZ (shares) and GFUZW (warrants) on July 10. Call up your broker! 
 
 [UKAEA and Eni launch RH3OVA, a colaboration on fusion fuel cycle](https://www.eni.com/en-IT/media/press-release/2026/07/pr-ukaea-eni-launch-rh3ova-expedite-fusion-energy-industrialisation.html). [RH3OVA](https://rh3ova.com/index.html#welcome) is a joint venture between the D-T experience on JET at UKAEA and gas processing codes at Eni that aims to provide tritium system engineering services.
 
@@ -45,7 +45,9 @@ General Fusion releases a [slick new promo video](https://www.linkedin.com/posts
 
 [Startorus Fusion tests a 2x4 m HTS magnet to 11.1 T peak field](https://www.linkedin.com/posts/superconductivity-superconductor-hts-ugcPost-7475473075191316480-fmsa/).
 
+[Paper published on *Tritium supply and demand for fusion: Socioeconomic scenario modelling*](https://www.sciencedirect.com/science/article/pii/S092037962600284X]. I was initially interested in reading through this to see what present credible tritium projections are. However, just seing their tritium demand estimates scaled from EU-DEMO based on fusion power (e.g., they calculate 750 g for SPARC, which [in fact](https://cfs.energy/devens-campus/devens-info/) is [10 g](https://conferences.iaea.org/event/425/contributions/37853/)) I couldn't bring myself to read or believe the rest of the paper. 
 
+[Tungsten prices have nearly 10x since the start of the year](https://www.bloomberg.com/graphics/2026-opinion-australia-tungsten-mine-us-war-defense-china/). Of course, 80% of the present tungsten supply comes from China (another 5% from Russia and North Korea). Tungsten is useful for fusion as the plasma-facing components because of the excellent thermal properties, low transmutation, low tritium retention, and low sputtering. Tungsten is useful for 
 
 [FIA Launches 2026 Fusion Industry Supply Chain Report](https://www.fusionindustryassociation.org/fia-launches-2026-fusion-industry-supply-chain-report/). Category: Supplier finance, factory capacity, and corporate moves. Confidence: High. Summary: On 23 June 2026, the Fusion Industry Association said reported fusion supply-chain spending rose 24% in 2025 to $538 million among respondents and is projected to rise another 27% in 2026 to $681 million. It also said 75% of suppliers invested to expand fusion capacity in the last year, while current bottlenecks remain concentrated in power systems, heat management, and vacuum vessels and pumps, with fuel-cycle systems and first-wall materials flagged as major future concerns. Fusion relevance: This is the clearest fresh public readout on where private fusion buyers are actually spending money and where supplier bottlenecks are hardening. For investors and supplier strategists, the most important signal is that traction is broadening beyond reactor developers to upstream vendors, but tritium/fuel-cycle and extreme-conditions materials remain unresolved scale risks. citeturn15view0
 

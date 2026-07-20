@@ -24,3 +24,6 @@ published: false
 
 [Type One Energy hosted an open house near its planned Tennessee facility](https://typeoneenergy.com/blog/a-community-first-approach-to-fusion-energy/). More than 150 people attended.
 
+[UKAEA published its procurement pipeline](https://www.gov.uk/government/publications/ukaea-procurement-pipeline), for those wanting a window into what they are planning on procuring (and doing).
+
+[F4E opened applications for its Supply Chain Excellence Award](https://industryportal.f4e.europa.eu/articles/f4e-supply-chain-excellence-award-2026-applications-are-open/).

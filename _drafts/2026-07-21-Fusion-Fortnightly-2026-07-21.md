@@ -27,3 +27,11 @@ published: false
 [UKAEA published its procurement pipeline](https://www.gov.uk/government/publications/ukaea-procurement-pipeline), for those wanting a window into what they are planning on procuring (and doing).
 
 [F4E opened applications for its Supply Chain Excellence Award](https://industryportal.f4e.europa.eu/articles/f4e-supply-chain-excellence-award-2026-applications-are-open/).
+
+[Nancy Lipson has joined Zap Energy as Chief Legal Officer](https://www.linkedin.com/posts/zap-energy_were-pleased-to-announce-that-nancy-lipson-activity-7484999848065253377-FWaN). [Nancy](https://www.linkedin.com/in/nancy-lipson-b11b4626/) spent most of her career as the Deputy Council and then Chief Legal Officer of Newmont Corporation, a publicly traded mining company and the "world's leading gold company." Perhaps a sign Zap is thinking about going public.
+
+[StandardX comes out of stealth](https://www.standardx.tech/). From Kyoto Fusioneering co-founder [Richard Pearson](https://www.linkedin.com/in/richard-pearson-phd-65660861/) and nuclear physicist [Ross Allen](https://www.linkedin.com/in/rossamallen/) comes "the world's first isotope refinery: a single accelerator platform that produces the full portfolio of isotopes from one machine." They plan on using a [fixed-field alternating gradient accelerator](https://en.wikipedia.org/wiki/Fixed-field_alternating_gradient_accelerator). I am seeing a lot of companies planning on isotope production. See the StandardX website for the menu of isotopes they would like to sell to you, including tritium.
+
+[Pacific Fusion pulsed power prototype completes 3,000 shots](https://www.pacificfusion.com/updates/lawrence-livermore-pacific-fusion-collaboration-breaks-new-record-to-advance-americas-high-gain-fusion-capability). An important achievement in scaling up their system. At about 1 Hz for their power plant, 3,000 shots is about an hour; so another factor of 10,000 to get to a year equivalent shot lifetime. I wonder if getting to this rep rate was the major hurdle or if there will be a lot of effort to increase through the next couple of decades of shots.
+
+[Avalanche announces the availability of a 300 kV feedthrough product](https://www.avalanchefusion.com/hardware/hammerhead). 

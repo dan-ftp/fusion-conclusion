@@ -12,7 +12,9 @@ General Fusion stock starts trading. Realta announces move to former hot dog fac
 
 [General Fusion completes deSPAC with Spring Valley Acquisition Corp. III](https://generalfusion.com/post/general-fusion-completes-business-combination-with-spring-valley-acquisition-corp-iii/). General Fusion began trading on Nasdaq on July 13 under [GFUZ](https://www.nasdaq.com/market-activity/stocks/gfuz).
 
-[General Fusion files SEC Form 20-F with details on how the deSPAC closed](https://www.sec.gov/ix?doc=/Archives/edgar/data/2074850/000110465926084015/tm2620136d1_20f.htm). The main news is that 91.6% of the SPAC investors chose to take their money back instead of keeping shares, redeeming about $217m. General Fusion still ended up with about $170m in cash, most of which came from private investors and money the company already had. 
+[General Fusion files SEC Form 20-F with details on how the deSPAC closed](https://www.sec.gov/ix?doc=/Archives/edgar/data/2074850/000110465926084015/tm2620136d1_20f.htm). The main news is that 91.6% of the SPAC investors chose to take their money back instead of keeping shares, redeeming about $217m. 
+
+General Fusion still ended up with about $170m in cash, most of which came from private investors and money the company already had. 
 
 The private investors got a very favorable deal: a 12% annual return that can be added to what General Fusion owes them, plus warrants that let them buy more shares at $12 if the stock’s value goes up. If General Fusion’s stock falls or the company later raises money at a lower price, those investors can receive more shares, diluting ordinary shareholders. 
 

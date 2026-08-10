@@ -5,6 +5,11 @@ published: false
 ---
 <p><em>No fluff, all facts.</em></p>
 
+[MIFTI expands LLNL collaboration]{https://miftifusion.com/updates/}.
+
+[Tokamak Energy publishes it's fusion pilot plant preconceptual design]{https://iopscience.iop.org/collections/nf-260604-01}.
+
+[Zap reports their liquid metal loop ran for 1,000 hours]{https://www.linkedin.com/posts/zap-energy_liquidmetals-fissionenergy-nuclearenergy-activity-7491497863298932737-xhOh}.
 
 [Starlight Engine opened a nationwide Japanese search for the site of its FAST superconducting-tokamak fusion demonstration project](https://www.jaif.or.jp/en/news/7948). The Japanese fusion startup invited proposals from prefectures and designated major cities through October 15, with local discussions and site surveys to follow and a preferred location targeted by 2028. 
 

@@ -11,7 +11,7 @@ published: false
 
 [Zap reports their liquid metal loop ran for 1,000 hours]{https://www.linkedin.com/posts/zap-energy_liquidmetals-fissionenergy-nuclearenergy-activity-7491497863298932737-xhOh} and [updates their website]{https://www.zapenergy.com/}. 
 
-[Starlight Engine opened a nationwide Japanese search for the site of its FAST superconducting-tokamak fusion demonstration project](https://www.jaif.or.jp/en/news/7948).
+[Starlight Engine opened a nationwide Japanese search for the site of its FAST superconducting-tokamak fusion demonstration project](https://www.jaif.or.jp/en/news/7948) and [stated that it expects its reactor project will cost 1 trillion yen ($6.3B)]{https://monoist.itmedia.co.jp/mn/articles/2607/21/news038_3.html}.
 
 [Inertia, the fusion company founded by the owner of The Onion, warns fusion industry against extrapolation, unveils extrapolation](https://inertia.com/press/commercial-roadmap-phase-1/). The chest thumping of NIF performance is a bit heavy handed, but the assessment of the 10 miracles to demonstrate in "phase 1" for them is relatively on target.
 
@@ -19,21 +19,21 @@ published: false
 
 [Thea won a $20 million ARPA-E SCALEUP award to scale up its superconducting magnet manufacturing](https://thea.energy/press-release/thea-energy-expands-magnet-manufacturing-lines-with-20-million-arpa-e-scaleup-program-award/). 
 
-[Commonwealth Fusion Systems raised another $1 billion of equity](https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/). Still no public information on what the total company valuation is. Oddly, this was the first round where specific investors were not named. It was mentioned that the round included pension funds, sovereign-wealth funds, infrastructure investors, and industrial corporate partners, which are classes of entities that have participated in previous rounds. While the round raised last year was explicitly described as funding to complete SPARC, this round has been identified as for ARC development, site prep, and supplier development.
+[Commonwealth Fusion Systems raised another $1 billion of equity](https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/). Still no public information on what the total company valuation is. Oddly, this was the first round where specific investors were not named. It was mentioned that the round included pension funds, sovereign-wealth funds, infrastructure investors, and industrial corporate partners, which are classes of entities that have participated in previous rounds. While the round raised last year was explicitly described as funding to complete SPARC, this round has been identified as for ARC development, site prep, and supplier development. 
 
-[Fuse signed a five-year Cooperative Research and Development Agreement with the Nevada National Security Site](https://www.f.energy/library/fuse-deepens-partnership-across-u-s-nuclear-security-enterprise-with-five-year-cooperative-research-and-development-agreement-crada-with-nevada-national-security-sites-nnss). 
+[Fuse claims record neutron yield of 1.27×10¹² in a single shot for a fusion company](https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/) which is false: [SHINE has demonstrated 3.7×10¹³ neutrons per second effectively in steady state](https://www.shinefusion.com/blog/shine-phoenix-combine-for-world-record).
 
-[Terra Fusion was reported to be raising a $10 million seed round to build its University of Maryland-origin fusion concept in Baltimore](https://technical.ly/entrepreneurship/energy-startups-race-to-power-ai-infrastructure/). 
+[Fuse signed a five-year Cooperative Research and Development Agreement with the Nevada National Security Site](https://www.f.energy/library/fuse-deepens-partnership-across-u-s-nuclear-security-enterprise-with-five-year-cooperative-research-and-development-agreement-crada-with-nevada-national-security-sites-nnss). It's a framework for collaboration.
 
-[Starlight Engine raised the planned budget for its FAST prototype fusion plant to as much as $5 billion and sought Japanese government support for roughly two-thirds of the cost](https://www.ft.com/content/981becc2-8d7d-428a-93d3-405fc44e3ca5). 
+[Terra Fusion reported to be raising a $10 million seed round](https://technical.ly/entrepreneurship/energy-startups-race-to-power-ai-infrastructure/). 
 
-[TAE Technologies signed a strategic agreement with Black Moon Energy Corporation for a prospective helium-3 supply pathway and commercial-development cooperation](https://tae.com/august-5-2026/). 
+[TAE Technologies signed an agreement with Black Moon Energy Corporation for helium-3 supply](https://tae.com/tae-technologies-and-black-moon-energy-corporation-enter-into-strategic-helium-3-supply-and-commercialization-agreement-for-fusion-power/). Fantasy meets fantasy. 
 
 [Commonwealth Fusion Systems cleared two more Department of Energy Milestone-Based Fusion Development Program gates, this time for its ARC commercial power plant](https://blog.cfs.energy/sparc-progress-doe-milestone-approvals-reflect-cfs-power-plant-maturity/). 
 
-[Oak Ridge National Laboratory licensed four cryogenic pellet-fueling inventions to Type One Energy for use in high-performance stellarator plasma and fuel-cycle systems](https://typeoneenergy.com/insights-announcements/ornl-type-one-energy-to-advance-fusion-fuel-cycle-with-innovative-new-technologies/). 
+[Oak Ridge National Laboratory licensed pellet-fueling technology to Type One Energy](https://typeoneenergy.com/insights-announcements/ornl-type-one-energy-to-advance-fusion-fuel-cycle-with-innovative-new-technologies/). 
 
-[First Light Fusion promoted experimental physicist Jonathan Skidmore to Chief Scientist](https://firstlightfusion.com/media/first-light-fusion-announces-the-promotion-of-dr-jonathan-skidmore-to-chief-scientist/). 
+[First Light Fusion promoted experimental physicist Jonathan Skidmore to Chief Scientist](https://firstlightfusion.com/media/first-light-fusion-announces-the-promotion-of-dr-jonathan-skidmore-to-chief-scientist/).  [Jonathan](https://www.linkedin.com/in/jonathan-skidmore-597322123/) has spent the last 10 years climbing the ranks at First Light.
 
 [The UK Atomic Energy Authority reported record plasma pressure on MAST Upgrade after completing its fifth experimental campaign]{https://www.ukaea.org/news/under-pressure-record-plasma-for-uk-flagship-machine/}. 
 

@@ -5,25 +5,17 @@ published: false
 ---
 <p><em>No fluff, all facts.</em></p>
 
-[Dennis Whyte appointed UKAEA CEO](https://www.gov.uk/government/news/fusion-energy-expert-prof-dennis-whyte-appointed-next-ukaea-ceo). This is a big win for the UKAEA. Dennis has great, practical (as far as one can be in fusion) vision and leadership. This signals to me that the UK is a stronger attractor than the US government funded fusion program.
+Dennis Whyte joins UKAEA as CEO. CFS raises another $1B. 
 
-[With Dennis moving to the UK, Guinevere Shaw steps into the CEO role at Rutherford Energy Ventures](https://www.businesswire.com/news/home/20260812247921/en/Rutherford-Energy-Ventures-Co-Founder-Dennis-Whyte-Appointed-as-Next-CEO-of-UK-Atomic-Energy-Authority-in-New-Global-Fusion-Leadership-Role). 
+## Companies
 
-[MIFTI expands LLNL collaboration](https://miftifusion.com/updates/). Includes alpha particle modeling and neutron diagnostics for  MIFTI's z-pinch.
+[Commonwealth Fusion Systems raised another $1 billion of equity](https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/). Still no public information on what the total company valuation is. Oddly, this was the first round where specific investors were not named. It was mentioned that the round included pension funds, sovereign-wealth funds, infrastructure investors, and industrial corporate partners, which are classes of entities that have participated in previous rounds. While the round raised last year was explicitly described as funding to complete SPARC, this round has been identified as for ARC development, site prep, and supplier development. 
 
 [Tokamak Energy publishes it's fusion pilot plant pre-conceptual design as part of the US Department of Energy Milestone Program](https://iopscience.iop.org/collections/nf-260604-01). First of all, I congratulate the team on pulling this all together, it was no small feat. For those not in the know, Tokamak Energy was founded many years ago on the thesis that HTS was a game changer (same as CFS) and that a low-aspect ratio tokamak was advantageous to high-aspect ratio. Not a big surprise to me, but incorporating all of the power plant considerations and the design has increased in size. The company's first [patent](https://patents.google.com/patent/EP2752099A1/en) had a tokamak with a major radius ≤1.5 m, with 1.35 m as the original design. The major radius of the most recent design, ST-E1 has increased to 5 m. The diameter of the largest poloidal field coils for ST-E1 is about 30 m; for comparison, the largest ones on ITER are about 24 m! The increase in size is largely a result of (1) a design choice to have horizontal maintenance of machine wedges between TF coils and (2) the need to have sufficient nuclear shielding of the inner legs of the toroidal field magnets to allow them to be lifetime components. These, along with all of the integrated physics, engineering, and economic requirements made for a big machine. Also telling is that aspect ratio is not a big controller of the final economics of the machine, with a span from 1.9 to 2.3 the overnight cost only increase by 5%. To me this along with other projects like STEP demonstrate that low aspect ratio tokamaks are not a strong lever for making machines smaller and more economic. One of the few potential advantages to low aspect ratio tokamaks is that much of the [plasma current is self-drive](https://en.wikipedia.org/wiki/Bootstrap_current) by the plasma; although CFS' design is a counter to this in showing that pulsed operation with a central solenoid could be viable as well. Final point of note is that Tokamak Energy is relying on a high normalized confinement (H98 for those in the know) compared to the [empirical scaling](https://en.wikipedia.org/wiki/High-confinement_mode#Energy_confinement_scaling) to achieve good economics, which is an optimistic assumption.
 
-[Zap reports their liquid metal loop ran for 1,000 hours](https://www.linkedin.com/posts/zap-energy_liquidmetals-fissionenergy-nuclearenergy-activity-7491497863298932737-xhOh) and [updates their website](https://www.zapenergy.com/). 
+[Commonwealth Fusion Systems passed the Department of Energy milestone program milestones on the pre-conceptual design and technology roadmap for ARC](https://blog.cfs.energy/sparc-progress-doe-milestone-approvals-reflect-cfs-power-plant-maturity/). No info on the details yet.
 
-[Starlight Engine opened a nationwide Japanese search for the site of its FAST superconducting-tokamak fusion demonstration project](https://www.jaif.or.jp/en/news/7948) and [stated that it expects its reactor project will cost 1 trillion yen ($6.3B)](https://monoist.itmedia.co.jp/mn/articles/2607/21/news038_3.html).
-
-[Inertia, the fusion company founded by the owner of The Onion, warns fusion industry against extrapolation, unveils extrapolation](https://inertia.com/press/commercial-roadmap-phase-1/). The chest thumping of NIF performance is a bit heavy handed, but the assessment of the 10 miracles to demonstrate in "phase 1" for them is relatively on target.
-
-[Proxima Fusion appointed Ahmed Diallo as Head of Global Partnerships](https://www.proximafusion.com/press-news/proxima-fusion-welcomes-ahmed-diallo-as-head-of-global-partnerships). [Ahmed](https://www.linkedin.com/in/hawkadiallo/) is great for this role. He's done a lot of work at PPPL and the US Department of Energy connecting public and private fusion.
-
-[Thea won a $20 million ARPA-E SCALEUP award to scale up its superconducting magnet manufacturing](https://thea.energy/press-release/thea-energy-expands-magnet-manufacturing-lines-with-20-million-arpa-e-scaleup-program-award/). 
-
-[Commonwealth Fusion Systems raised another $1 billion of equity](https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/). Still no public information on what the total company valuation is. Oddly, this was the first round where specific investors were not named. It was mentioned that the round included pension funds, sovereign-wealth funds, infrastructure investors, and industrial corporate partners, which are classes of entities that have participated in previous rounds. While the round raised last year was explicitly described as funding to complete SPARC, this round has been identified as for ARC development, site prep, and supplier development. 
+[Inertia, the fusion company founded by the owner of The Onion, warns about extrapolation in the fusion industry, unveils Inertia's plans for extrapolation](https://inertia.com/press/commercial-roadmap-phase-1/). The chest thumping of NIF performance is a bit heavy-handed, but the assessment of the 10 miracles to demonstrate in "phase 1" for them is relatively on target.
 
 [Fuse claims record neutron yield of 1.27×10¹² in a single shot for a fusion company](https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/) which is false: [SHINE has demonstrated 3.7×10¹³ neutrons per second effectively in steady state](https://www.shinefusion.com/blog/shine-phoenix-combine-for-world-record).
 
@@ -31,35 +23,19 @@ published: false
 
 [Terra Fusion reported to be raising a $10 million seed round](https://technical.ly/entrepreneurship/energy-startups-race-to-power-ai-infrastructure/). 
 
+[Zap reports their liquid metal loop ran for 1,000 hours](https://www.linkedin.com/posts/zap-energy_liquidmetals-fissionenergy-nuclearenergy-activity-7491497863298932737-xhOh) and [updates their website](https://www.zapenergy.com/). 
+
+[Starlight Engine opened a nationwide Japanese search for the site of its FAST superconducting-tokamak fusion demonstration project](https://www.jaif.or.jp/en/news/7948) and [stated that it expects its reactor project will cost 1 trillion yen ($6.3B)](https://monoist.itmedia.co.jp/mn/articles/2607/21/news038_3.html).
+
+[MIFTI expands LLNL collaboration](https://miftifusion.com/updates/). Includes alpha particle modeling and neutron diagnostics for  MIFTI's z-pinch.
+
+[Thea won a $20 million ARPA-E SCALEUP award to scale up its superconducting magnet manufacturing](https://thea.energy/press-release/thea-energy-expands-magnet-manufacturing-lines-with-20-million-arpa-e-scaleup-program-award/). 
+
 [TAE Technologies signed an agreement with Black Moon Energy Corporation for helium-3 supply](https://tae.com/tae-technologies-and-black-moon-energy-corporation-enter-into-strategic-helium-3-supply-and-commercialization-agreement-for-fusion-power/). Fantasy meets fantasy. 
 
-[Commonwealth Fusion Systems passed the Department of Energy milestone program milestones on the preconceptual design and technology roadmap for ARC](https://blog.cfs.energy/sparc-progress-doe-milestone-approvals-reflect-cfs-power-plant-maturity/). No info on the details yet.
+[Oak Ridge National Laboratory licensed pellet-fueling technology to Type One Energy](https://typeoneenergy.com/insights-announcements/ornl-type-one-energy-to-advance-fusion-fuel-cycle-with-innovative-new-technologies/).
 
-[Oak Ridge National Laboratory licensed pellet-fueling technology to Type One Energy](https://typeoneenergy.com/insights-announcements/ornl-type-one-energy-to-advance-fusion-fuel-cycle-with-innovative-new-technologies/). 
-
-[First Light Fusion promoted experimental physicist Jonathan Skidmore to Chief Scientist](https://firstlightfusion.com/media/first-light-fusion-announces-the-promotion-of-dr-jonathan-skidmore-to-chief-scientist/).  [Jonathan](https://www.linkedin.com/in/jonathan-skidmore-597322123/) has spent the last 10 years climbing the ranks at First Light.
-
-[China’s National Natural Science Foundation reported a strategic forum on fusion-reactor materials](https://www.nsfc.gov.cn/p1/3381/2821/139890.html) that should inform the work that gets done in the next five-year plan.
-
-[Germany announces three national fusion hubs](https://www.bmftr.bund.de/SharedDocs/Kurzmeldungen/DE/2026/07/290726-fusionshubs.html). Three hubs, I suppose this makes it the tricycle strategy for fusion? Marvel Fusion and Focused Energy work on the VEGA laser fusion hub. Proxima Fusion, Gauss Fusion, and the Max Planck Institute for Plasma Physics work on the STRIDE magnetic fusion hub. Karlsruhe Institute of Technology works on the MAT-TRIX fusion materials and fuel cycles hub. Starting support is 125 million euros from the Federal Ministry for Research, Technology and Space. 
-
-[ITER announced installation of its sixth vacuum-vessel sector](https://www.iter.org/print/whatsnew/509). The vacuum vessel is now two-thirds in place.
-
-[The UK Parliament opened an inquiry into the proposed national planning framework for fusion power infrastructure](https://committees.parliament.uk/work/9935/national-planning-policy-statement-on-nuclear-fusion/). This would give fusion plants national-priority and broad siting freedom. Interesting to watch this as an outsider to how things work in the UK.
-
-[UKAEA announced that £40 million for more fusion education at British universities](https://www.ukaea.org/news/supporting-fusion-inclusion-into-postgraduate-education/). Good workforce development.
-
-[UKAEA set revised priorities for the government-funded JET Decommissioning and Repurposing program](https://www.ukaea.org/news/refreshed-priorities-for-jet-decommissioning-and-repurposing-jdr/). 
-
-[DOE announces awardees for the Genesis Mission](https://www.energy.gov/sites/default/files/2026-07/GM-RFA-Awards-List.pdf). Looks like a lot of projects funded for application of AI/ML for specific topics.
-
-[The White House’s new science-policy highlights fusion as a high-level mission](https://www.whitehouse.gov/releases/2026/07/45470/): "Demonstration of commercial fusion power in the United States by the mid-2030s, following the Department of Energy’s Fusion Science & Technology Roadmap." Haven't had the chance to read over the whole policy yet.
-
-American Fusion disclosed [nineteen patent applications](https://americanfusionenergy.com/news/american-fusion-inc-otc-amfn-provides-intellectual-property-and-development-update-as-texatron-testing-program-advances/) and [six patent applications](https://americanfusionenergy.com/news/american-fusion-inc-otc-amfn-provides-intellectual-property-and-corporate-development-update/). Surprised they have such a large IP budget for a penny stock company.
-
-[Fusion Industry Association and Clean Air Task Force release their principles for codes and standards for fusion](https://www.fusionindustryassociation.org/fia-and-clean-air-task-force-publish-principles-on-codes-and-standards/). Little I disagree with in there.
-
-[ORNL and Rutherford Energy Ventures officially begin their work together](https://www.ornl.gov/news/ornl-rev-launch-innovative-collaboration-fusion-infrastructure). They're starting on an 18 month project with REV helping ORNL that will result in a "technical blueprint, financial framework and operating model for a pilot Fulcrum at ORNL", which aims to be a facility that helps address a cross cutting issue for the fusion industry on the DoE's roadmap.
+American Fusion disclosed [nineteen patent applications](https://americanfusionenergy.com/news/american-fusion-inc-otc-amfn-provides-intellectual-property-and-development-update-as-texatron-testing-program-advances/) and [six patent applications](https://americanfusionenergy.com/news/american-fusion-inc-otc-amfn-provides-intellectual-property-and-corporate-development-update/). Surprised they have such a large IP budget for a penny stock company. 
 
 [American Fusion appointed Texas Tech researcher Noah D’Amico as a strategic advisor](https://www.streetinsider.com/Press+Releases/American+Fusion+Inc.+%28OTC%3A+AMFN%29+Appoints+Dr.+Noah+D%E2%80%99Amico+as+Strategic+Advisor/26854472.html). [Noah](https://www.linkedin.com/in/noah-d-amico-797b7b344/), according to American Fusion, has expertise in nuclear measurements and a 4.0 GPA.
 
@@ -73,3 +49,35 @@ General Fusion filed a couple of SEC Schedule 13Gs and Form 3s that report on la
 
 TAE+TMTG filed a couple of SEC From 8-Ks: [anounced earnings call](https://www.sec.gov/Archives/edgar/data/1849635/000143774926025800/ex_999015.htm);  [management priorities: close TAE merger in Q4, tighten treasury management, grow media and monetize data](https://www.sec.gov/Archives/edgar/data/1849635/000143774926026797/ex_1001984.htm);  [sees fusion as the largest component of the company after the deal](https://www.sec.gov/Archives/edgar/data/1849635/000143774926026809/ex_1002711.htm); [management thinks digital-asset treasury companies and prediction markets have become crowded](https://www.sec.gov/Archives/edgar/data/1849635/000143774926026839/ex_1002726.htm); [abandons Crypto.com prediction-market integration](https://www.sec.gov/Archives/edgar/data/1849635/000143774926026595/ex_1000265.htm); and
 [termination of the Crypto.com/Yorkville CRO treasury SPAC](https://www.sec.gov/Archives/edgar/data/1849635/000143774926026597/djt20260804_8k.htm).
+
+## People 
+
+[Dennis Whyte appointed UKAEA CEO](https://www.gov.uk/government/news/fusion-energy-expert-prof-dennis-whyte-appointed-next-ukaea-ceo). This is a big win for the UKAEA. Dennis has great, practical (as far as one can be in fusion) vision and leadership. This signals to me that the UK present and near-term vision and funding is stronger than the US.
+
+[With Dennis moving to the UK, Guinevere Shaw steps into the CEO role at Rutherford Energy Ventures](https://www.businesswire.com/news/home/20260812247921/en/Rutherford-Energy-Ventures-Co-Founder-Dennis-Whyte-Appointed-as-Next-CEO-of-UK-Atomic-Energy-Authority-in-New-Global-Fusion-Leadership-Role). The co-founders (Dennis, Andrew, and Maria) transition into Strategic Advisor roles.
+
+[Proxima Fusion appointed Ahmed Diallo as Head of Global Partnerships](https://www.proximafusion.com/press-news/proxima-fusion-welcomes-ahmed-diallo-as-head-of-global-partnerships). [Ahmed](https://www.linkedin.com/in/hawkadiallo/) is great for this role. He's done a lot of work at PPPL and the US Department of Energy connecting public and private fusion.
+
+[First Light Fusion promoted experimental physicist Jonathan Skidmore to Chief Scientist](https://firstlightfusion.com/media/first-light-fusion-announces-the-promotion-of-dr-jonathan-skidmore-to-chief-scientist/).  [Jonathan](https://www.linkedin.com/in/jonathan-skidmore-597322123/) has spent the last 10 years climbing the ranks at First Light.
+
+## Government
+
+[Germany announces three national fusion hubs](https://www.bmftr.bund.de/SharedDocs/Kurzmeldungen/DE/2026/07/290726-fusionshubs.html). Three hubs, I suppose this makes it the tricycle strategy for fusion? Marvel Fusion and Focused Energy work on the VEGA laser fusion hub. Proxima Fusion, Gauss Fusion, and the Max Planck Institute for Plasma Physics work on the STRIDE magnetic fusion hub. Karlsruhe Institute of Technology works on the MAT-TRIX fusion materials and fuel cycles hub. Starting support is 125 million euros from the Federal Ministry for Research, Technology and Space. 
+
+[China’s National Natural Science Foundation reported a strategic forum on fusion-reactor materials](https://www.nsfc.gov.cn/p1/3381/2821/139890.html) that should inform the work that gets done in the next five-year plan.
+
+[ITER announced installation of its sixth vacuum-vessel sector](https://www.iter.org/print/whatsnew/509). The vacuum vessel is now two-thirds in place.
+
+[The UK Parliament opened an inquiry into the proposed national planning framework for fusion power infrastructure](https://committees.parliament.uk/work/9935/national-planning-policy-statement-on-nuclear-fusion/). This would give fusion plants national-priority and broad siting freedom. Interesting to watch this as an outsider to how things work in the UK.
+
+[UKAEA announced that £40 million for more fusion education at British universities](https://www.ukaea.org/news/supporting-fusion-inclusion-into-postgraduate-education/). Good workforce development.
+
+[UKAEA set revised priorities for the government-funded JET Decommissioning and Repurposing program](https://www.ukaea.org/news/refreshed-priorities-for-jet-decommissioning-and-repurposing-jdr/). 
+
+[DOE announces awardees for the Genesis Mission](https://www.energy.gov/sites/default/files/2026-07/GM-RFA-Awards-List.pdf). Looks like a lot of projects funded for application of AI/ML for specific topics.
+
+[The White House’s new science-policy highlights fusion as a high-level mission](https://www.whitehouse.gov/releases/2026/07/45470/): "Demonstration of commercial fusion power in the United States by the mid-2030s, following the Department of Energy’s Fusion Science & Technology Roadmap." Haven't had the chance to read over the whole policy yet.
+
+[Fusion Industry Association and Clean Air Task Force release their principles for codes and standards for fusion](https://www.fusionindustryassociation.org/fia-and-clean-air-task-force-publish-principles-on-codes-and-standards/). Little I disagree with in there.
+
+[ORNL and Rutherford Energy Ventures officially begin their work together](https://www.ornl.gov/news/ornl-rev-launch-innovative-collaboration-fusion-infrastructure). They're starting on an 18 month project with REV helping ORNL that will result in a "technical blueprint, financial framework and operating model for a pilot Fulcrum at ORNL", which aims to be a facility that helps address a cross cutting issue for the fusion industry on the DoE's roadmap.

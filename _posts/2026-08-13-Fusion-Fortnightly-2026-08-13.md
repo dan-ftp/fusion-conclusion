@@ -1,12 +1,10 @@
-----------------
+---
 layout: post
 title: "Fusion Fortnightly | 2026-08-13"
-published: false
-----------------
+published: True
+---
 
-<p><em>No fluff, all facts.</em></p>
-
-Dennis Whyte joins UKAEA as CEO. CFS raises another &#36;1B.
+<p><em>No fluff, all facts: Dennis Whyte joins UKAEA as CEO. CFS raises another &#36;1B. Tokamak Energy publishes its fusion pilot plant pre-conceptual design.</em></p>
 
 ## Companies
 

@@ -59,35 +59,27 @@ published: false
 
 ## Government, regulation, and public programs
 
-[UK and US announce fusion computing and regulatory agreements](https://www.gov.uk/government/news/uk-and-us-fusion-strike-partnership-to-accelerate-clean-energy). The September 14 package includes a UKAEA–PPPL partnership on AI and supercomputing and closer cooperation between the countries on fusion regulation. No new funding commitment was specified for either agreement. 
+[UK and US announce fusion computing and regulatory agreements](https://www.gov.uk/government/news/uk-and-us-fusion-strike-partnership-to-accelerate-clean-energy). It includes a UKAEA–PPPL partnership on AI and supercomputing as well as cooperation between the countries on fusion regulation. 
 
-[Japan conditionally selects four company-led fusion projects for demonstration funding](https://www.fusionindustryassociation.org/japan-selects-four-industry-led-projects-to-support-fusion-power-demonstration-in-the-2030s/). EX-Fusion, Helical Fusion, LINEA Innovation, and Starlight Engine were selected for a program with roughly ¥60 billion available through fiscal 2028. Awards remain conditional and individual funding amounts have not been finalized. 
+[Japan selects four company-led fusion projects for demonstration funding](https://www.fusionindustryassociation.org/japan-selects-four-industry-led-projects-to-support-fusion-power-demonstration-in-the-2030s/). EX-Fusion, Helical Fusion, LINEA Innovation, and Starlight Engine were selected for a program with ¥60 billion ($390 million) through 2028.
 
-[Tennessee issues Type One Energy a fusion-specific license](https://www.tn.gov/environment/news/2026/8/31/first-license-commercial-fusion.html). Tennessee describes the Project Infinity license as the first issued under a state regulatory framework specifically for fusion machines. It puts the new licensing approach into actual use, although construction and operation remain years away and full startup is targeted for 2034. ([Tennessee State Government][3])
+[Tennessee issues Type One Energy a fusion-specific license](https://www.tn.gov/environment/news/2026/8/31/first-license-commercial-fusion.html). The headline of "First License for Commercial Fusion" is an overreach, with CFS and SHINE both receiving commercial fusion licenses in recent years. The more accurate statement of what was done is still significant: Tennessee is the first U.S. state to write a dedicated regulations for fusion machines and is the first to issue a fusion-machine-specific byproduct-material license under such regulations.
 
-[California sends its fusion roadmap bill to the governor](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB925). SB 925 passed both chambers without opposing votes and was presented to the governor on August 31. It would require a state fusion strategy and make qualifying large fusion-component manufacturing projects eligible for streamlined review; as of September 14 it remains an enrolled bill, not enacted law. ([LegiInfo][4])
+[California sends its fusion roadmap bill to the governor](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB925). SB 925 passed both chambers without opposing votes. It would require a state fusion strategy and make large fusion-component manufacturing projects eligible for streamlined review. A reaction to losing Pacific Fusion to the desert of New Mexico?
 
-[UK Parliament scrutinizes fusion’s separate planning framework](https://committees.parliament.uk/oralevidence/18071/html/). At a September 9 hearing on draft policy EN-8, MPs questioned industry, regulators, and the energy minister about safety, local control, planning thresholds, and regulatory capacity. EN-8 remains draft policy.
+[U.K. Parliament scrutinizes fusion’s separate planning framework](https://committees.parliament.uk/oralevidence/18071/html/). U.K. officials refused to indorse the FIA fusion energy cost claims. They made it explicit that the framework is to attract foreign fusion companies. 
 
-[England sets out an early-engagement process for fusion regulators](https://www.gov.uk/guidance/fusion-energy-developers-engage-early-with-regulators). The Environment Agency and Health and Safety Executive now offer coordinated advice before developers submit formal permit applications. The process is voluntary, charged, and does not constitute regulatory approval.
+[U.K. regulators release early-engagement process for fusion](https://www.gov.uk/guidance/fusion-energy-developers-engage-early-with-regulators). 
 
-[New investment targets fusion shielding materials and STEP testing](https://www.gov.uk/government/news/uk-and-us-fusion-strike-partnership-to-accelerate-clean-energy). A £2.63 million University of Birmingham–EPRI collaboration will work on fusion shielding materials, while Kyoto Fusioneering plans to invest up to £3 million in Project ALBION for STEP-related materials development and testing. The Kyoto money is company investment rather than another government grant. 
+[ITER gives updates on summer progress](https://www.iter.org/node/20687/summer-substantial-progress). Unlike the Fusion Conclusion, ITER boasts it didn't have a summer slowdown. 
 
-[LIPAc advances commissioning toward beam operations next spring](https://fusionforenergy.europa.eu/news/lipac-accelerator-commissioning-operation/). Europe and Japan completed initial warm-conditioning tests of the superconducting RF section. Cooldown is expected in December and beam operation in spring 2027, building experience for the DONES materials-irradiation facility. 
+[Japan and Europe expand students and early-career research training at JT-60SA](https://euro-fusion.org/eurofusion-news/japan-eu-strengthen-talent-through-the-jt-60sa-on-site-laboratory/).  
 
-[PPPL demonstrates a modular AI control framework on DIII-D](https://www.pppl.gov/news/2026/pacman-ai-framework-controlling-fusion-systems-safely-makes-key-decisions-milliseconds). PACMAN was tested experimentally in five applications, including heating, instability prediction, density, and rotation control. Its main value is an architecture that can combine models while enforcing hardware limits, with typical control cycles around 20 milliseconds. 
+[UKAEA looks to sell old JET equipment to reduce decommissioning costs](https://www.ukaea.org/news/jdr-trials-asset-based-decommissioning-with-ramco-uk/). I call dibs on the [flywheels and motor generators](https://www.researchgate.net/figure/Pictures-of-the-flywheel-generator-during-its-realization-at-JET_fig12_350046540).
 
-[ITER completes its three-year vacuum-vessel bevel-repair campaign](https://www.iter.org/node/20687/summer-substantial-progress). Sector 3 was handed to assembly teams on September 2, ending repairs to the vessel edges that will be welded together. ITER also reported continued assembly of sector module 9. 
+[FIA lays out regulatory priorities for U.S. states](https://www.fusionindustryassociation.org/preparing-for-commercial-fusion-fia-white-paper-outlines-regulatory-priorities-for-u-s-states/).
 
-[ITER fixes a magnet-test joint and prepares for higher-current trials](https://www.iter.org/node/20687/ramping-testing). Oxidation caused excessive resistance in a feeder joint during testing of toroidal-field coil 17. The joint has been repaired and testing will next target 34 kA; operation at the full 68 kA still requires facility upgrades. 
-
-[Japan and Europe expand hands-on research training at JT-60SA](https://euro-fusion.org/eurofusion-news/japan-eu-strengthen-talent-through-the-jt-60sa-on-site-laboratory/). QST, Fusion for Energy, and EUROfusion are expanding the on-site laboratory that embeds students and early-career researchers at Naka for practical work on the machine. 
-
-[UKAEA tests whether selling old JET equipment can reduce decommissioning costs](https://www.ukaea.org/news/jdr-trials-asset-based-decommissioning-with-ramco-uk/). Ramco will dismantle three areas of former JET electrical infrastructure and recover value through equipment auctions and scrap. The trial runs through March 2027. 
-
-[FIA lays out regulatory priorities for U.S. states](https://www.fusionindustryassociation.org/preparing-for-commercial-fusion-fia-white-paper-outlines-regulatory-priorities-for-u-s-states/). The September white paper urges Agreement States to prepare staffing, laws, and radioactive-waste arrangements and favors coordinated reviews of standardized machines across jurisdictions. These are industry recommendations, not adopted requirements. ([Fusion Industry Association][5])
-
-[Fusion industry groups ask for more input into Europe’s forthcoming strategy](https://www.fusionindustryassociation.org/fusion-industry-calls-for-greater-transparency-and-industry-input-in-upcoming-eu-fusion-strategy/). FIA, Pro-Fusion, INEUSTAR, and the European Fusion Association complained of limited visibility into the European Commission’s policy choices and asked to review them before adoption. The letter itself changes neither policy nor funding. 
+[FIA asks for more transparency into Europe’s fusion strategy](https://www.fusionindustryassociation.org/fusion-industry-calls-for-greater-transparency-and-industry-input-in-upcoming-eu-fusion-strategy/).  
 
 ## People and hiring
 

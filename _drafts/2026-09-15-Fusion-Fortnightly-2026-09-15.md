@@ -7,6 +7,8 @@ published: false
 
 ## Companies, financing, and commercial development
 
+[Helion closes Series G at $500 million](https://www.linkedin.com/feed/update/urn:li:activity:7505662477167321088/). The Series G was [first reported](https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power) in early June to be $465 million, so the stragglers have finally sent in their checks.
+
 [NovaFusionX raises RMB 1.2 billion ($179 million) in a pre-Series A round](https://en.lingang.gov.cn/html/website/lg/English/News1630758253379031042/Updates/2097854259582238722.html). They're aiming to have their FRC operating by the end of the year. 
 
 [Kyoto Fusioneering secures $105 million in equity and access to $57 million in debt financing](https://kyotofusioneering.com/en/news/2026/08/24/4350). The Series D first close raised ¥16.72 billion of equity alongside ¥9 billion in credit/loan. The financing supports UNITY fuel-cycle, blanket, and thermal-system demonstrations and expanded gyrotron production. 
@@ -71,6 +73,8 @@ published: false
 
 [U.K. regulators release early-engagement process for fusion](https://www.gov.uk/guidance/fusion-energy-developers-engage-early-with-regulators). 
 
+[80-page glossy U.K. Fusion: Investment Prospectus published](https://assets.publishing.service.gov.uk/media/6aa4195aa378ca4ee34ee181/investment-prospectus-UK-fusion.pdf).
+
 [ITER gives updates on summer progress](https://www.iter.org/node/20687/summer-substantial-progress). Unlike the Fusion Conclusion, ITER boasts it didn't have a summer slowdown. 
 
 [Japan and Europe expand students and early-career research training at JT-60SA](https://euro-fusion.org/eurofusion-news/japan-eu-strengthen-talent-through-the-jt-60sa-on-site-laboratory/).  
@@ -99,6 +103,10 @@ Contrast that with a real fusion program: [The STEP developer, UK Fusion Energy,
 
 ## Papers and research
 
-[Thea Energy publishes 16 peer-reviewed papers on its Helios power plant design](https://thea.energy/press-release/thea-energy-publishes-the-most-practical-fusion-power-plant-design-and-a-clear-path-toward-energy-on-the-grid/). They claim it to be the "most practical fusion power plant design". Can we all agree to stop with these arbitrary and subjective superlatives? Probably not.
+[Thea Energy publishes 16 peer-reviewed papers on its Helios power plant design](https://thea.energy/press-release/thea-energy-publishes-the-most-practical-fusion-power-plant-design-and-a-clear-path-toward-energy-on-the-grid/). They claim it to be the "most practical fusion power plant design". Can we all agree to stop with these arbitrary and subjective superlatives? Probably not. Nonetheless, an impressive work by the team pulling this all together.
 
 [Delgado-Aparicio, Ono, and Menard at PPPL publish work examining what it takes to get to ignition](https://journals.aps.org/prl/abstract/10.1103/mmc9-nzfx). This is a nice combination of the work of Lawson, Cordy, and Mills seeing if a fusion machine can reach ignition without running into a density, heating, radiation, or beta limits first. They find that adding in more physics makes the path narrower but also makes it more stable once there.
+
+[U.S. Fusion Materials Community Roadmap: Near-term priorities published](https://doi.org/10.1016/j.cossms.2026.101291). I share the authors' pessimism for materials for early fusion devices, it's probably the biggest challenge to making fusion economic. 
+
+[Acceleron Fusion publishes on their diamond anvil cell for exploring muon-catalyzed fusion](https://doi.org/10.1063/5.0337239).

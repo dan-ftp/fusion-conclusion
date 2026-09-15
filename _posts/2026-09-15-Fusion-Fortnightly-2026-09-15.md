@@ -4,9 +4,7 @@ title: "Fusion Fortnightly | 2026-09-15"
 published: true
 ---
 
-<p><em>No fluff, all facts.</em></p>
-
-Blue Laser Fusion becomes public-reporting company. General Fusion / Spring Valley disclose $411 million accounting error. Matt Reinke writes about fusion and pop-culture as well as his dog.
+<p><em>No fluff, all facts:</em></p> Blue Laser Fusion becomes public-reporting company. General Fusion / Spring Valley disclose $411 million accounting error. Matt Reinke writes about fusion and pop-culture as well as his dog.
 
 ## Companies, financing, and commercial development
 

@@ -16,8 +16,6 @@ published: true
 
 [Kyoto Fusioneering secures <span>$</span>105 million in equity and access to <span>$</span>57 million in debt financing](https://kyotofusioneering.com/en/news/2026/08/24/4350). The Series D first close raised ¥16.72 billion of equity alongside ¥9 billion in credit/loans. The financing supports UNITY fuel-cycle, blanket, and thermal-system demonstrations and expanded gyrotron production.
 
-[Blue Laser Fusion raises <span>$</span>25 million and becomes a public-reporting company through a reverse merger](https://www.streetinsider.com/SEC%2BFilings/Form%2B8-K%2BBlue%2BLaser%2BFusion%2C%2BInc.%2BFor%3A%2BSep%2B04/27038691.html). The transaction combined a private placement with a merger into Unite Acquisition 2. There was no public market for the shares at filing, and the company expects its post-transaction cash to cover about 12 months.
-
 [Pacific Fusion breaks ground in Albuquerque and signs a collaboration framework with NNSA](https://www.energy.gov/nnsa/articles/nnsa-signs-memorandum-understanding-pacific-fusion-company-breaks-ground-high-yield). The campus will house Pacific Fusion’s planned high-yield demonstrator. The planned NNSA work is on high-energy-density and stockpile science.
 
 [SHINE is reported to be preparing for an IPO](https://www.axios.com/pro/climate-deals/2026/08/19/shine-technologies-ipo-goldman-sachs-jp-morgan). Finally, a fusion company that's going public that's got a legitimate product! SHINE is using fusion from particle accelerators to produce neutrons for radiography as well as medical isotope production.

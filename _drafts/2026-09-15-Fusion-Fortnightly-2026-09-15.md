@@ -83,64 +83,22 @@ published: false
 
 ## People and hiring
 
-[TAE hires Darrell Taylor as general counsel](https://tae.com/leadership/darrell-taylor/). Taylor brings more than 30 years of experience in energy transactions, securities law, capital markets, and public-company compliance, including work on ten IPOs. The appointment is particularly relevant to financing and corporate structure as TAE pursues its public-market transaction.
+[TAE hires Darrell Taylor as general counsel](https://tae.com/leadership/darrell-taylor/). [Taylor](https://www.linkedin.com/in/darrell-taylor-5891a983/) has more than 30 years of experience in energy transactions, securities, capital markets, and public-company compliance, including work on ten IPOs. Seems like a good experienced lawyer to help them navigate the road ahead for TAE.
 
-[CFS seeks a vice president of capital markets and investor relations](https://jobs.lever.co/cfsenergy/d9f77057-885c-49e3-a227-8bd731c06988). The role will lead equity fundraising for the first ARC plant, report to the CFO, and build the investor-relations function. The posting explicitly says CFS has not committed to an IPO and is considering several financing routes.
+[CFS seeks a vice president of capital markets and investor relations](https://jobs.lever.co/cfsenergy/d9f77057-885c-49e3-a227-8bd731c06988). The job description includes "Experience preparing a private company for public-company readiness — reporting, disclosure controls, and the S-1 process."
 
-[CFS is also recruiting a director of corporate financial planning and analysis](https://jobs.lever.co/cfsenergy/609c2630-8887-430d-8dc1-26b3f54bf038). The role covers budgets, long-range planning, cash forecasts, risk, and board reporting. Together with the capital-markets hire, it points to continued build-out of the finance organization ahead of ARC.
-
-[Xcimer seeks a director of fusion nuclear science](https://jobs.lever.co/xcimer/d34ae80a-3bf3-4259-b0e1-6c9b1c5f7ec3). The new department will cover chamber dynamics, blanket physics, and tritium science and translate research into engineering requirements. The remit extends substantially beyond laser development.
-
-[Former CFS CFO Mitch Goldstein joins SuperCritical Materials’ board](https://markets.businessinsider.com/news/stocks/supercritical-materials-appoints-former-commonwealth-fusion-and-nextera-nuclear-cfo-mitchell-p-goldstein-to-board-of-directors-1036532093). Goldstein, now CFO of Takkion, will chair the audit and compensation committees at the uranium-from-seawater company. He previously served as CFO of both CFS and NextEra’s nuclear fleet.
-
-[Andrea Mercante takes over Eni Next](https://www.eni.com/eninext/en-US/who-we-are/andrea-mercante.html). Mercante now leads the corporate venture arm of one of CFS’s major investors, succeeding Clara Andreoletti after nearly two decades across strategy, finance, and acquisitions.
-
-[Fusion fuel-cycle supplier Next Hydrogen names Jocelyne Moyer CEO](https://nexthydrogen.com/news-release/next-hydrogen-solutions-inc-reports-q2-2026-financial-results-and-announces-appoint-of-jocelyne-moyer-as-president-and-ceo/). Moyer replaced Raveel Afzaal as president, CEO, and a director on September 1. Next Hydrogen is developing electrolyzer equipment for Fusion Fuel Cycles’ tritium-recovery system.
-
-[American Fusion adds Samson Lee to its board](https://americanfusionenergy.com/news/american-fusion-inc-otc-amfn-appoints-asian-financial-markets-and-digital-assets-executive-samson-lee-as-independent-director/). The Hong Kong-based capital-markets and digital-assets executive is expected to help develop financial and commercial relationships in Asia, especially Hong Kong and Singapore.
+[American Fusion adds Samson Lee to its board](https://americanfusionenergy.com/news/american-fusion-inc-otc-amfn-appoints-asian-financial-markets-and-digital-assets-executive-samson-lee-as-independent-director/). [Samson](https://www.linkedin.com/in/samsonlee/) is a fintech executive.
 
 ## Legal and intellectual property
 
-[American Fusion reaches 130 pending U.S. patent applications and pursues an exchange uplisting](https://americanfusionenergy.com/news/american-fusion-inc-otcqb-amfn-expands-intellectual-property-portfolio-to-130-u-s-patent-applications-and-provides-national-stock-exchange-uplisting-and-capital-markets-update/). The September update added 30 applications to the 100 announced in August and reiterated plans to seek a national-exchange listing after beginning OTCQB trading. The applications remain unexamined claims, not granted patents or evidence of fusion performance. 
+[American Fusion says it now has 130 pending U.S. patent applications](https://americanfusionenergy.com/news/american-fusion-inc-otcqb-amfn-expands-intellectual-property-portfolio-to-130-u-s-patent-applications-and-provides-national-stock-exchange-uplisting-and-capital-markets-update/). That's a ridiculous number of patents for a company with low $100k R&D budget. They also are planning on switching which stock exchange they are listed on, filed a motion to vacate a legacy judgement in Alaska, and hired a new communications firm.
 
-[UK Fusion Energy passes 50 patent applications](https://stepfusion.com/uk-fusion-energy-hits-major-ip-milestone/). The STEP developer reported 52 applications and 108 technology disclosures since 2025, with two applications published. The portfolio covers STEP technology and inventions that may have uses outside fusion.
+Contrast that with a real fusion program: [The STEP developer, UK Fusion Energy, passes 50 patent applications](https://stepfusion.com/uk-fusion-energy-hits-major-ip-milestone/). 
 
-[American Fusion seeks to overturn a legacy Alaska judgment](https://americanfusionenergy.com/news/american-fusion-inc-otcqb-amfn-reaches-major-intellectual-property-milestone-with-100-patent-applications-pending/). The company disclosed a motion to vacate a default judgment inherited from its Renewal Fuels era, relying partly on a later Washington ruling over an acquisition that was found never to have closed. The dispute concerns legacy corporate history rather than fusion technology.
-
-[Patent lawyers ask whether 20 years is enough for fusion](https://www.hgf.com/knowledge-hub/blog-posts/fuelling-ip-nuclear-fusion-patents-is-20-years-enough/). HGF argues that early fusion patents may expire before commercialization and discusses capped patent-term extensions modeled partly on pharmaceuticals. This is commentary and a policy proposal, not a change in patent law.
+[Patent lawyers ask whether 20 years is enough for fusion](https://www.hgf.com/knowledge-hub/blog-posts/fuelling-ip-nuclear-fusion-patents-is-20-years-enough/). It probably is.
 
 ## Papers and research
 
-[Thea Energy publishes 16 peer-reviewed papers on its Helios power plant design](https://thea.energy/press-release/thea-energy-publishes-the-most-practical-fusion-power-plant-design-and-a-clear-path-toward-energy-on-the-grid/). The collection describes a roughly 400 MWe stellarator with an 8 m major radius, planar magnet arrays, and removable maintenance sectors. It puts considerably more engineering detail into public view, while the advertised capacity factor and component lifetimes remain design projections. 
+[Thea Energy publishes 16 peer-reviewed papers on its Helios power plant design](https://thea.energy/press-release/thea-energy-publishes-the-most-practical-fusion-power-plant-design-and-a-clear-path-toward-energy-on-the-grid/). They claim it to be the "most practical fusion power plant design". Can we all agree to stop with these arbitrary and subjective superlatives? Probably not.
 
-[DIII-D finds the first experimental evidence of helicon current drive](https://arxiv.org/abs/2609.12474). A September 11 preprint accepted by *Physical Review Lettersreports core heating and current-profile changes from DIII-D’s megawatt-level helicon system that agree with modeling. This is experimental support for a proposed steady-state current-drive technique, though not yet reactor-scale efficiency. 
-
-[Reaching ignition requires more than crossing the Lawson threshold](https://journals.aps.org/prl/abstract/10.1103/mmc9-nzfx). A *Physical Review Letterspaper combines power balance, ignition accessibility, and burn stability. Radiation pushes the required density, temperature, and pressure higher and tightens the relationship between ignition and magnetic-stability limits. 
-
-[Pacific Fusion adds magnetized viscosity to its implosion models](https://doi.org/10.1063/5.0340252). The *Physics of Plasmaspaper incorporates the full magnetized-viscosity tensor into Pacific Fusion’s FLASH modeling. Viscosity damps vortices and Rayleigh–Taylor instability and increases predicted yield, but the gain remains a simulation result. 
-
-[ITER’s radio-frequency antennas could increase local tungsten erosion substantially](https://arxiv.org/abs/2609.09408). Modeling finds RF sheaths increase gross tungsten erosion near the antennas by roughly 64 times over the thermal-sheath case. The modeled source nevertheless remains about three orders of magnitude below the divertor source under the studied conditions. 
-
-[ARC-like plasmas test the limits of external-coil vertical control](https://arxiv.org/abs/2608.22677). Simulated ARC-like cases using external poloidal-field coils achieve full success in 50% of tested disturbances and actuator faults, with 33% marginal and 17% losing control. The failures identify where fast vertical growth and actuator constraints defeat the proposed scheme. 
-
-[Seven tokamaks sharpen projections of SPARC and ITER edge bursts](https://arxiv.org/abs/2608.21179). A new multi-machine scaling projects conventional type-I ELM losses of about 4.5% of stored energy for SPARC and 12% for ITER’s Q=10 scenario. Small-ELM regimes extrapolate much lower, near 1%–1.2%, though the dataset remains limited. 
-
-[TCV raises the heat on alternative divertors](https://arxiv.org/abs/2608.18939). A high-power TCV scenario reaches 2.5 MW of absorbed ECRH and stationary parallel heat fluxes around 100 MW/m², roughly ten times earlier TCV divertor studies. It provides a more reactor-relevant platform for comparing exhaust geometries. 
-
-[A new fusion benchmark asks AI to reconstruct equilibria without magnetic sensors](https://arxiv.org/abs/2609.01750). The open dataset contains 9,113 DIII-D and 2,416 MAST discharges and asks models to infer magnetic geometry from coil currents and Thomson-scattering data, including transfer between machines. It is a benchmark rather than a demonstrated replacement for reactor magnetic diagnostics. 
-
-[MAST Upgrade puts neural-network-assisted shape control into real discharges](https://arxiv.org/abs/2608.28468). A neural-network emulator updates plasma-response calculations during operation while retaining the conventional control architecture. The experiment is a useful example of machine learning augmenting an existing controller rather than replacing it. 
-
-[KSTAR balances tungsten removal against overfueling](https://arxiv.org/abs/2608.19259). Feedback control of ELM frequency through divertor deuterium puffing tracks changing targets with about 13% mean error. Too little gas allows core radiation to rise, while too much degrades plasma performance. 
-
-[W7-X predicts when pellet-enhanced confinement will fade](https://arxiv.org/abs/2608.18325). A neural network predicts the end of enhanced confinement after pellet injection, with 90% of predictions within 51 milliseconds of the observed transition. Closed-loop fueling using the predictor has not yet been demonstrated. 
-
-[DIII-D tests how magnetic errors upset tokamak startup](https://arxiv.org/abs/2609.04546). Current-ramp experiments with deliberately applied perturbations show existing error-field penetration scaling works reasonably well when the machine’s actual three-dimensional fields are included. The work matters for startup reliability and proposed runaway-electron mitigation coils. 
-
-[India’s first spherical tokamak reports its commissioning results](https://arxiv.org/abs/2608.26024). The Institute for Plasma Research reports first-plasma and commissioning results using Ohmic drive with 2.45 GHz microwave assistance. The machine is intended as a relatively inexpensive testbed for startup, current-drive, and shaped-plasma research. 
-
-[Runaway electrons may excite the waves that limit them](https://arxiv.org/abs/2609.08051). The model shows runaway electrons generating whistler waves that scatter the same population, producing a wave-regulated regime that could limit avalanches. It identifies a physical mechanism rather than demonstrating an operational mitigation system. 
-
-[A proposed route from fusion-product energy back into fuel ions](https://arxiv.org/abs/2609.07732). Linear theory finds a resonance through which energetic fusion products can excite ion Bernstein waves and transfer energy into thermal ions. The idea could be useful for proton–boron systems but remains theoretical. 
-
-[Proton–boron targets favor a higher beam energy than the resonance alone suggests](https://arxiv.org/abs/2609.04987). Modeling that couples proton stopping, target heating, and fusion reactions shifts the optimum beam energy to about 900 keV, above the 672 keV nuclear resonance. Particle-in-cell simulations support the analysis, but the study does not demonstrate net energy production. 
+[Delgado-Aparicio, Ono, and Menard at PPPL publish work examining what it takes to get to ignition](https://journals.aps.org/prl/abstract/10.1103/mmc9-nzfx). This is a nice combination of the work of Lawson, Cordy, and Mills seeing if a fusion machine can reach ignition without running into a density, heating, radiation, or beta limits first. They find that adding in more physics makes the path narrower but also makes it more stable once there.

@@ -3,7 +3,7 @@ layout: post
 title: "Fusion Fortnightly | 2026-09-29"
 published: true
 ---
-<p><em>No fluff, all facts:</em> Bipartisan House bill teases $10 billion for fusion commercialization. StandardX raises £10 million to produce medical isotopes and tritium. New retrospective published on lessons learned from U.S. DOE’s fusion milestone program.</p>
+<p><em>No fluff, allf facts:</em> Bipartisan House bill teases <span>$</span>10 billion for fusion commercialization. StandardX raises £10 million to produce medical isotopes and tritium. New retrospective published on lessons learned from U.S. DOE’s fusion milestone program.</p>
 
 ## Companies, financing, and commercial development
 
@@ -13,11 +13,11 @@ published: true
 
 [Type One Energy completes the first phase of DOE’s Milestone-Based Fusion Development Program](https://www.linkedin.com/posts/type-one-energy-has-completed-the-first-phase-ugcPost-7508564481640165376-hp4i/). Type One says it completed all seven science, technology, and commercial milestones in its first budget period.
 
-[EnableFusion closes a ₩45 billion Series A](https://www.hellodd.com/news/articleView.html?idxno=113270). Quantum Ventures Korea led the round, which brings total funding to approximately ₩56 billion ($42 million). The company is working on precision manufacturing, AI, high-temperature superconductors, and tritium fuel systems for fusion.
+[EnableFusion closes a ₩45 billion Series A](https://www.hellodd.com/news/articleView.html?idxno=113270). Quantum Ventures Korea led the round, which brings total funding to approximately ₩56 billion (<span>$</span>42 million). The company is working on precision manufacturing, AI, high-temperature superconductors, and tritium fuel systems for fusion.
 
 [StandardX raises £10 million to produce medical isotopes and tritium](https://www.standardx.tech/news-stories/standardx-launches-with-ps10m-seed-round-to-create-the-rare-isotopes-needed-to-advance-medical-and-fusion-innovation). Initial medical-isotope deliveries are planned for 2027.
 
-[Daedal Systems raises $4.04 million for plasma diagnostics](https://www.daedalsystems.com/funding-announcement). The round will fund the company’s first three diagnostic systems and deployments with pilot customers.
+[Daedal Systems raises <span>$</span>4.04 million for plasma diagnostics](https://www.daedalsystems.com/funding-announcement). The round will fund the company’s first three diagnostic systems and deployments with pilot customers.
 
 [Marvel Fusion spins out Caelora to commercialize lasers](https://www.marvelfusion.com/newsroom/marvel-fusion-launches-caelora). The subsidiary will develop diode-pumped lasers for fusion and scientific research, plus radiation sources for medical, industrial, and security applications.
 
@@ -27,7 +27,7 @@ published: true
 
 [General Fusion files SEC Form 6-K disclosing change of auditor](https://www.sec.gov/Archives/edgar/data/2074850/000110465926109354/tm2625843d1_6k.htm).
 
-[Blue Laser Fusion files SEC Form D](https://www.sec.gov/Archives/edgar/data/1938570/000119312526401614/xslFormDX01/primary_doc.xml). It indicates they just got over the $25 million raise to complete the merger and had 118 investors (an average of $212,000 per investor).
+[Blue Laser Fusion files SEC Form D](https://www.sec.gov/Archives/edgar/data/1938570/000119312526401614/xslFormDX01/primary_doc.xml). It indicates they just got over the <span>$</span>25 million raise to complete the merger and had 118 investors (an average of <span>$</span>212,000 per investor).
 
 ## Supply chain, manufacturing, and enabling technology
 
@@ -43,7 +43,7 @@ published: true
 
 ## Government, regulation, and public programs
 
-[Bipartisan U.S. House bill teases $10 billion to help fusion commercialization](https://democrats-science.house.gov/imo/media/doc/American%20Leadership%20in%20Fusion%20Act%20-%209.16.26.pdf). Still just proposed legislation, so don't hold your breath. This is a step in the right direction for the U.S. government to support fusion at the level that fits its rhetoric.
+[Bipartisan U.S. House bill teases <span>$</span>10 billion to help fusion commercialization](https://democrats-science.house.gov/imo/media/doc/American%20Leadership%20in%20Fusion%20Act%20-%209.16.26.pdf). Still just proposed legislation, so don't hold your breath. This is a step in the right direction for the U.S. government to support fusion at the level that fits its rhetoric.
 
 [South Korea plans central oversight for fusion and six other strategic technologies](https://en.sedaily.com/finance/2026/09/20/deputy-pm-to-oversee-new-team-for-koreas-seven-seed-projects). The country's focus on these technologies was reported in previous issues. The latest is to bring together efforts that were spread out.
 

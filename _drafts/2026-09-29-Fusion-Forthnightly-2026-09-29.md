@@ -21,6 +21,8 @@ published: false
 
 [Marvel Fusion spins out Caelora to commercialize lasers](https://www.marvelfusion.com/newsroom/marvel-fusion-launches-caelora). The subsidiary will develop diode-pumped lasers for fusion and scientific research, plus radiation sources for medical, industrial, and security applications. 
 
+[Helion is letting employees sell shares on the secondary market](https://www.linkedin.com/feed/update/urn:li:activity:7506834559393767424/). This is not uncommon these days for tech companies that are a long way from founding to IPO (see SpaceX). Also an opportunity for accredited investors that at are check sizes too small to get into the big rounds to invest if you can figure out where they are selling.
+
 [nT-Tao and Orion Nuclear agree to explore U.S. fusion deployments](https://www.utilitydive.com/press-release/20260921-nt-tao-and-orion-nuclear-energy-corporation-announce-strategic-collaboratio/). Orion is a newish small entity set up to do primarily small modular fission reactors. 
 
 [General Fusion files SEC Form 6-K disclosing change of auditor](https://www.sec.gov/Archives/edgar/data/2074850/000110465926109354/tm2625843d1_6k.htm).
@@ -28,6 +30,8 @@ published: false
 [Blue Laser Fusion files SEC Form D](https://www.sec.gov/Archives/edgar/data/1938570/000119312526401614/xslFormDX01/primary_doc.xml). It indicates they just got over the $25 million raise to complete the merger and had 118 investors (average of $212,000 per investor).
 
 ## Supply chain, manufacturing, and enabling technology
+
+[Kyoto Fusioneering receives order from Quaise Energy for gyrotons](https://kyotofusioneering.com/en/news/2026/09/29/4681). Quaise is using the gyroton RF power to "drill" for geothermal applications. 
 
 [SPARC’s cryogenic system reaches operational temperature of 8 Kelvin](https://blog.cfs.energy/cryogenics-how-well-make-our-fusion-machine-magnets-colder-than-pluto/). This was a fun plant to design. To make SPARC as small as we could, we removed as much nuclear shielding of the superconducting magnets as we could. This means that a lot of the 140 MW of fusion power goes into the superconducting magnets during the 10 s pulses, which is uncharacteristic of a fusion power plant where the magnets are well shielded (driven by radiation damage requirements) and the fusion power getting to them is much lower. Two MIT [masters](https://dspace.mit.edu/entities/publication/4289bb1c-99cb-44bc-87e0-29a86798bdad) [theses](https://dspace.mit.edu/entities/publication/a2ebaf13-869b-4551-840e-7df2fe18df12) we written on early concepts of the SPARC cryogenic system.
 
@@ -45,6 +49,8 @@ published: false
 
 ## People and hiring
 
+[Xcimer hires Cliff Thomas as Chief Scientist](https://xcimer.energy/news/xcimer-hires-university-of-rochester-fusion-scientist-cliff-thomas/). [Cliff](https://www.linkedin.com/in/cliff-thomas-axt/) was previously a Scientist at the University of Rochester and a Designer at LLNL working on inertial fusion.
+
 [Daedal Systems hires Alon Hazan as chief technology and product officer](https://www.linkedin.com/posts/whenrygould_im-excited-to-welcome-alon-hazan-as-daedal-share-7509269771519991809-8po1/). [Alon](https://www.linkedin.com/in/alonhazan/) was previously CTO of RetiSpec, a hyperspectral retinal-scanning technology. He will lead industrial development of Daedal’s plasma-diagnostic.
 
 [Fusion Science and Technology publishes a special issue on growing the fusion workforce](https://www.tandfonline.com/toc/ufst20/82/sup1). 
@@ -61,6 +67,4 @@ published: false
 
 [LLNL and Inertia publish target designs projecting fusion gains of 26–43 with 10 MJ laser pulse](https://arxiv.org/abs/2609.19752). Naturally, the designs scale up NIF’s approach. Am I allowed only one Onion-style headline per Fortnightly? I've got my lawyers looking into it.
 
-[Tritium-lean startup could substantially reduce the breeding requirements for early fusion plants](https://www.sciencedirect.com/science/article/pii/S2352179126001262). 
-
-[Teams+AI produce counterexamples to Grad’s 59-year-old conjecture](https://www.linkedin.com/feed/update/urn:li:activity:7508836442303819776/). While not a Millennium problem, it's an important achievement in the pairing of humans and AI. Don't let my MHD proffessor Jeff Friedberg know, but this math is well over my head.
+[People+AI produce counterexamples to Grad’s 59-year-old conjecture](https://www.linkedin.com/feed/update/urn:li:activity:7508836442303819776/). While not a Millennium problem, it's an important achievement in the pairing of humans and AI. Don't let my MHD proffessor Jeff Friedberg know, but this math is well over my head.

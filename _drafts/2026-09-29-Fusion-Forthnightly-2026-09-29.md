@@ -3,7 +3,7 @@ layout: post
 title: "Fusion Fortnightly | 2026-09-29"
 published: false
 ---
-<p><em>No fluff, all facts:</em> Bipartisan House bill proposes $10 billion for fusion commercialization. Fusion for Energy publishes six reports mapping fusion technology and supply-chain gaps. New retrospective published on lessons learned from U.S. DOE’s fusion milestone program.</p>
+<p><em>No fluff, all facts:</em> Bipartisan House bill teases $10 billion for fusion commercialization. StandardX raises £10 million to produce medical isotopes and tritium. New retrospective published on lessons learned from U.S. DOE’s fusion milestone program.</p>
 
 ## Companies, financing, and commercial development
 
@@ -43,7 +43,7 @@ published: false
 
 ## Government, regulation, and public programs
 
-[Bipartisan U.S. House bill proposes $10 billion to help fusion commercialization](https://democrats-science.house.gov/news/press-releases/lofgren-and-obernolte-lead-introduction-of-american-leadership-in-fusion-act). Still just proposed legislation, so don't hold your breath. This is a step in the right direction for the U.S. government to support fusion at the level that fits its rhetoric.
+[Bipartisan U.S. House bill teases $10 billion to help fusion commercialization](https://democrats-science.house.gov/imo/media/doc/American%20Leadership%20in%20Fusion%20Act%20-%209.16.26.pdf). Still just proposed legislation, so don't hold your breath. This is a step in the right direction for the U.S. government to support fusion at the level that fits its rhetoric.
 
 [South Korea plans central oversight for fusion and six other strategic technologies](https://en.sedaily.com/finance/2026/09/20/deputy-pm-to-oversee-new-team-for-koreas-seven-seed-projects). The country's focus on these technologies was reported in previous issues. The latest is to bring together efforts that were spread out.
 
@@ -57,11 +57,11 @@ published: false
 
 ## Legal and intellectual property
 
-[New retrospective published on lessons learned from U.S. DOE’s fusion milestone program](https://arxiv.org/html/2609.28398v1). Great that they published these lessons. 
-
 [American Fusion says it now has 151 pending U.S. patent applications](https://americanfusionenergy.com/news/american-fusion-inc-otcqb-amfn-provides-corporate-update-on-intellectual-property-texatron-testing-and-national-exchange-uplisting/). Up from the 130 reported last fortnight.
 
 ## Papers and research
+
+[New retrospective published on lessons learned from U.S. DOE’s fusion milestone program](https://arxiv.org/html/2609.28398v1). Great that they published these lessons. 
 
 [TAE makes additions to WARPX particle-in-cell code and validates them on experiments](https://iopscience.iop.org/article/10.1088/1741-4326/ae96c0).
 

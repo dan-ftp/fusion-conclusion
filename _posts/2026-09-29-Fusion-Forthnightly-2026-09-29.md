@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fusion Fortnightly | 2026-09-29"
-published: false
+published: true
 ---
 <p><em>No fluff, all facts:</em> Bipartisan House bill teases $10 billion for fusion commercialization. StandardX raises £10 million to produce medical isotopes and tritium. New retrospective published on lessons learned from U.S. DOE’s fusion milestone program.</p>
 

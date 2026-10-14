@@ -3,11 +3,7 @@ layout: post
 title: "Fusion Fortnightly | 2026-10-14"
 published: true
 ---
-<p><em>No fluff, all facts.</em></p>
-
-# Fusion Fortnightly | 2026-10-14
-
-No fluff, all facts: TAE files SEC Form S-4. General Fusion reaches 1 keV on LM26. Germany launches a €500 million fusion milestone program. 
+<p><em>No fluff, all facts.</em> TAE files SEC Form S-4. General Fusion reaches 1 keV on LM26. Germany launches a €500 million fusion milestone program.</p>
 
 ## Companies, financing, and commercial development
 

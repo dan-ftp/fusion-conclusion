@@ -50,3 +50,18 @@ layout: default
     </footer>
   {% endif %}
 </article>
+
+<script>
+  document.querySelectorAll('.post-content a[href]').forEach(link => {
+    const url = new URL(link.href);
+
+    const external =
+      ['http:', 'https:'].includes(url.protocol) &&
+      !['fusionconclusion.com', 'www.fusionconclusion.com'].includes(url.hostname);
+
+    if (external) {
+      link.target = '_blank';
+      link.relList.add('noopener');
+    }
+  });
+</script>

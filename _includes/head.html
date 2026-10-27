@@ -23,7 +23,7 @@ Enable per-page with `mathjax: true` in front matter, or globally with `mathjax:
 window.MathJax = {
   tex: {
     inlineMath:
-      {% if page.title contains 'Fusion Fortnightly' %}
+      {% if page.layout == 'home' or page.title contains 'Fusion Fortnightly' %}
         [['\\(', '\\)']]
       {% else %}
         [['$', '$'], ['\\(', '\\)']]
